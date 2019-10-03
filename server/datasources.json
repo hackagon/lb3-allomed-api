@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "allomed": {
+    "host": "mypha.cdg5hzzfio8h.us-east-2.rds.amazonaws.com",
+    "port": 3306,
+    "url": "",
+    "database": "dbpha",
+    "password": "RotpHA2706",
+    "name": "allomed",
+    "user": "rootpha",
+    "connector": "mysql"
+  }
+}

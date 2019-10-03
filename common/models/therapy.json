@@ -1,0 +1,44 @@
+{
+  "name": "Therapy",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "dbpha",
+      "table": "therapy"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "id": 1,
+      "defaultFn": "uuidv4",
+      "mysql": {
+        "columnName": "id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "therapyName": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "therapy_name",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  }
+}

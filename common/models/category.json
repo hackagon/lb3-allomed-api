@@ -1,0 +1,59 @@
+{
+  "name": "Category",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "dbpha",
+      "table": "category"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "String",
+      "id": 1,
+      "required": true,
+      "defaultFn": "uuidv4",
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "categoryName": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "category_name",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "activeIngredients": {
+      "type": "hasMany",
+      "model": "ActiveIngredient",
+      "foreignKey": "categoryId",
+      "options": {
+        "nestRemoting": true,
+        "disableInclude": true
+      },
+      "through": "ActiveIngredientCategory"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

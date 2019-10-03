@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Category": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "ActiveIngredient": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "ActiveIngredientCategory": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "Therapy": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "allomed",
+    "public": true
+  }
+}
