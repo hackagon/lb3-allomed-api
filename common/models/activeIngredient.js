@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 module.exports = (ActiveIngredient) => {
   // ActiveIngredient.observe('after save', (ctx, next) => {
   //   console.log(ctx.req)
@@ -14,9 +16,10 @@ module.exports = (ActiveIngredient) => {
   //   next();
   // })
 
-  ActiveIngredient.afterRemote('prototype.*', async (ctx) => {
-    console.log("after remote")
+  ActiveIngredient.afterRemote('*', async (ctx) => {
     const items = ctx.result;
-    console.log(items)
+    if (Array.isArray(ctx.result) && items[0].activeIngredientCode) {
+      ctx.result = items.map(item => ({ activeIngredientCode: item.activeIngredientCode, activeIngredientName: item.activeIngredientName }))
+    }
   })
 }
