@@ -506,7 +506,7 @@
       }
     },
     "isPrioritize": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -551,7 +551,7 @@
       }
     },
     "isPregnant": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -566,7 +566,7 @@
       }
     },
     "isBreastfeed": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -626,7 +626,7 @@
       }
     },
     "noBreak": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -701,7 +701,7 @@
       }
     },
     "noSugar": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -716,7 +716,7 @@
       }
     },
     "noAlcohol": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -806,7 +806,7 @@
       }
     },
     "isActive": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
