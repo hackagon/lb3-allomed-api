@@ -252,7 +252,7 @@
       }
     },
     "isPregnancy": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -267,7 +267,7 @@
       }
     },
     "breastfeed": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -282,7 +282,7 @@
       }
     },
     "isChild": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,
@@ -641,6 +641,12 @@
         "nullable": "Y"
       }
     }
+  },
+  "scope": {
+    "fields": [
+      "activeIngredientCode",
+      "activeIngredientName"
+    ]
   },
   "validations": [],
   "relations": {
