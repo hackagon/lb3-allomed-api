@@ -642,12 +642,6 @@
       }
     }
   },
-  "scope": {
-    "fields": [
-      "activeIngredientCode",
-      "activeIngredientName"
-    ]
-  },
   "validations": [],
   "relations": {
     "categories": {

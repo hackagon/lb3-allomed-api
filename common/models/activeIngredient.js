@@ -14,7 +14,7 @@ module.exports = (ActiveIngredient) => {
   //   next();
   // })
 
-  ActiveIngredient.afterRemote('prototype.__get__activeIngredients', async (ctx) => {
+  ActiveIngredient.afterRemote('prototype.*', async (ctx) => {
     console.log("after remote")
     const items = ctx.result;
     console.log(items)
