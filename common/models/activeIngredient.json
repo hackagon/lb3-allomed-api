@@ -650,7 +650,7 @@
       "foreignKey": "activeIngredientId",
       "options": {
         "nestRemoting": true,
-        "disableInclude": true
+        "disableInclude": false
       },
       "through": "ActiveIngredientCategory"
     }

@@ -49,7 +49,7 @@
       "foreignKey": "categoryId",
       "options": {
         "nestRemoting": true,
-        "disableInclude": true
+        "disableInclude": false
       },
       "through": "ActiveIngredientCategory"
     }
