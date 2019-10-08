@@ -43,23 +43,15 @@
   },
   "validations": [],
   "relations": {
-    "activeIngredients": {
+    "activeIngredient": {
       "type": "belongsTo",
       "model": "ActiveIngredient",
-      "foreignKey": "activeIngredientId",
-      "options": {
-        "nestRemoting": true,
-        "disableInclude": true
-      }
+      "foreignKey": "activeIngredientId"
     },
-    "categories": {
+    "category": {
       "type": "belongsTo",
       "model": "Category",
-      "foreignKey": "categoryId",
-      "options": {
-        "nestRemoting": true,
-        "disableInclude": true
-      }
+      "foreignKey": "categoryId"
     }
   },
   "acls": [],

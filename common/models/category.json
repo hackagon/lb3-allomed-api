@@ -47,10 +47,6 @@
       "type": "hasMany",
       "model": "ActiveIngredient",
       "foreignKey": "categoryId",
-      "options": {
-        "nestRemoting": true,
-        "disableInclude": false
-      },
       "through": "ActiveIngredientCategory"
     }
   },

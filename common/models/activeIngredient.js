@@ -14,15 +14,13 @@ module.exports = (ActiveIngredient) => {
     }
   })
 
-  // ActiveIngredient.afterRemote('findById', (ctx) => {
-  //   const item = ctx.result;
-  //   item.categories.find()
-  //     .then(categories => {
-  //       console.log(categories)
-  //     })
-  // })
-
-  // ActiveIngredient.afterRemote('count', (ctx) => {
-  //   console.log(ctx.result);
-  // })
+  ActiveIngredient.afterRemote('findById', async (ctx) => {
+    const activeIngredients = ctx.result;
+    const res = await activeIngredients.categories.find()
+    const categories = res.map(item => ({ categoryId: item.id, categoryName: item.categoryName }))
+    ctx.result = {
+      ...activeIngredients.__data,
+      categories
+    }
+  })
 } 

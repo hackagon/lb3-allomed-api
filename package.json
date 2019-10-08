@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "start": "node .",
     "debug": "nodemon .",
+    "debug:log": "DEBUG=* nodemon .",
     "posttest": "npm run lint && npm audit"
   },
   "dependencies": {
@@ -24,6 +25,7 @@
     "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
+    "debug": "^4.1.1",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
     "eslint-plugin-prettier": "^3.1.1"
