@@ -1,23 +1,22 @@
 {
-  "name": "Category",
+  "name": "ActiveIngredientTherapy",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "dbpha",
-      "table": "category"
+      "table": "active_ingredient_therapy"
     }
   },
   "properties": {
-    "id": {
+    "activeIngredientId": {
       "type": "String",
       "id": 1,
       "required": true,
-      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "id",
+        "columnName": "active_ingredient_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -25,29 +24,34 @@
         "nullable": "N"
       }
     },
-    "categoryName": {
+    "therapyId": {
       "type": "String",
-      "required": false,
-      "length": 255,
+      "id": 2,
+      "required": true,
+      "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "category_name",
+        "columnName": "therapy_id",
         "dataType": "varchar",
-        "dataLength": 255,
+        "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
+        "nullable": "N"
       }
     }
   },
   "validations": [],
   "relations": {
-    "activeIngredients": {
-      "type": "hasMany",
+    "activeIngredient": {
+      "type": "belongsTo",
       "model": "ActiveIngredient",
-      "foreignKey": "categoryId",
-      "through": "ActiveIngredientCategory"
+      "foreignKey": "activeIngredientId"
+    },
+    "therapy": {
+      "type": "belongsTo",
+      "model": "Therapy",
+      "foreignKey": "therapyId"
     }
   },
   "acls": [],
