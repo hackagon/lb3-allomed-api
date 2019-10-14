@@ -25,7 +25,7 @@
     },
     "displayEnglishName": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
@@ -35,7 +35,7 @@
         "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "displayVietnameseName": {
