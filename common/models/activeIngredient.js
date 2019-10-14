@@ -4,7 +4,7 @@ const app = require('../../server/server')
 module.exports = (ActiveIngredient) => {
 
   /**
-   * @todo: display some fields
+   * @todo: filter fields
   */
   ActiveIngredient.afterRemote('find', async (ctx) => {
     var items = ctx.result;
@@ -21,14 +21,14 @@ module.exports = (ActiveIngredient) => {
    * @todo: get all properties of a specific activeIngredient including their categories and therapies
   */
   ActiveIngredient.afterRemote('findById', async (ctx) => {
-    const activeIngredients = ctx.result;
-    const res_categories = await activeIngredients.categories.find()
-    const res_therapies = await activeIngredients.therapies.find()
+    const activeIngredient = ctx.result;
+    const res_categories = await activeIngredient.categories.find()
+    const res_therapies = await activeIngredient.therapies.find()
 
     const categories = res_categories.map(item => ({ categoryId: item.id, categoryName: item.categoryName }))
     const therapies = res_therapies.map(item => ({ therapyId: item.id, therapyName: item.therapyName }))
 
-    ctx.result = { ...activeIngredients.__data, categories, therapies }
+    ctx.result = { ...activeIngredient.__data, categories, therapies }
   })
 
   /**
@@ -59,4 +59,4 @@ module.exports = (ActiveIngredient) => {
       })
     })
   })
-} 
+}

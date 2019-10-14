@@ -2,7 +2,9 @@ const _ = require('lodash');
 
 module.exports = (Product) => {
 
-  // Filter fields
+  /**
+   * @todo: filter fields
+  */
   Product.afterRemote('find', async (ctx) => {
     var items = ctx.result;
     if (Array.isArray(items)) {

@@ -1,21 +1,36 @@
 {
-  "name": "Therapy",
+  "name": "Option",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "dbpha",
-      "table": "therapy"
+      "table": "option"
     }
   },
   "properties": {
+    "displayname": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "displayName",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
     "id": {
       "type": "String",
       "id": 1,
+      "defaultFn": "uuidv4",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
-      "defaultFn": "uuidv4",
       "mysql": {
         "columnName": "id",
         "dataType": "varchar",
@@ -25,31 +40,24 @@
         "nullable": "N"
       }
     },
-    "therapyName": {
+    "inputId": {
       "type": "String",
-      "required": false,
-      "length": 255,
+      "required": true,
+      "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "therapy_name",
+        "columnName": "input_id",
         "dataType": "varchar",
-        "dataLength": 255,
+        "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
+        "nullable": "N"
       }
     }
   },
   "validations": [],
-  "relations": {
-    "activeIngredients": {
-      "type": "hasMany",
-      "model": "ActiveIngredient",
-      "foreignKey": "activeIngredientId",
-      "through": "ActiveIngredientTherapy"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }
