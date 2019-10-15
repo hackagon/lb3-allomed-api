@@ -386,6 +386,24 @@
       "displayVietnameseName": "Sử dụng",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Sử dụng"
+    },
+    {
+      "name": "categories",
+      "type": "multiplechoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Phân loại",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Phân loại",
+      "options": []
+    },
+    {
+      "name": "therapies",
+      "type": "multiplechoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Liệu pháp điều trị",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Liệu pháp điều trị",
+      "options": []
     }
   ]
 }

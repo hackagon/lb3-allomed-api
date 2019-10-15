@@ -25,8 +25,8 @@
     },
     "displayVietnameseName": {
       "type": "String",
-      "defaultFn": "uuidv4",
       "required": true,
+      "defaultFn": "uuidv4",
       "length": 255,
       "precision": null,
       "scale": null,
@@ -57,8 +57,8 @@
     "id": {
       "type": "String",
       "id": 1,
-      "defaultFn": "uuidv4",
       "required": true,
+      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
@@ -153,6 +153,11 @@
       "type": "belongsTo",
       "model": "Form",
       "foreignKey": "formId"
+    },
+    "options": {
+      "type": "hasMany",
+      "model": "Option",
+      "foreignKey": "inputId"
     }
   },
   "acls": [],
