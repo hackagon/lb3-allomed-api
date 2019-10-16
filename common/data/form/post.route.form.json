@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createRoute",
+  "displayEnglishName": "Create route",
+  "displayVietnameseName": "Thêm đường dùng",
+  "description": "Form thêm mới đường dùng",
+  "inputs": [
+    {
+      "name": "routeName",
+      "type": "text",
+      "displayEnglishName": "Route name",
+      "displayVietnameseName": "Tên đường dùng",
+      "englishPlaceholder": "Enter route name",
+      "vietnamesePlaceholder": "Nhập tên đường dùng"
+    }
+  ]
+}

@@ -4,25 +4,24 @@ const postActiveIngredientForm = require('../../common/data/form/post.activeIngr
 /**
  * @todo generate form via POST method
  */
-module.exports.generateFormWithInputs = async (req, res, next) => {
+module.exports.generateFormWithInputs = (postMethodForm) => async (req, res, next) => {
   const FormModel = app.models.Form;
   const InputModel = app.models.Input;
   const OptionModel = app.models.Option;
-  const CategoryModel = app.models.Category;
-  const formName = postActiveIngredientForm.name;
+  const formName = postMethodForm.name;
 
   try {
     let form;
-    const existedForm = await FormModel.findOne({ name: formName })
+    const existedForm = await FormModel.findOne({ where: { name: formName } })
     if (existedForm) {
-      await existedForm.updateAttributes({ ...postActiveIngredientForm, id: existedForm.id })
+      await existedForm.updateAttributes({ ...postMethodForm, id: existedForm.id })
       form = existedForm;
     } else {
-      form = await FormModel.create(postActiveIngredientForm);
+      form = await FormModel.create(postMethodForm);
     }
 
     let count = 0;
-    for (const inp of postActiveIngredientForm.inputs) {
+    for (const inp of postMethodForm.inputs) {
       let _inp = inp;
       const existedInput = await InputModel.findOne({ where: { formId: form.id, name: inp.name } })
       if (existedInput) {
@@ -53,6 +52,10 @@ module.exports.generateFormWithInputs = async (req, res, next) => {
     res.status(400).json(error)
   }
 }
+
+/**
+ * @todo
+ */
 
 /**
  * @todo update form via PUT method

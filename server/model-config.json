@@ -70,5 +70,13 @@
   "Input": {
     "dataSource": "allomed",
     "public": true
+  },
+  "Route": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "CategoryTrade": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

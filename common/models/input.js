@@ -6,7 +6,6 @@ const app = require('../../server/server')
  */
 module.exports = (Input) => {
   Input.observe("before save", async (ctx) => {
-
     const input = ctx.instance || ctx.result;
     if (!input) return;
     const formId = input.formId

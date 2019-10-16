@@ -5,4 +5,6 @@ const discover = require('./utils');
 // discover('active_ingredient_therapy')
 // discover('form')
 // discover('input')
-discover('option')
+// discover('option')
+// discover('route')
+// discover('category_trade');
