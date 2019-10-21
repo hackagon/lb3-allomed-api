@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createCategory",
+  "displayEnglishName": "Create category",
+  "displayVietnameseName": "Thêm phân nhóm",
+  "description": "Form thêm mới phân nhóm",
+  "inputs": [
+    {
+      "name": "categoryName",
+      "type": "text",
+      "displayEnglishName": "Category name",
+      "displayVietnameseName": "Tên phân nhóm",
+      "englishPlaceholder": "Enter category name",
+      "vietnamesePlaceholder": "Nhập tên phân nhóm"
+    }
+  ]
+}

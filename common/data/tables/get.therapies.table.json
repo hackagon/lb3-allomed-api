@@ -1,0 +1,12 @@
+{
+  "name": "therapiesTable",
+  "displayVietnameseName": "Danh sách liệu pháp điều trị",
+  "displayEnglishName": "List of therapies",
+  "headers": [
+    {
+      "name": "therapyName",
+      "displayVietnameseName": "Tên liệu pháp điều trị",
+      "displayEnglishName": "therapyName"
+    }
+  ]
+}

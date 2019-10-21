@@ -1,0 +1,12 @@
+{
+  "name": "colorsTable",
+  "displayVietnameseName": "Danh sách màu sắc",
+  "displayEnglishName": "List of colors",
+  "headers": [
+    {
+      "name": "colorName",
+      "displayVietnameseName": "Tên màu sắc",
+      "displayEnglishName": "colorName"
+    }
+  ]
+}

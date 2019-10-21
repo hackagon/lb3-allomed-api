@@ -1,0 +1,12 @@
+{
+  "name": "categoryTradesTable",
+  "displayVietnameseName": "Danh sách danh mục thương mại",
+  "displayEnglishName": "List of categoryTrades",
+  "headers": [
+    {
+      "name": "categoryTradeName",
+      "displayVietnameseName": "Tên danh mục thương mại",
+      "displayEnglishName": "categoryTradeName"
+    }
+  ]
+}

@@ -8,3 +8,14 @@ const discover = require('./utils');
 // discover('option')
 // discover('route')
 // discover('category_trade');
+// discover('color');
+discover('characteristic');
+// discover('package');
+// discover('country');
+// discover('pharmacological_mechanism')
+// discover('pharmacological_impact')
+// discover('unit');
+// discover('toxicity');
+// discover('product_group');
+// discover('odor');
+// discover('characteristic_other');

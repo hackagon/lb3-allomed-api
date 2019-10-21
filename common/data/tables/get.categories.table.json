@@ -1,0 +1,12 @@
+{
+  "name": "categoriesTable",
+  "displayVietnameseName": "Danh sách phân nhóm hoạt chất",
+  "displayEnglishName": "List of categories",
+  "headers": [
+    {
+      "name": "categoryName",
+      "displayVietnameseName": "Tên phân nhóm",
+      "displayEnglishName": "categoryName"
+    }
+  ]
+}

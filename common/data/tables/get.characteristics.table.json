@@ -1,0 +1,12 @@
+{
+  "name": "characteristicsTable",
+  "displayVietnameseName": "Danh sách đặc trưng",
+  "displayEnglishName": "List of characteristics",
+  "headers": [
+    {
+      "name": "therapyName",
+      "displayVietnameseName": "Tên đặc trưng",
+      "displayEnglishName": "therapyName"
+    }
+  ]
+}

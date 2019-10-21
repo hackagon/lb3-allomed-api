@@ -2,16 +2,16 @@
   "method": "POST",
   "name": "createTherapy",
   "displayEnglishName": "Create therapy",
-  "displayVietnameseName": "Thêm đường dùng",
-  "description": "Form thêm mới đường dùng",
+  "displayVietnameseName": "Thêm nhóm trị liệu",
+  "description": "Form thêm mới nhóm trị liệu",
   "inputs": [
     {
       "name": "therapyName",
       "type": "text",
       "displayEnglishName": "Therapy name",
-      "displayVietnameseName": "Tên đường dùng",
+      "displayVietnameseName": "Tên nhóm trị liệu",
       "englishPlaceholder": "Enter Therapy name",
-      "vietnamesePlaceholder": "Nhập tên đường dùng"
+      "vietnamesePlaceholder": "Nhập tên nhóm trị liệu"
     }
   ]
 }

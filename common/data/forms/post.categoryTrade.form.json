@@ -10,7 +10,7 @@
       "type": "text",
       "displayEnglishName": "Category trade name",
       "displayVietnameseName": "Tên danh mục thương mại",
-      "englishPlaceholder": "Enter route name",
+      "englishPlaceholder": "Enter category trade name",
       "vietnamesePlaceholder": "Nhập tên danh mục thương mại"
     }
   ]

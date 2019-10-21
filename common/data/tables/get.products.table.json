@@ -1,0 +1,17 @@
+{
+  "name": "productsTable",
+  "displayVietnameseName": "Danh sách sản phẩm",
+  "displayEnglishName": "List of products",
+  "headers": [
+    {
+      "name": "productName",
+      "displayVietnameseName": "Tên sản phẩm",
+      "displayEnglishName": "productName"
+    },
+    {
+      "name": "retailPrice",
+      "displayVietnameseName": "Giá bán lẻ",
+      "displayEnglishName": "Retail price"
+    }
+  ]
+}

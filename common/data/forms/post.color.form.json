@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createColor",
+  "displayEnglishName": "Create color",
+  "displayVietnameseName": "Thêm màu sắc",
+  "description": "Form thêm mới màu sắc",
+  "inputs": [
+    {
+      "name": "colorName",
+      "type": "text",
+      "displayEnglishName": "Color name",
+      "displayVietnameseName": "Tên màu sắc",
+      "englishPlaceholder": "Enter color name",
+      "vietnamesePlaceholder": "Nhập tên màu sắc"
+    }
+  ]
+}

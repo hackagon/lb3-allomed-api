@@ -1,0 +1,12 @@
+{
+  "name": "routesTable",
+  "displayVietnameseName": "Danh sách đường dùng thuốc",
+  "displayEnglishName": "List of routes",
+  "headers": [
+    {
+      "name": "routeName",
+      "displayVietnameseName": "Tên đường dùng thuốc",
+      "displayEnglishName": "routeName"
+    }
+  ]
+}

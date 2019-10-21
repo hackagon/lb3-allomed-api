@@ -1,5 +1,5 @@
 const app = require('../../server/server')
-const postActiveIngredientForm = require('../../common/data/form/post.activeIngredient.form.json');
+const postActiveIngredientForm = require('../../common/data/forms/post.activeIngredient.form.json');
 
 /**
  * @todo generate form via POST method

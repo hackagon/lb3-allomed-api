@@ -78,5 +78,13 @@
   "CategoryTrade": {
     "dataSource": "allomed",
     "public": true
+  },
+  "Color": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "Characteristic": {
+    "dataSource": "allomed",
+    "public": true
   }
 }
