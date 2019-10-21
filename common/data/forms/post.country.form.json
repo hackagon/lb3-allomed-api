@@ -1,0 +1,51 @@
+{
+  "method": "POST",
+  "name": "createCountry",
+  "displayEnglishName": "Create Country",
+  "displayVietnameseName": "Thêm quốc gia",
+  "description": "Form thêm mới quốc gia",
+  "inputs": [
+    {
+      "name": "countryCode",
+      "type": "text",
+      "displayEnglishName": "Country code",
+      "displayVietnameseName": "Mã quốc gia",
+      "englishPlaceholder": "Enter Country code",
+      "vietnamesePlaceholder": "Nhập mã quốc gia"
+    },
+    {
+      "name": "countryName",
+      "type": "text",
+      "displayEnglishName": "Country name",
+      "displayVietnameseName": "Tên quốc gia",
+      "englishPlaceholder": "Enter Country name",
+      "vietnamesePlaceholder": "Nhập tên quốc gia"
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "Is active?",
+      "displayVietnameseName": "Được kích hoạt?",
+      "englishPlaceholder": "Choose",
+      "vietnamesePlaceholder": "Chọn",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    },
+    {
+      "name": "notes",
+      "type": "textarea",
+      "displayEnglishName": "Notes",
+      "displayVietnameseName": "Ghi chú",
+      "englishPlaceholder": "Enter notes",
+      "vietnamesePlaceholder": "Nhập ghi chú"
+    }
+  ]
+}

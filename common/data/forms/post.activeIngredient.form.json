@@ -70,12 +70,12 @@
       "vietnamesePlaceholder": "Cho con bướu",
       "options": [
         {
-          "displayEnglishName": "Có",
-          "displayVietnameseName": "Yes"
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
         },
         {
-          "displayEnglishName": "Không",
-          "displayVietnameseName": "No"
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
         }
       ]
     },

@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createPackage",
+  "displayEnglishName": "Create Package",
+  "displayVietnameseName": "Thêm quy cách đóng gói",
+  "description": "Form thêm mới quy cách đóng gói",
+  "inputs": [
+    {
+      "name": "packageName",
+      "type": "text",
+      "displayEnglishName": "Package name",
+      "displayVietnameseName": "Tên quy cách đóng gói",
+      "englishPlaceholder": "Enter Package name",
+      "vietnamesePlaceholder": "Nhập tên quy cách đóng gói"
+    }
+  ]
+}

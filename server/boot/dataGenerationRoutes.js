@@ -6,6 +6,8 @@ const postTherapy = require('../../common/data/forms/post.therapy.form.json');
 const postCategory = require('../../common/data/forms/post.category.form.json');
 const postColor = require('../../common/data/forms/post.color.form.json');
 const postCharacteristic = require('../../common/data/forms/post.characteristic.form.json');
+const postPackage = require('../../common/data/forms/post.package.form.json');
+const postCountry = require('../../common/data/forms/post.country.form.json');
 
 module.exports = (server) => {
   const router = server.loopback.Router();
@@ -18,6 +20,8 @@ module.exports = (server) => {
   router.post(`${restApiRoot}/generate-form/postCategory`, generateFormWithInputs(postCategory))
   router.post(`${restApiRoot}/generate-form/postColor`, generateFormWithInputs(postColor))
   router.post(`${restApiRoot}/generate-form/postCharacteristic`, generateFormWithInputs(postCharacteristic))
+  router.post(`${restApiRoot}/generate-form/postPackage`, generateFormWithInputs(postPackage))
+  router.post(`${restApiRoot}/generate-form/postCountry`, generateFormWithInputs(postCountry))
 
 
   server.use(router);

@@ -1,0 +1,12 @@
+{
+  "name": "packagesTable",
+  "displayVietnameseName": "Danh sách quy cách đóng gói",
+  "displayEnglishName": "List of packages",
+  "headers": [
+    {
+      "name": "packageName",
+      "displayVietnameseName": "Tên quy cách đóng gói",
+      "displayEnglishName": "packageName"
+    }
+  ]
+}

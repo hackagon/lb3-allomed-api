@@ -6,6 +6,8 @@ const routesTable = require('../../common/data/tables/get.routes.table.json');
 const categoryTradesTable = require('../../common/data/tables/get.categoryTrades.table.json');
 const colorsTable = require('../../common/data/tables/get.colors.table.json');
 const characteristicsTable = require('../../common/data/tables/get.characteristics.table.json');
+const packagesTable = require('../../common/data/tables/get.packages.table.json');
+const countriesTable = require('../../common/data/tables/get.countries.table.json');
 
 
 module.exports = (server) => {
@@ -20,6 +22,8 @@ module.exports = (server) => {
   router.get(`${restApiRoot}/tables/categoryTrades`, (req, res) => res.json(categoryTradesTable))
   router.get(`${restApiRoot}/tables/colors`, (req, res) => res.json(colorsTable))
   router.get(`${restApiRoot}/tables/characteristics`, (req, res) => res.json(characteristicsTable))
+  router.get(`${restApiRoot}/tables/packages`, (req, res) => res.json(packagesTable))
+  router.get(`${restApiRoot}/tables/countries`, (req, res) => res.json(countriesTable))
 
   server.use(router);
 }

@@ -9,9 +9,9 @@ const discover = require('./utils');
 // discover('route')
 // discover('category_trade');
 // discover('color');
-discover('characteristic');
+// discover('characteristic');
 // discover('package');
-// discover('country');
+discover('country');
 // discover('pharmacological_mechanism')
 // discover('pharmacological_impact')
 // discover('unit');

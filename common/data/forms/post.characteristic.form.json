@@ -6,7 +6,7 @@
   "description": "Form thêm mới dặc trưng",
   "inputs": [
     {
-      "name": "CharacteristicName",
+      "name": "characteristicName",
       "type": "text",
       "displayEnglishName": "Characteristic name",
       "displayVietnameseName": "Tên dặc trưng",
