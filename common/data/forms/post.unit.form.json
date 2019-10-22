@@ -1,0 +1,43 @@
+{
+  "method": "POST",
+  "name": "createUnit",
+  "displayEnglishName": "Create unit",
+  "displayVietnameseName": "Thêm đơn vị tính",
+  "description": "Form thêm mới đơn vị tính",
+  "inputs": [
+    {
+      "name": "unitName",
+      "type": "text",
+      "displayEnglishName": "unit name",
+      "displayVietnameseName": "Tên đơn vị tính",
+      "englishPlaceholder": "Enter unit name",
+      "vietnamesePlaceholder": "Nhập tên đơn vị tính"
+    },
+    {
+      "name": "notes",
+      "type": "text",
+      "displayEnglishName": "Notes",
+      "displayVietnameseName": "Ghi chú",
+      "englishPlaceholder": "Enter notes",
+      "vietnamesePlaceholder": "Nhập ghi chú"
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "Is active?",
+      "displayVietnameseName": "Được kích hoạt?",
+      "englishPlaceholder": "Choose",
+      "vietnamesePlaceholder": "Chọn",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    }
+  ]
+}

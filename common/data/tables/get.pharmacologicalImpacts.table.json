@@ -1,0 +1,12 @@
+{
+  "name": "pharmacologicalImpactsTable",
+  "displayVietnameseName": "Danh sách yếu tố ảnh hưởng",
+  "displayEnglishName": "List of pharmacologicalImpacts",
+  "headers": [
+    {
+      "name": "pharmacologicalImpact",
+      "displayVietnameseName": "Tên yếu tố ảnh hưởng",
+      "displayEnglishName": "pharmacologicalMechanism"
+    }
+  ]
+}

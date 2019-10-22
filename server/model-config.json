@@ -98,5 +98,17 @@
   "PharmacologicalMechanism": {
     "dataSource": "allomed",
     "public": true
+  },
+  "PharmacologicalImpact": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "Unit": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "Toxicity": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

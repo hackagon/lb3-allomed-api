@@ -1,0 +1,32 @@
+{
+  "name": "unitsTable",
+  "displayVietnameseName": "Danh sách đơn vị",
+  "displayEnglishName": "List of units",
+  "headers": [
+    {
+      "name": "unitName",
+      "displayVietnameseName": "Tên đơn vị",
+      "displayEnglishName": "unitName"
+    },
+    {
+      "name": "notes",
+      "displayVietnameseName": "Ghi chú",
+      "displayEnglishName": "notes"
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Đã kích hoạt?",
+      "displayEnglishName": "Is active?",
+      "options": [
+        {
+          "displayEnglishName": "Có",
+          "displayVietnameseName": "Yes"
+        },
+        {
+          "displayEnglishName": "Không",
+          "displayVietnameseName": "No"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createPharmacologicalImpact",
+  "displayEnglishName": "Create PharmacologicalImpact",
+  "displayVietnameseName": "Thêm yếu tố tác động",
+  "description": "Form thêm mới yếu tố tác động",
+  "inputs": [
+    {
+      "name": "pharmacologicalImpact",
+      "type": "text",
+      "displayEnglishName": "Pharmacological Impact",
+      "displayVietnameseName": "Tên yếu tố tác động",
+      "englishPlaceholder": "Enter Pharmacological Impact",
+      "vietnamesePlaceholder": "Nhập tên yếu tố tác động"
+    }
+  ]
+}
