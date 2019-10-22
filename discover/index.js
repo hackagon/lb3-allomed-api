@@ -11,8 +11,8 @@ const discover = require('./utils');
 // discover('color');
 // discover('characteristic');
 // discover('package');
-discover('country');
-// discover('pharmacological_mechanism')
+// discover('country');
+discover('pharmacological_mechanism')
 // discover('pharmacological_impact')
 // discover('unit');
 // discover('toxicity');

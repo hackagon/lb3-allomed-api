@@ -1,0 +1,12 @@
+{
+  "name": "pharmacologicalMechanismsTable",
+  "displayVietnameseName": "Danh sách liệu pháp điều trị",
+  "displayEnglishName": "List of pharmacologicalMechanisms",
+  "headers": [
+    {
+      "name": "pharmacologicalMechanism",
+      "displayVietnameseName": "Tên liệu pháp điều trị",
+      "displayEnglishName": "pharmacologicalMechanism"
+    }
+  ]
+}

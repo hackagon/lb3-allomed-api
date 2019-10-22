@@ -8,6 +8,7 @@ const postColor = require('../../common/data/forms/post.color.form.json');
 const postCharacteristic = require('../../common/data/forms/post.characteristic.form.json');
 const postPackage = require('../../common/data/forms/post.package.form.json');
 const postCountry = require('../../common/data/forms/post.country.form.json');
+const postPharmacologicalMechanisms = require('../../common/data/forms/post.pharmacologicalMechanisms.form.json');
 
 module.exports = (server) => {
   const router = server.loopback.Router();
@@ -22,6 +23,7 @@ module.exports = (server) => {
   router.post(`${restApiRoot}/generate-form/postCharacteristic`, generateFormWithInputs(postCharacteristic))
   router.post(`${restApiRoot}/generate-form/postPackage`, generateFormWithInputs(postPackage))
   router.post(`${restApiRoot}/generate-form/postCountry`, generateFormWithInputs(postCountry))
+  router.post(`${restApiRoot}/generate-form/postPharmacologicalMechanisms`, generateFormWithInputs(postPharmacologicalMechanisms))
 
 
   server.use(router);

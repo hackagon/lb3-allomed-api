@@ -94,5 +94,9 @@
   "Country": {
     "dataSource": "allomed",
     "public": true
+  },
+  "PharmacologicalMechanism": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

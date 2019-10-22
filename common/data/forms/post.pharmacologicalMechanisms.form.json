@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createPharmacologicalMechanism",
+  "displayEnglishName": "Create PharmacologicalMechanism",
+  "displayVietnameseName": "Thêm cơ chế",
+  "description": "Form thêm mới cơ chế",
+  "inputs": [
+    {
+      "name": "pharmacologicalMechanism",
+      "type": "text",
+      "displayEnglishName": "Pharmacological mechanism",
+      "displayVietnameseName": "Tên cơ chế",
+      "englishPlaceholder": "Enter Pharmacological mechanism",
+      "vietnamesePlaceholder": "Nhập tên cơ chế"
+    }
+  ]
+}
