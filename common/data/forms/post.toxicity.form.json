@@ -1,0 +1,25 @@
+{
+  "method": "POST",
+  "name": "createToxicity",
+  "displayEnglishName": "Create toxicity",
+  "displayVietnameseName": "Thêm đơn độc chất",
+  "description": "Form thêm mới đơn độc chất",
+  "inputs": [
+    {
+      "name": "toxicityName",
+      "type": "text",
+      "displayEnglishName": "toxicity name",
+      "displayVietnameseName": "Tên đơn độc chất",
+      "englishPlaceholder": "Enter toxicity name",
+      "vietnamesePlaceholder": "Nhập tên đơn độc chất"
+    },
+    {
+      "name": "notes",
+      "type": "text",
+      "displayEnglishName": "Notes",
+      "displayVietnameseName": "Ghi chú",
+      "englishPlaceholder": "Enter notes",
+      "vietnamesePlaceholder": "Nhập ghi chú"
+    }
+  ]
+}
