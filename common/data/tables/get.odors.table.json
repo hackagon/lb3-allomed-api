@@ -1,0 +1,12 @@
+{
+  "name": "odorsTable",
+  "displayVietnameseName": "Danh sách mùi hương",
+  "displayEnglishName": "List of odors",
+  "headers": [
+    {
+      "name": "odorName",
+      "displayVietnameseName": "Tên mùi hương",
+      "displayEnglishName": "odorName"
+    }
+  ]
+}

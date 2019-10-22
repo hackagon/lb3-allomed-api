@@ -13,6 +13,7 @@ const pharmacologicalImpactsTable = require('../../common/data/tables/get.pharma
 const unitsTable = require('../../common/data/tables/get.units.table.json');
 const toxicitiesTable = require('../../common/data/tables/get.toxicities.table.json');
 const productGroupsTable = require('../../common/data/tables/get.productGroups.table.json');
+const odorsTable = require('../../common/data/tables/get.odors.table.json');
 
 module.exports = (server) => {
   const router = server.loopback.Router();
@@ -33,6 +34,7 @@ module.exports = (server) => {
   router.get(`${restApiRoot}/tables/units`, (req, res) => res.json(unitsTable))
   router.get(`${restApiRoot}/tables/toxicities`, (req, res) => res.json(toxicitiesTable))
   router.get(`${restApiRoot}/tables/productGroups`, (req, res) => res.json(productGroupsTable))
+  router.get(`${restApiRoot}/tables/odors`, (req, res) => res.json(odorsTable))
 
   server.use(router);
 }

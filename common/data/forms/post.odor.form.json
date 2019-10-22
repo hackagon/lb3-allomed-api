@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createOdor",
+  "displayEnglishName": "Create odor",
+  "displayVietnameseName": "Thêm mùi hương",
+  "description": "Form thêm mới mùi hương",
+  "inputs": [
+    {
+      "name": "odorName",
+      "type": "text",
+      "displayEnglishName": "odor name",
+      "displayVietnameseName": "Tên mùi hương",
+      "englishPlaceholder": "Enter odor name",
+      "vietnamesePlaceholder": "Nhập tên mùi hương"
+    }
+  ]
+}

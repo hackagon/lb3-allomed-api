@@ -13,6 +13,7 @@ const postPharmacologicalImpact = require('../../common/data/forms/post.pharmaco
 const postUnit = require('../../common/data/forms/post.unit.form.json');
 const postToxicity = require('../../common/data/forms/post.toxicity.form.json');
 const postproductGroup = require('../../common/data/forms/post.productGroup.form.json');
+const postOdor = require('../../common/data/forms/post.odor.form.json');
 
 module.exports = (server) => {
   const router = server.loopback.Router();
@@ -32,6 +33,7 @@ module.exports = (server) => {
   router.post(`${restApiRoot}/generate-form/postUnit`, generateFormWithInputs(postUnit))
   router.post(`${restApiRoot}/generate-form/postToxicity`, generateFormWithInputs(postToxicity))
   router.post(`${restApiRoot}/generate-form/postproductGroup`, generateFormWithInputs(postproductGroup))
+  router.post(`${restApiRoot}/generate-form/postOdor`, generateFormWithInputs(postOdor))
 
 
   server.use(router);
