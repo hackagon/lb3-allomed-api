@@ -15,7 +15,7 @@ const discover = require('./utils');
 // discover('pharmacological_mechanism')
 // discover('pharmacological_impact')
 // discover('unit');
-discover('toxicity');
+// discover('toxicity');
 // discover('product_group');
-// discover('odor');
+discover('odor');
 // discover('characteristic_other');

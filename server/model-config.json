@@ -110,5 +110,9 @@
   "Toxicity": {
     "dataSource": "allomed",
     "public": true
+  },
+  "ProductGroup": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

@@ -12,7 +12,7 @@ module.exports = (Form) => {
 
     const form = ctx.result;
 
-    let inputs = await form.inputs.find({});
+    let inputs = await form.inputs.find({ order: "displayIndex ASC" });
 
     for (const i in inputs) {
       const inp = inputs[i];

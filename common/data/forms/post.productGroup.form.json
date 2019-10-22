@@ -1,0 +1,35 @@
+{
+  "method": "POST",
+  "name": "createProductGroup",
+  "displayEnglishName": "Create productGroup",
+  "displayVietnameseName": "Thêm nhóm sản phẩm",
+  "description": "Form thêm mới nhóm sản phẩm",
+  "inputs": [
+    {
+      "name": "productGroupName",
+      "type": "text",
+      "displayEnglishName": "productGroup name",
+      "displayVietnameseName": "Tên nhóm sản phẩm",
+      "englishPlaceholder": "Enter productGroup name",
+      "vietnamesePlaceholder": "Nhập tên nhóm sản phẩm"
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "Is active?",
+      "displayVietnameseName": "Được kích hoạt?",
+      "englishPlaceholder": "Choose",
+      "vietnamesePlaceholder": "Chọn",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    }
+  ]
+}
