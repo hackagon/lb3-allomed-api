@@ -17,4 +17,5 @@ module.exports = {
   postOtherCharacteristic: require('./post.otherCharacteristic.form.json'),
   postEnterprise: require('./post.enterprise.form.json'),
   postCategoryLabel: require('./post.categoryLabel.form.json'),
+  postUse: require('./post.use.form.json'),
 }

@@ -16,17 +16,7 @@
     {
       "name": "isActive",
       "displayVietnameseName": "Đã kích hoạt?",
-      "displayEnglishName": "Is active?",
-      "options": [
-        {
-          "displayEnglishName": "Có",
-          "displayVietnameseName": "Yes"
-        },
-        {
-          "displayEnglishName": "Không",
-          "displayVietnameseName": "No"
-        }
-      ]
+      "displayEnglishName": "Is active?"
     }
   ],
   "actions": [

@@ -1,0 +1,35 @@
+{
+  "method": "POST",
+  "name": "createUse",
+  "displayEnglishName": "Create Use",
+  "displayVietnameseName": "Thêm mục đích sử dụng",
+  "description": "Form thêm mới mục đích sử dụng",
+  "inputs": [
+    {
+      "name": "use",
+      "type": "text",
+      "displayEnglishName": "Use",
+      "displayVietnameseName": "Tên mục đích sử dụng",
+      "englishPlaceholder": "Enter use",
+      "vietnamesePlaceholder": "Nhập tên mục đích sử dụng"
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "Is active?",
+      "displayVietnameseName": "Được kích hoạt?",
+      "englishPlaceholder": "Choose",
+      "vietnamesePlaceholder": "Chọn",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    }
+  ]
+}

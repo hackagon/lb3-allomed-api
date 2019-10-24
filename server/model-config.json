@@ -130,5 +130,9 @@
   "CategoryLabel": {
     "dataSource": "allomed",
     "public": true
+  },
+  "Use": {
+    "dataSource": "allomed",
+    "public": true
   }
 }
