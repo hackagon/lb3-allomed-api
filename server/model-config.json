@@ -118,5 +118,13 @@
   "Odor": {
     "dataSource": "allomed",
     "public": true
+  },
+  "OtherCharacteristic": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "Enterprise": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

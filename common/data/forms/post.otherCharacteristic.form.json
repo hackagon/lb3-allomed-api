@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createotherCharacteristic",
+  "displayEnglishName": "Create other characteristic",
+  "displayVietnameseName": "Thêm dặc trưng khác",
+  "description": "Form thêm mới dặc trưng khác",
+  "inputs": [
+    {
+      "name": "otherCharacteristicName",
+      "type": "text",
+      "displayEnglishName": "Other characteristic name",
+      "displayVietnameseName": "Tên dặc trưng khác",
+      "englishPlaceholder": "Enter other characteristic name",
+      "vietnamesePlaceholder": "Nhập tên dặc trưng khác"
+    }
+  ]
+}

@@ -17,5 +17,6 @@ const discover = require('./utils');
 // discover('unit');
 // discover('toxicity');
 // discover('product_group');
-discover('odor');
-// discover('characteristic_other');
+// discover('odor');
+// discover('other_characteristic');
+discover('enterprise');

@@ -1,17 +1,16 @@
 {
-  "name": "Country",
+  "name": "Enterprise",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "dbpha",
-      "table": "country"
+      "table": "enterprise"
     }
   },
   "properties": {
     "id": {
       "type": "String",
       "required": true,
-      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
@@ -25,14 +24,14 @@
         "nullable": "N"
       }
     },
-    "countryCode": {
+    "enterpriseName": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "country_code",
+        "columnName": "enterprise_name",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -40,14 +39,14 @@
         "nullable": "Y"
       }
     },
-    "countryName": {
+    "shortName": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "country_name",
+        "columnName": "short_name",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -55,14 +54,14 @@
         "nullable": "Y"
       }
     },
-    "notes": {
+    "address": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "notes",
+        "columnName": "address",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -70,17 +69,62 @@
         "nullable": "Y"
       }
     },
-    "isActive": {
-      "type": "Binary",
+    "phone": {
+      "type": "String",
       "required": false,
-      "length": null,
-      "precision": 1,
+      "length": 255,
+      "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "is_active",
-        "dataType": "bit",
-        "dataLength": null,
-        "dataPrecision": 1,
+        "columnName": "phone",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "fax": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "fax",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "taxCode": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "tax_code",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "email": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "email",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
       }

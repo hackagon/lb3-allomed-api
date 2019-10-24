@@ -1,0 +1,12 @@
+{
+  "name": "otherCharacteristicsTable",
+  "displayVietnameseName": "Danh sách đặc trưng khác",
+  "displayEnglishName": "List of other characteristics",
+  "headers": [
+    {
+      "name": "characteristic",
+      "displayVietnameseName": "Tên đặc trưng",
+      "displayEnglishName": "Characteristic"
+    }
+  ]
+}
