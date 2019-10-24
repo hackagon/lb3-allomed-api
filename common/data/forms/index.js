@@ -16,4 +16,5 @@ module.exports = {
   postOdor: require('./post.odor.form.json'),
   postOtherCharacteristic: require('./post.otherCharacteristic.form.json'),
   postEnterprise: require('./post.enterprise.form.json'),
+  postCategoryLabel: require('./post.categoryLabel.form.json'),
 }

@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createCategoryLabel",
+  "displayEnglishName": "Create category label",
+  "displayVietnameseName": "Thêm phân loại nhãn",
+  "description": "Form thêm mới phân loại nhãn",
+  "inputs": [
+    {
+      "name": "categoryLabelName",
+      "type": "text",
+      "displayEnglishName": "Category label name",
+      "displayVietnameseName": "Tên phân loại nhãn",
+      "englishPlaceholder": "Enter category label name",
+      "vietnamesePlaceholder": "Nhập tên phân loại nhãn"
+    }
+  ]
+}
