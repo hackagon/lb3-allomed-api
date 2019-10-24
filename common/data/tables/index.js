@@ -18,5 +18,7 @@ module.exports = {
   otherCharacteristicsTable: require('./get.otherCharacteristics.table.json'),
   enterprisesTable: require('./get.enterprises.table.json'),
   categoryLabelsTable: require('./get.categoryLabels.table.json'),
-  usesTable: require('./get.uses.table.json')
+  usesTable: require('./get.uses.table.json'),
+  chemicalStructuresTable: require('./get.chemicalStructures.table.json'),
+  fdaPharmacologicalGroupsTable: require('./get.fdaPharmacologicalGroups.table.json')
 }

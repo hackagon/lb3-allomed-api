@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createChemicalStructure",
+  "displayEnglishName": "Create ChemicalStructure",
+  "displayVietnameseName": "Thêm cấu trúc hóa học",
+  "description": "Form thêm mới cấu trúc hóa học",
+  "inputs": [
+    {
+      "name": "ChemicalStructure",
+      "type": "text",
+      "displayEnglishName": "ChemicalStructure",
+      "displayVietnameseName": "Tên cấu trúc hóa học",
+      "englishPlaceholder": "Enter ChemicalStructure",
+      "vietnamesePlaceholder": "Nhập tên cấu trúc hóa học"
+    }
+  ]
+}

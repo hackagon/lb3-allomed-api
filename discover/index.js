@@ -21,4 +21,6 @@ const discover = require('./utils');
 // discover('other_characteristic');
 // discover('enterprise');
 // discover('category_label');
-discover('use');
+// discover('use');
+// discover('chemical_structure');
+discover('fda_pharmacological_group');

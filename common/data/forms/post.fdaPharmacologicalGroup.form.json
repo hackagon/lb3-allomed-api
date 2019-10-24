@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createFdaPharmacologicalGroup",
+  "displayEnglishName": "Create FDA Pharmacological Group",
+  "displayVietnameseName": "Thêm phân nhóm dược lý theo FDA",
+  "description": "Form thêm mới phân nhóm dược lý theo FDA",
+  "inputs": [
+    {
+      "name": "groupName",
+      "type": "text",
+      "displayEnglishName": "Group name",
+      "displayVietnameseName": "Tên nhóm",
+      "englishPlaceholder": "Enter group name",
+      "vietnamesePlaceholder": "Nhập tên nhóm"
+    }
+  ]
+}

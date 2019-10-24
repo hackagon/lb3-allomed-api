@@ -134,5 +134,13 @@
   "Use": {
     "dataSource": "allomed",
     "public": true
+  },
+  "ChemicalStructure": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "FdaPharmacologicalGroup": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

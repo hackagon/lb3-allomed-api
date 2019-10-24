@@ -1,0 +1,19 @@
+{
+  "name": "chemicalStructures",
+  "displayVietnameseName": "Danh sách cấu trúc hóa học",
+  "displayEnglishName": "List of chemical structures",
+  "headers": [
+    {
+      "name": "chemicalStructure",
+      "displayVietnameseName": "Tên cấu trúc hóa học",
+      "displayEnglishName": "chemicalStructure"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm cấu trúc hóa học",
+      "displayEnglishName": "Add new chemical structure"
+    }
+  ]
+}
