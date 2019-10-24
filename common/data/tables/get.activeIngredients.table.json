@@ -13,5 +13,12 @@
       "displayVietnameseName": "Tên hoạt chất",
       "displayEnglishName": "Active ingredient name"
     }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm hoạt chất",
+      "displayEnglishName": "Add new active ingredient"
+    }
   ]
 }
