@@ -8,5 +8,12 @@
       "displayVietnameseName": "Tên mùi hương",
       "displayEnglishName": "odorName"
     }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm hoạt chất",
+      "displayEnglishName": "Add new active ingredient"
+    }
   ]
 }

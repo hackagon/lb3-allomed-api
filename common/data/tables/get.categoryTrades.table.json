@@ -8,5 +8,12 @@
       "displayVietnameseName": "Tên danh mục thương mại",
       "displayEnglishName": "categoryTradeName"
     }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm hoạt chất",
+      "displayEnglishName": "Add new active ingredient"
+    }
   ]
 }

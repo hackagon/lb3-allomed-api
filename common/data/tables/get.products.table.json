@@ -13,5 +13,12 @@
       "displayVietnameseName": "Giá bán lẻ",
       "displayEnglishName": "Retail price"
     }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm hoạt chất",
+      "displayEnglishName": "Add new active ingredient"
+    }
   ]
 }

@@ -8,5 +8,12 @@
       "displayVietnameseName": "Tên yếu tố ảnh hưởng",
       "displayEnglishName": "pharmacologicalMechanism"
     }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm hoạt chất",
+      "displayEnglishName": "Add new active ingredient"
+    }
   ]
 }

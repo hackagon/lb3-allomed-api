@@ -8,5 +8,12 @@
       "displayVietnameseName": "Tên đường dùng thuốc",
       "displayEnglishName": "routeName"
     }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm hoạt chất",
+      "displayEnglishName": "Add new active ingredient"
+    }
   ]
 }
