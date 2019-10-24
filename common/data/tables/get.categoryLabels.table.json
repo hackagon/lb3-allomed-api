@@ -4,9 +4,9 @@
   "displayEnglishName": "List of category labels",
   "headers": [
     {
-      "name": "categoryName",
-      "displayVietnameseName": "Tên phân nhóm",
-      "displayEnglishName": "categoryName"
+      "name": "categoryLabelName",
+      "displayVietnameseName": "Tên phân loại nhãn",
+      "displayEnglishName": "Category label name"
     }
   ],
   "actions": [

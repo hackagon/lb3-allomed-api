@@ -17,4 +17,5 @@ module.exports = {
   odorsTable: require('./get.odors.table.json'),
   otherCharacteristicsTable: require('./get.otherCharacteristics.table.json'),
   enterprisesTable: require('./get.enterprises.table.json'),
+  categoryLabelsTable: require('./get.categoryLabels.table.json')
 }
