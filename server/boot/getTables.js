@@ -15,6 +15,7 @@ const toxicitiesTable = require('../../common/data/tables/get.toxicities.table.j
 const productGroupsTable = require('../../common/data/tables/get.productGroups.table.json');
 const odorsTable = require('../../common/data/tables/get.odors.table.json');
 const otherCharacteristicsTable = require('../../common/data/tables/get.otherCharacteristics.table.json');
+const enterprisesTable = require('../../common/data/tables/get.enterprises.table.json');
 
 module.exports = (server) => {
   const router = server.loopback.Router();
@@ -37,6 +38,7 @@ module.exports = (server) => {
   router.get(`${restApiRoot}/tables/productGroups`, (req, res) => res.json(productGroupsTable))
   router.get(`${restApiRoot}/tables/odors`, (req, res) => res.json(odorsTable))
   router.get(`${restApiRoot}/tables/otherCharacteristics`, (req, res) => res.json(otherCharacteristicsTable))
+  router.get(`${restApiRoot}/tables/enterprises`, (req, res) => res.json(enterprisesTable))
 
   server.use(router);
 }

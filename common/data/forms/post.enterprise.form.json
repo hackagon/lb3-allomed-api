@@ -1,0 +1,51 @@
+{
+  "method": "POST",
+  "name": "createEnterprise",
+  "displayEnglishName": "Create Enterprise",
+  "displayVietnameseName": "Thêm doanh nghiệp",
+  "description": "Form thêm mới doanh nghiệp",
+  "inputs": [
+    {
+      "name": "enterpriseCode",
+      "type": "text",
+      "displayEnglishName": "Enterprise code",
+      "displayVietnameseName": "Mã doanh nghiệp",
+      "englishPlaceholder": "Enter enterprise code",
+      "vietnamesePlaceholder": "Nhập mã doanh nghiệp"
+    },
+    {
+      "name": "EnterpriseName",
+      "type": "text",
+      "displayEnglishName": "Enterprise name",
+      "displayVietnameseName": "Tên doanh nghiệp",
+      "englishPlaceholder": "Enter enterprise name",
+      "vietnamesePlaceholder": "Nhập tên doanh nghiệp"
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "Is active?",
+      "displayVietnameseName": "Được kích hoạt?",
+      "englishPlaceholder": "Choose",
+      "vietnamesePlaceholder": "Chọn",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    },
+    {
+      "name": "notes",
+      "type": "textarea",
+      "displayEnglishName": "Notes",
+      "displayVietnameseName": "Ghi chú",
+      "englishPlaceholder": "Enter notes",
+      "vietnamesePlaceholder": "Nhập ghi chú"
+    }
+  ]
+}

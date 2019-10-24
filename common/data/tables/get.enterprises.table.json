@@ -1,0 +1,37 @@
+{
+  "name": "enterprisesTable",
+  "displayVietnameseName": "Danh sách doanh nghiệp",
+  "displayEnglishName": "List of enterprises",
+  "headers": [
+    {
+      "name": "countryCode",
+      "displayVietnameseName": "Mã doanh nghiệp",
+      "displayEnglishName": "Country code"
+    },
+    {
+      "name": "countryName",
+      "displayVietnameseName": "Tên doanh nghiệp",
+      "displayEnglishName": "Country name"
+    },
+    {
+      "name": "notes",
+      "displayVietnameseName": "Ghi chú",
+      "displayEnglishName": "notes"
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Đã kích hoạt?",
+      "displayEnglishName": "Is active?",
+      "options": [
+        {
+          "displayEnglishName": "Có",
+          "displayVietnameseName": "Yes"
+        },
+        {
+          "displayEnglishName": "Không",
+          "displayVietnameseName": "No"
+        }
+      ]
+    }
+  ]
+}
