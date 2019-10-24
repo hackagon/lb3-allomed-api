@@ -142,5 +142,9 @@
   "FdaPharmacologicalGroup": {
     "dataSource": "allomed",
     "public": true
+  },
+  "SnomedCategory": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

@@ -20,4 +20,5 @@ module.exports = {
   postUse: require('./post.use.form.json'),
   postChemicalStructure: require('./post.chemicalStructure.form.json'),
   postFdaPharmacologicalGroup: require('./post.fdaPharmacologicalGroup.form.json'),
+  postSnomedCategory: require('./post.snomedCategory.form.json'),
 }

@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "createSnomedCategory",
+  "displayEnglishName": "Create Snomed Category",
+  "displayVietnameseName": "Thêm phân nhóm bệnh SNOMED",
+  "description": "Form thêm mới nhóm bệnh",
+  "inputs": [
+    {
+      "name": "categoryName",
+      "type": "text",
+      "displayEnglishName": "Category name",
+      "displayVietnameseName": "Tên phân nhóm",
+      "englishPlaceholder": "Enter category name",
+      "vietnamesePlaceholder": "Nhập tên phân nhóm"
+    }
+  ]
+}

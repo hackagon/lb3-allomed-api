@@ -1,0 +1,19 @@
+{
+  "name": "snomedCategories",
+  "displayVietnameseName": "Danh sách phân nhóm bệnh theo SNOMED",
+  "displayEnglishName": "List of snomed categories",
+  "headers": [
+    {
+      "name": "categoryName",
+      "displayVietnameseName": "Tên nhóm",
+      "displayEnglishName": "Snomed category"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm nhóm",
+      "displayEnglishName": "Add new chemical structure"
+    }
+  ]
+}
