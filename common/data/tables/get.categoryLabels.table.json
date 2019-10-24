@@ -1,7 +1,7 @@
 {
-  "name": "categoriesTable",
-  "displayVietnameseName": "Danh sách phân nhóm hoạt chất",
-  "displayEnglishName": "List of categories",
+  "name": "categoryLabelsTable",
+  "displayVietnameseName": "Danh sách phân loại nhãn sản phảm",
+  "displayEnglishName": "List of category labels",
   "headers": [
     {
       "name": "categoryName",
@@ -12,7 +12,7 @@
   "actions": [
     {
       "name": "create",
-      "displayVietnameseName": "Thêm phân nhóm hoạt chất",
+      "displayVietnameseName": "Thêm phân loại nhãn sản phảm",
       "displayEnglishName": "Add new active ingredient"
     }
   ]

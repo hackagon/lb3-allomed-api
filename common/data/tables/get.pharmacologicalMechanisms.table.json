@@ -1,18 +1,18 @@
 {
   "name": "pharmacologicalMechanismsTable",
-  "displayVietnameseName": "Danh sách liệu pháp điều trị",
+  "displayVietnameseName": "Danh sách cơ chế",
   "displayEnglishName": "List of pharmacologicalMechanisms",
   "headers": [
     {
       "name": "pharmacologicalMechanism",
-      "displayVietnameseName": "Tên liệu pháp điều trị",
+      "displayVietnameseName": "Tên cơ chế",
       "displayEnglishName": "pharmacologicalMechanism"
     }
   ],
   "actions": [
     {
       "name": "create",
-      "displayVietnameseName": "Thêm hoạt chất",
+      "displayVietnameseName": "Thêm cơ chế",
       "displayEnglishName": "Add new active ingredient"
     }
   ]

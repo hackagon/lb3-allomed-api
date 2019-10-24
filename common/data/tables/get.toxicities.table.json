@@ -17,7 +17,7 @@
   "actions": [
     {
       "name": "create",
-      "displayVietnameseName": "Thêm hoạt chất",
+      "displayVietnameseName": "Thêm độc chất",
       "displayEnglishName": "Add new active ingredient"
     }
   ]

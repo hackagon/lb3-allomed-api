@@ -12,7 +12,7 @@
   "actions": [
     {
       "name": "create",
-      "displayVietnameseName": "Thêm hoạt chất",
+      "displayVietnameseName": "Thêm quy cách đóng gói",
       "displayEnglishName": "Add new active ingredient"
     }
   ]
