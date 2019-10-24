@@ -11,6 +11,7 @@
     "id": {
       "type": "String",
       "required": true,
+      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
