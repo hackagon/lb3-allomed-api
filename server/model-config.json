@@ -146,5 +146,9 @@
   "SnomedCategory": {
     "dataSource": "allomed",
     "public": true
+  },
+  "Icd10": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

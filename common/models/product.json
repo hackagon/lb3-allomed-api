@@ -822,7 +822,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "route": {
+      "type": "belongsTo",
+      "model": "Route",
+      "foreignKey": "routeId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

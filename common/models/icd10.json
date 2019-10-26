@@ -1,10 +1,10 @@
 {
-  "name": "Characteristic",
+  "name": "Icd10",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "dbpha",
-      "table": "characteristic"
+      "table": "icd10"
     }
   },
   "properties": {
@@ -12,7 +12,6 @@
       "type": "String",
       "id": 1,
       "required": true,
-      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
@@ -25,32 +24,32 @@
         "nullable": "N"
       }
     },
-    "characteristicName": {
+    "icdVietnameseName": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "characteristic_name",
+        "columnName": "icd_vietnamese_name",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
-    "active": {
-      "type": "Binary",
+    "icdEnglishName": {
+      "type": "String",
       "required": false,
-      "length": null,
-      "precision": 1,
+      "length": 255,
+      "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "active",
-        "dataType": "bit",
-        "dataLength": null,
-        "dataPrecision": 1,
+        "columnName": "icd_english_name",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
       }

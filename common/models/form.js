@@ -11,38 +11,34 @@ module.exports = (Form) => {
     const TherapyModel = app.models.Therapy;
 
     const form = ctx.result;
+    const formName = form.__data.name;
+    if (formName === 'createActiveIngredient') await fetchOptionsForPostActiveIngredientForm(form)
 
-    let inputs = await form.inputs.find({ order: "displayIndex ASC" });
-
-    for (const i in inputs) {
-      const inp = inputs[i];
-      let options;
-      if (inp.name === "categories") {
-        categories = await CategoryModel.find();
-        options = categories.map(cate => {
-          return {
-            id: cate.id,
-            displayEnglishName: cate.categoryName,
-            displayVietnameseName: cate.categoryName
-          }
-        })
-      } else if (inp.name === "therapies") {
-        therapies = await TherapyModel.find();
-        options = therapies.map(the => {
-          return {
-            id: the.id,
-            displayEnglishName: the.therapyName,
-            displayVietnameseName: the.therapyName
-          }
-        })
-      } else {
-        options = await inp.options.find();
-      }
-
-
-      inputs[i] = { ...inputs[i].__data, options }
-    }
-
-    ctx.result = { ...form.__data, inputs }
+    ctx.result = form;
   })
+}
+
+fetchOptionsForPostActiveIngredientForm = async (form) => {
+  const CategoryModel = app.models.Category;
+  const TherapyModel = app.models.Therapy;
+
+  let inputs = await form.inputs.find({ order: "displayIndex ASC" });
+
+  await fetchOptionsForInput(inputs, CategoryModel, "categories", "categoryName");
+  await fetchOptionsForInput(inputs, TherapyModel, "therapies", "therapyName");
+
+  form.__data.inputs = inputs;
+}
+
+fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
+  const inputIndex = inputs.findIndex(elm => elm.name === inputName)
+  const instances = await Model.find();
+  options = instances.map(inst => {
+    return {
+      id: inst.id,
+      displayEnglishName: inst[displayName],
+      displayVietnameseName: inst[displayName]
+    }
+  })
+  inputs[inputIndex].__data.options = options;
 }
