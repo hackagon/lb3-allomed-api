@@ -1,0 +1,41 @@
+{
+  "method": "POST",
+  "name": "createProduct",
+  "displayEnglishName": "Create Product",
+  "displayVietnameseName": "Thêm sản phẩm",
+  "description": "Form thêm mới sản phẩm",
+  "inputs": [
+    {
+      "name": "productName",
+      "type": "text",
+      "displayEnglishName": "Product name",
+      "displayVietnameseName": "Tên sản phẩm",
+      "englishPlaceholder": "Enter product name",
+      "vietnamesePlaceholder": "Nhập tên sản phẩm"
+    },
+    {
+      "name": "activeIngredients",
+      "type": "multiplechoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Hoạt chất",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn hoạt chất"
+    },
+    {
+      "name": "age",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tuổi",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn tuổi"
+    },
+    {
+      "name": "categoryLabel",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhãn",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn nhãn"
+    }
+  ]
+}
