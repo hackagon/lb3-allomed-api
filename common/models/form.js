@@ -20,10 +20,21 @@ module.exports = (Form) => {
 
       default:
         const inputs = await form.inputs.find({ order: "displayIndex ASC" });
+        await fetchOptions(inputs);
         form.__data.inputs = inputs;
     }
     ctx.result = form;
   })
+}
+
+fetchOptions = async (inputs) => {
+  for (let i = 0; i < inputs.length; i++) {
+    const inp = inputs[i];
+    if (inp.type === 'radio' || inp.type === 'multiplechoice' || inp.type === 'select' || inp.type === 'singleChoice') {
+      const options = await inp.options.find();
+      inputs[i].__data.options = options;
+    }
+  }
 }
 
 /**
@@ -33,6 +44,7 @@ module.exports = (Form) => {
  * @param displayName fieldName which is chosen to display as options
  */
 fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
+  await fetchOptions(inputs);
   const inputIndex = inputs.findIndex(elm => elm.name === inputName)
   const instances = await Model.find();
   options = instances.map(inst => {
