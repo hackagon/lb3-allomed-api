@@ -43,8 +43,8 @@ module.exports = (ActiveIngredient) => {
     await activeIngredient.categories.destroyAll();
     await activeIngredient.therapies.destroyAll();
 
-    const categories = _.get(ctx, "options.req.body.categories")
-    const therapies = _.get(ctx, "options.req.body.therapies")
+    const categories = _.get(ctx, "options.req.body.categories", [])
+    const therapies = _.get(ctx, "options.req.body.therapies", [])
 
     const ActiveIngredientCategory = app.models.ActiveIngredientCategory
     const ActiveIngredientTherapy = app.models.ActiveIngredientTherapy
