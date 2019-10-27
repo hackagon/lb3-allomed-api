@@ -9,9 +9,19 @@ module.exports = (Form) => {
   Form.afterRemote('findOne', async (ctx) => {
     const form = ctx.result;
     const formName = form.__data.name;
-    if (formName === 'createActiveIngredient') await modifyPostActiveIngredientForm(form)
-    if (formName === 'createProduct') await modifyPostProductForm(form)
+    switch (formName) {
+      case 'createActiveIngredient':
+        await modifyPostActiveIngredientForm(form)
+        break;
 
+      case 'createProduct':
+        await modifyPostProductForm(form)
+        break;
+
+      default:
+        const inputs = await form.inputs.find({ order: "displayIndex ASC" });
+        form.__data.inputs = inputs;
+    }
     ctx.result = form;
   })
 }
@@ -23,7 +33,6 @@ module.exports = (Form) => {
  * @param displayName fieldName which is chosen to display as options
  */
 fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
-  console.log("TCL: fetchOptionsForInput -> inputs", inputs)
   const inputIndex = inputs.findIndex(elm => elm.name === inputName)
   const instances = await Model.find();
   options = instances.map(inst => {
