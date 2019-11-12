@@ -655,6 +655,12 @@
       "model": "Therapy",
       "foreignKey": "activeIngredientId",
       "through": "ActiveIngredientTherapy"
+    },
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "",
+      "through": "ProductActiveIngredient"
     }
   },
   "acls": [],

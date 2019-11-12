@@ -827,6 +827,11 @@
       "type": "belongsTo",
       "model": "Route",
       "foreignKey": "routeId"
+    },
+    "productActiveIngredients": {
+      "type": "hasMany",
+      "model": "ProductActiveIngredient",
+      "foreignKey": ""
     }
   },
   "acls": [],

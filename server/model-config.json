@@ -150,5 +150,9 @@
   "Icd10": {
     "dataSource": "allomed",
     "public": true
+  },
+  "ProductActiveIngredient": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

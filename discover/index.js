@@ -25,4 +25,5 @@ const discover = require('./utils');
 // discover('chemical_structure');
 // discover('fda_pharmacological_group');
 // discover('snomed_category');
-discover('icd10');
+// discover('icd10');
+// discover('product_active_ingredient');
