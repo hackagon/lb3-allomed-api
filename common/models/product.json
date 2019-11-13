@@ -670,14 +670,14 @@
         "nullable": "Y"
       }
     },
-    "pharmacyStructureId": {
+    "chemicalStructureId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "pharmacy_structure_id",
+        "columnName": "chemical_structure_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -685,14 +685,14 @@
         "nullable": "Y"
       }
     },
-    "pharmacyFdaId": {
+    "fdaPharmacologicalGroupId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "pharmacy_fda_id",
+        "columnName": "fda_pharmacological_group_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -745,14 +745,14 @@
         "nullable": "Y"
       }
     },
-    "categorySnomedId": {
+    "snomedCategoryId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "category_snomed_id",
+        "columnName": "snomed_category_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -923,6 +923,21 @@
       "type": "belongsTo",
       "model": "Use",
       "foreignKey": "useId"
+    },
+    "chemicalStructure": {
+      "type": "belongsTo",
+      "model": "ChemicalStructure",
+      "foreignKey": "chemicalStructureId"
+    },
+    "fdaPharmacologicalGroup": {
+      "type": "belongsTo",
+      "model": "FdaPharmacologicalGroup",
+      "foreignKey": "fdaPharmacologicalGroupId"
+    },
+    "snomedCategoryGroup": {
+      "type": "belongsTo",
+      "model": "SnomedCategoryGroup",
+      "foreignKey": "snomedCategoryGroupId"
     }
   },
   "acls": [],
