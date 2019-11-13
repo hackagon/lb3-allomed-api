@@ -87,7 +87,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "distributionCountryProducts": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "distributionCountryId"
+    },
+    "manufacturingCountryProducts": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "manufacturingCountryId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -132,7 +132,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "labelEnterpriseProducts": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "labelEnterpriseId"
+    },
+    "manufacturerProducts": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "manufacturerId"
+    },
+    "distributionProducts": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "distributionId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

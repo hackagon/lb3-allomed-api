@@ -1,4 +1,5 @@
 const _ = require('lodash');
+const app = require('../../server/server')
 
 module.exports = (Product) => {
 
@@ -20,14 +21,14 @@ module.exports = (Product) => {
     const product = ctx.instance;
     await product.activeIngredients.destroyAll();
 
-    const activeIngredients = _.get(ctx, "options.req.body.activeIngredients", [])
+    const activeIngredientIds = _.get(ctx, "options.req.body.activeIngredientIds", [])
 
     const ProductActiveIngredient = app.models.ProductActiveIngredient
 
-    await activeIngredients.forEach(async (ingre) => {
+    await activeIngredientIds.forEach(async (ingreId) => {
       await ProductActiveIngredient.create({
         productId: product.id,
-        activeIngredientId: ingre
+        activeIngredientId: ingreId
       })
     })
   })

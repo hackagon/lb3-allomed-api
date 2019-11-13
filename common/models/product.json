@@ -85,14 +85,14 @@
         "nullable": "Y"
       }
     },
-    "activeIngredientName": {
+    "activeIngredientId": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "active_ingredient_name",
+        "columnName": "active_ingredient_id",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -250,14 +250,14 @@
         "nullable": "Y"
       }
     },
-    "odourId": {
+    "odorId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "odour_id",
+        "columnName": "odor_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -325,14 +325,14 @@
         "nullable": "Y"
       }
     },
-    "characteristicOtherId": {
+    "otherCharacteristicId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "characteristic_other_id",
+        "columnName": "other_characteristic_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -535,14 +535,14 @@
         "nullable": "Y"
       }
     },
-    "usePurposeId": {
+    "useId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "use_purpose_id",
+        "columnName": "use_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -640,14 +640,14 @@
         "nullable": "Y"
       }
     },
-    "pharmacyMechanismId": {
+    "pharmacologicalMechanismId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "pharmacy_mechanism_id",
+        "columnName": "pharmacological_mechanism_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -655,14 +655,14 @@
         "nullable": "Y"
       }
     },
-    "pharmacyImpactId": {
+    "pharmacologicalImpactId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "pharmacy_impact_id",
+        "columnName": "pharmacological_impact_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -828,10 +828,101 @@
       "model": "Route",
       "foreignKey": "routeId"
     },
-    "productActiveIngredients": {
+    "activeIngredients": {
       "type": "hasMany",
-      "model": "ProductActiveIngredient",
-      "foreignKey": ""
+      "model": "ActiveIngredient",
+      "foreignKey": "",
+      "through": "ProductActiveIngredient"
+    },
+    "categoryTrade": {
+      "type": "belongsTo",
+      "model": "CategoryTrade",
+      "foreignKey": "categoryTradeId"
+    },
+    "color": {
+      "type": "belongsTo",
+      "model": "Color",
+      "foreignKey": "colorId"
+    },
+    "characteristic": {
+      "type": "belongsTo",
+      "model": "Characteristic",
+      "foreignKey": "characteristicId"
+    },
+    "package": {
+      "type": "belongsTo",
+      "model": "Package",
+      "foreignKey": "packageId"
+    },
+    "labelEnterprise": {
+      "type": "belongsTo",
+      "model": "Enterprise",
+      "foreignKey": "labelEnterpriseId"
+    },
+    "manufacturer": {
+      "type": "belongsTo",
+      "model": "Manufacturer",
+      "foreignKey": "manufacturerId"
+    },
+    "distribution": {
+      "type": "belongsTo",
+      "model": "Enterprise",
+      "foreignKey": "distributionId"
+    },
+    "distributionCountry": {
+      "type": "belongsTo",
+      "model": "Country",
+      "foreignKey": "distributionCountryId"
+    },
+    "manufacturingCountry": {
+      "type": "belongsTo",
+      "model": "Country",
+      "foreignKey": "manufacturingCountryId"
+    },
+    "pharmacologicalMechanism": {
+      "type": "belongsTo",
+      "model": "PharmacologicalMechanism",
+      "foreignKey": "pharmacologicalMechanismId"
+    },
+    "pharmacologicalImpact": {
+      "type": "belongsTo",
+      "model": "PharmacologicalImpact",
+      "foreignKey": "pharmacologicalImpactId"
+    },
+    "unit": {
+      "type": "belongsTo",
+      "model": "Unit",
+      "foreignKey": "unitId"
+    },
+    "toxicity": {
+      "type": "belongsTo",
+      "model": "Toxicity",
+      "foreignKey": "toxicityId"
+    },
+    "productGroup": {
+      "type": "belongsTo",
+      "model": "ProductGroup",
+      "foreignKey": "productGroupId"
+    },
+    "odor": {
+      "type": "belongsTo",
+      "model": "Odor",
+      "foreignKey": "odorId"
+    },
+    "otherCharacteristic": {
+      "type": "belongsTo",
+      "model": "OtherCharacteristic",
+      "foreignKey": "otherCharacteristicId"
+    },
+    "categoryLabel": {
+      "type": "belongsTo",
+      "model": "CategoryLabel",
+      "foreignKey": "categoryLabelId"
+    },
+    "use": {
+      "type": "belongsTo",
+      "model": "Use",
+      "foreignKey": "useId"
     }
   },
   "acls": [],

@@ -72,7 +72,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "unitId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
