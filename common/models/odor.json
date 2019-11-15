@@ -41,7 +41,7 @@
       }
     },
     "isActive": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": null,
       "precision": 1,

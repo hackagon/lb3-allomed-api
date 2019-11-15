@@ -12,7 +12,7 @@ module.exports.generateTherapy = async (req, res, next) => {
   )
 
   await data.forEach(async item => {
-    const inst = await Model__Therapy.create({
+    await Model__Therapy.create({
       therapyName: item.name
     })
   })
@@ -28,9 +28,30 @@ module.exports.generateCategory = async (req, res, next) => {
   )
 
   await data.forEach(async item => {
-    const inst = await Model__Category.create({
+    await Model__Category.create({
       categoryName: item.name
     })
+  })
+  res.status(200).json({ message: "Generate data successfully" })
+}
+
+module.exports.generateColor = async (req, res, next) => {
+  const Model__Color = app.models.Color;
+
+  const data = await getStream.array(
+    fs.createReadStream('mockup/color.csv')
+      .pipe(csv())
+  )
+
+  await data.forEach(async item => {
+    try {
+      const inst = await Model__Color.create({
+        colorName: item.color_name,
+        colorCode: item.color_code
+      })
+    } catch (error) {
+      console.log(error)
+    }
   })
   res.status(200).json({ message: "Generate data successfully" })
 }

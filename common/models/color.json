@@ -40,14 +40,30 @@
         "nullable": "N"
       }
     },
-    "active": {
-      "type": "Binary",
+    "colorCode": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "color_code",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "isActive": {
+      "type": "Boolean",
       "required": false,
+      "default": true,
       "length": null,
       "precision": 1,
       "scale": null,
       "mysql": {
-        "columnName": "active",
+        "columnName": "is_active",
         "dataType": "bit",
         "dataLength": null,
         "dataPrecision": 1,
