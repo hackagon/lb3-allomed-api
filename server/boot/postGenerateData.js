@@ -1,7 +1,5 @@
 const _ = require('lodash');
-const { generateTherapy, generateCategory, generateColor,
-  generateShape, generateDataForSingleTable
-} = require('../controllers/generateData');
+const { generateDataForSingleTable } = require('../controllers/generateData');
 
 const mockup = require('../../mockup');
 

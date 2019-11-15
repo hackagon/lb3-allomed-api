@@ -39,6 +39,22 @@
         "dataScale": null,
         "nullable": "Y"
       }
+    },
+    "isActive": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "default": true,
+      "mysql": {
+        "columnName": "is_active",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "Y"
+      }
     }
   },
   "validations": [],

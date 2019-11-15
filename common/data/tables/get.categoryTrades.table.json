@@ -7,6 +7,11 @@
       "name": "categoryTradeName",
       "displayVietnameseName": "Tên danh mục thương mại",
       "displayEnglishName": "categoryTradeName"
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Được kích hoạt?",
+      "displayEnglishName": "Is active?"
     }
   ],
   "actions": [

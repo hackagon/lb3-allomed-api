@@ -12,6 +12,24 @@
       "displayVietnameseName": "Tên danh mục thương mại",
       "englishPlaceholder": "Enter category trade name",
       "vietnamesePlaceholder": "Nhập tên danh mục thương mại"
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "Is active?",
+      "displayVietnameseName": "Được kích hoạt?",
+      "englishPlaceholder": "Choose",
+      "vietnamesePlaceholder": "Chọn",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
     }
   ]
 }
