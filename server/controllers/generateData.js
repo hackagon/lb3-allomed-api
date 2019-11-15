@@ -44,14 +44,39 @@ module.exports.generateColor = async (req, res, next) => {
   )
 
   await data.forEach(async item => {
-    try {
-      const inst = await Model__Color.create({
-        colorName: item.color_name,
-        colorCode: item.color_code
-      })
-    } catch (error) {
-      console.log(error)
-    }
+    const inst = await Model__Color.create({
+      colorName: item.color_name,
+      colorCode: item.color_code
+    })
+  })
+  res.status(200).json({ message: "Generate data successfully" })
+}
+
+module.exports.generateShape = async (req, res, next) => {
+  const Model__Shape = app.models.Shape;
+
+  const data = await getStream.array(
+    fs.createReadStream('mockup/shape.csv')
+      .pipe(csv())
+  )
+
+  await data.forEach(async item => {
+    const inst = await Model__Shape.create({
+      shapeName: item.shapeName,
+      splTerm: item.splTerm
+    })
+  })
+  res.status(200).json({ message: "Generate data successfully" })
+}
+
+module.exports.generateDataForSingleTable = (Model, csvFileName) => async (req, res, next) => {
+  const data = await getStream.array(
+    fs.createReadStream(`mockup/${csvFileName}`)
+      .pipe(csv())
+  )
+
+  await data.forEach(async item => {
+    const inst = await Model.create(item)
   })
   res.status(200).json({ message: "Generate data successfully" })
 }

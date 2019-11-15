@@ -1,0 +1,43 @@
+{
+  "method": "POST",
+  "name": "createShape",
+  "displayEnglishName": "Create shape",
+  "displayVietnameseName": "Thêm hình dạng",
+  "description": "Form thêm mới hình dạng",
+  "inputs": [
+    {
+      "name": "shapeName",
+      "type": "text",
+      "displayEnglishName": "Shape name",
+      "displayVietnameseName": "Tên hình dạng",
+      "englishPlaceholder": "Enter shape name",
+      "vietnamesePlaceholder": "Nhập tên hình dạng"
+    },
+    {
+      "name": "splTerm",
+      "type": "text",
+      "displayEnglishName": "SPL term",
+      "displayVietnameseName": "Thuật ngữ SPL",
+      "englishPlaceholder": "Enter SPL term",
+      "vietnamesePlaceholder": "Nhập thuật ngữ SPL"
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "Is active?",
+      "displayVietnameseName": "Được kích hoạt?",
+      "englishPlaceholder": "Choose",
+      "vietnamesePlaceholder": "Chọn",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    }
+  ]
+}

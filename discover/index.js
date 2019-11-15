@@ -27,3 +27,4 @@ const discover = require('./utils');
 // discover('snomed_category');
 // discover('icd10');
 // discover('product_active_ingredient');
+// discover('shape');
