@@ -32,7 +32,7 @@ fetchOptions = async (inputs) => {
     const inp = inputs[i];
     if (inp.type === 'radio' || inp.type === 'multiplechoice' || inp.type === 'select' || inp.type === 'singleChoice') {
       const options = await inp.options.find();
-      inputs[i].__data.options = options;
+      if (!_.isEmpty(options)) inputs[i].__data.options = options;
     }
   }
 }
@@ -54,7 +54,7 @@ fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
       displayVietnameseName: inst[displayName]
     }
   })
-  inputs[inputIndex].__data.options = options;
+  if (inputIndex > -1) inputs[inputIndex].__data.options = options;
 }
 
 /**
@@ -102,7 +102,12 @@ modifyPostProductForm = async (form) => {
   let inputs = await form.inputs.find({ order: "displayIndex ASC" });
 
   await fetchOptionsForInput(inputs, ActiveIngredientModel, "activeIngredients", "activeIngredientName");
-  await fetchOptionsForInput(inputs, CategoryLabelModel, "categoryLabel", "categoryLabelName");
+  await fetchOptionsForInput(inputs, CategoryLabelModel, "categoryLabelId", "categoryLabelName");
+  await fetchOptionsForInput(inputs, CategoryTradeModel, "categoryTradeId", "categoryTradeName");
+  await fetchOptionsForInput(inputs, CharacteristicModel, "characteristicId", "characteristicName");
+  await fetchOptionsForInput(inputs, ChemicalStructureModel, "chemicalStructureId", "chemicalStructure");
+  await fetchOptionsForInput(inputs, ColorModel, "colorId", "colorName");
+  await fetchOptionsForInput(inputs, CountryModel, "distributionCountryId", "countryName");
 
   form.__data.inputs = inputs;
 }

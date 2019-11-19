@@ -3,5 +3,6 @@ module.exports = {
   therapy: { model: "Therapy", csvFileName: "therapy.csv", endpoint: "therapy" },
   color: { model: "Color", csvFileName: "color.csv", endpoint: "color" },
   shape: { model: "Shape", csvFileName: "shape.csv", endpoint: "shape" },
+  categoryTrade: { model: "CategoryTrade", csvFileName: "categoryTrade.csv", endpoint: "categoryTrade" },
   categoryTrade: { model: "CategoryTrade", csvFileName: "categoryTrade.csv", endpoint: "categoryTrade" }
 }

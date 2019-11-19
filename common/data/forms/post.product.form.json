@@ -30,12 +30,84 @@
       "vietnamesePlaceholder": "Chọn tuổi"
     },
     {
-      "name": "categoryLabel",
+      "name": "categoryLabelId",
       "type": "singleChoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhãn",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Chọn nhãn"
+    },
+    {
+      "name": "categoryTradeId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Danh mục thương mại",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn danh mục thương mại"
+    },
+    {
+      "name": "characteristicId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đặc trưng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn đặc trưng"
+    },
+    {
+      "name": "chemicalStructureId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Cấu trúc hóa học",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn cấu trúc hóa học"
+    },
+    {
+      "name": "colorId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "màu sắc",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn màu sắc"
+    },
+    {
+      "name": "cytochromeInteraction",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuốc tương tác qua Cytochrom P450",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Thuốc tương tác qua Cytochrom P450"
+    },
+    {
+      "name": "dateExpiry",
+      "type": "date",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày hết hạn lưu hành trên thị trường (Ngày hết hạn)",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ngày hết hạn lưu hành trên thị trường (Ngày hết hạn)"
+    },
+    {
+      "name": "dateOfIssue",
+      "type": "date",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày bắt đầu dưa ra thị trường (Ngày cấp)",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ngày bắt đầu dưa ra thị trường (Ngày cấp)"
+    },
+    {
+      "name": "decisionNumber",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số quyết định cấp số đăng ký",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Số quyết định cấp số đăng ký"
+    },
+    {
+      "name": "distributionCountryId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nước phân phối",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn nước phân phối"
     }
   ]
 }
