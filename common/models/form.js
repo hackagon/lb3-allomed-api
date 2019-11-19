@@ -108,6 +108,7 @@ modifyPostProductForm = async (form) => {
   await fetchOptionsForInput(inputs, ChemicalStructureModel, "chemicalStructureId", "chemicalStructure");
   await fetchOptionsForInput(inputs, ColorModel, "colorId", "colorName");
   await fetchOptionsForInput(inputs, CountryModel, "distributionCountryId", "countryName");
+  await fetchOptionsForInput(inputs, EnterpriseModel, "distributionEnterpriseId", "enterpriseName");
 
   form.__data.inputs = inputs;
 }

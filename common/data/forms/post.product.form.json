@@ -108,6 +108,30 @@
       "displayVietnameseName": "Nước phân phối",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Chọn nước phân phối"
+    },
+    {
+      "name": "distributionEnterpriseId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Công ty phân phối",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn công ty phân phối"
+    },
+    {
+      "name": "dosageForm",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "dạng bào chế",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn dạng bào chế"
+    },
+    {
+      "name": "excipient",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "tá dược",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn tá dược"
     }
   ]
 }

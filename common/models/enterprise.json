@@ -146,7 +146,7 @@
     "distributionProducts": {
       "type": "hasMany",
       "model": "Product",
-      "foreignKey": "distributionId"
+      "foreignKey": "distributionEnterpriseId"
     }
   },
   "acls": [],

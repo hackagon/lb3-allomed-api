@@ -445,14 +445,14 @@
         "nullable": "N"
       }
     },
-    "distributionId": {
+    "distributionEnterpriseId": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "distribution_id",
+        "columnName": "distribution_enterprise_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -864,10 +864,10 @@
       "model": "Manufacturer",
       "foreignKey": "manufacturerId"
     },
-    "distribution": {
+    "distributionEnterprise": {
       "type": "belongsTo",
       "model": "Enterprise",
-      "foreignKey": "distributionId"
+      "foreignKey": "distributionEnterpriseId"
     },
     "distributionCountry": {
       "type": "belongsTo",
