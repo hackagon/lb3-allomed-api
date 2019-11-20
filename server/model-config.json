@@ -59,18 +59,6 @@
     "dataSource": "allomed",
     "public": true
   },
-  "Option": {
-    "dataSource": "allomed",
-    "public": true
-  },
-  "Form": {
-    "dataSource": "allomed",
-    "public": true
-  },
-  "Input": {
-    "dataSource": "allomed",
-    "public": true
-  },
   "Route": {
     "dataSource": "allomed",
     "public": true

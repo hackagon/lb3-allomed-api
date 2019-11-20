@@ -1,40 +1,29 @@
+const postForms = require('../../common/data/forms');
 const _ = require('lodash');
-const app = require('../../server/server')
+const app = require('../server');
 
-/**
- * @todo: add inputs for form
- * @todo: add options for input
- */
-module.exports = (Form) => {
-  Form.afterRemote('findOne', async (ctx) => {
-    const form = ctx.result;
-    const formName = form.__data.name;
-    switch (formName) {
-      case 'createActiveIngredient':
-        await modifyPostActiveIngredientForm(form)
-        break;
+module.exports = (server) => {
+  const router = server.loopback.Router();
+  const restApiRoot = server.get('restApiRoot');
 
-      case 'createProduct':
-        await modifyPostProductForm(form)
-        break;
+  _.keys(postForms).forEach(key => {
+    const form = postForms[key];
+    router.get(`${restApiRoot}/postForms/${form.name}`, async (req, res) => {
+      switch (form.name) {
+        case "createProduct":
+          await modifyPostProductForm(form)
 
-      default:
-        const inputs = await form.inputs.find({ order: "displayIndex ASC" });
-        await fetchOptions(inputs);
-        form.__data.inputs = inputs;
-    }
-    ctx.result = form;
-  })
-}
+        case "createActiveIngredient":
+          await modifyPostActiveIngredientForm(form)
 
-fetchOptions = async (inputs) => {
-  for (let i = 0; i < inputs.length; i++) {
-    const inp = inputs[i];
-    if (inp.type === 'radio' || inp.type === 'multiplechoice' || inp.type === 'select' || inp.type === 'singleChoice') {
-      const options = await inp.options.find();
-      if (!_.isEmpty(options)) inputs[i].__data.options = options;
-    }
-  }
+        default:
+          break;
+      }
+      res.status(200).json(form)
+    })
+  });
+
+  server.use(router);
 }
 
 /**
@@ -54,41 +43,25 @@ fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
       displayVietnameseName: inst[displayName]
     }
   })
-  if (inputIndex > -1) inputs[inputIndex].__data.options = options;
-  console.log("run")
+  if (inputIndex > -1) inputs[inputIndex].options =
+    options;
 }
 
-/**
- * @param form form which should be modified
- */
-modifyPostActiveIngredientForm = async (form) => {
+const modifyPostActiveIngredientForm = async (form) => {
   const CategoryModel = app.models.Category;
   const TherapyModel = app.models.Therapy;
 
-  let inputs = await form.inputs.find({ order: "displayIndex ASC" });
+  const inputs = form.inputs;
 
-  for (let i = 0; i < inputs.length; i++) {
-    const inp = inputs[i];
-    if (inp.type === "text") continue;
+  await Promise.all([
+    fetchOptionsForInput(inputs, CategoryModel, "categories", "categoryName"),
+    fetchOptionsForInput(inputs, TherapyModel, "therapies", "therapyName")
+  ])
 
-    inp.options.find()
-      .then(options => {
-        if (!_.isEmpty(options)) {
-          inp.__data.options = options;
-        }
-      })
-  }
-
-  await fetchOptionsForInput(inputs, CategoryModel, "categories", "categoryName");
-  await fetchOptionsForInput(inputs, TherapyModel, "therapies", "therapyName");
-
-  form.__data.inputs = inputs;
+  form.inputs = inputs;
 }
 
-/**
- * @param form
- */
-modifyPostProductForm = async (form) => {
+const modifyPostProductForm = async (form) => {
   const ActiveIngredientModel = app.models.ActiveIngredient;
   const RouteModel = app.models.Route;
   const CategoryTradeModel = app.models.CategoryTrade;
@@ -112,20 +85,7 @@ modifyPostProductForm = async (form) => {
   const FdaPharmacologicalGroupModel = app.models.FdaPharmacologicalGroup;
   const SnomedCategoryModel = app.models.SnomedCategory;
 
-  let inputs = await form.inputs.find({ order: "displayIndex ASC" });
-
-  for (let i = 0; i < inputs.length; i++) {
-    const inp = inputs[i];
-    if (!inp.needQuery) continue;
-
-    inp.options.find()
-      .then(options => {
-        if (!_.isEmpty(options)) {
-          inp.__data.options = options;
-        }
-      })
-  }
-
+  const inputs = form.inputs;
 
   await Promise.all([
     fetchOptionsForInput(inputs, ActiveIngredientModel, "activeIngredients", "activeIngredientName"),
@@ -151,5 +111,5 @@ modifyPostProductForm = async (form) => {
     fetchOptionsForInput(inputs, UseModel, "useId", "use"),
   ])
 
-  form.__data.inputs = inputs;
+  form.inputs = inputs;
 }
