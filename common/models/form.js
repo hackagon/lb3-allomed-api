@@ -44,7 +44,7 @@ fetchOptions = async (inputs) => {
  * @param displayName fieldName which is chosen to display as options
  */
 fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
-  await fetchOptions(inputs);
+  // fetchOptions(inputs);
   const inputIndex = inputs.findIndex(elm => elm.name === inputName)
   const instances = await Model.find();
   options = instances.map(inst => {
@@ -55,6 +55,7 @@ fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
     }
   })
   if (inputIndex > -1) inputs[inputIndex].__data.options = options;
+  console.log("run")
 }
 
 /**
@@ -65,6 +66,18 @@ modifyPostActiveIngredientForm = async (form) => {
   const TherapyModel = app.models.Therapy;
 
   let inputs = await form.inputs.find({ order: "displayIndex ASC" });
+
+  for (let i = 0; i < inputs.length; i++) {
+    const inp = inputs[i];
+    if (inp.type === "text") continue;
+
+    inp.options.find()
+      .then(options => {
+        if (!_.isEmpty(options)) {
+          inp.__data.options = options;
+        }
+      })
+  }
 
   await fetchOptionsForInput(inputs, CategoryModel, "categories", "categoryName");
   await fetchOptionsForInput(inputs, TherapyModel, "therapies", "therapyName");
@@ -101,28 +114,41 @@ modifyPostProductForm = async (form) => {
 
   let inputs = await form.inputs.find({ order: "displayIndex ASC" });
 
-  await fetchOptionsForInput(inputs, ActiveIngredientModel, "activeIngredients", "activeIngredientName");
-  await fetchOptionsForInput(inputs, CategoryLabelModel, "categoryLabelId", "categoryLabelName");
-  await fetchOptionsForInput(inputs, CategoryTradeModel, "categoryTradeId", "categoryTradeName");
-  await fetchOptionsForInput(inputs, CharacteristicModel, "characteristicId", "characteristicName");
-  await fetchOptionsForInput(inputs, ChemicalStructureModel, "chemicalStructureId", "chemicalStructure");
-  await fetchOptionsForInput(inputs, ColorModel, "colorId", "colorName");
-  await fetchOptionsForInput(inputs, CountryModel, "distributionCountryId", "countryName");
-  await fetchOptionsForInput(inputs, EnterpriseModel, "distributionEnterpriseId", "enterpriseName");
-  await fetchOptionsForInput(inputs, FdaPharmacologicalGroupModel, "fdaPharmacologicalGroupId", "groupName");
-  await fetchOptionsForInput(inputs, OdorModel, "odorId", "odorName");
-  await fetchOptionsForInput(inputs, OtherCharacteristicModel, "otherCharacteristicId", "characteristic");
-  await fetchOptionsForInput(inputs, PackageModel, "packageId", "packageName");
-  await fetchOptionsForInput(inputs, PharmacologicalImpactModel, "pharmacologicalImpactId", "pharmacologicalImpact");
-  await fetchOptionsForInput(inputs, PharmacologicalMechanismModel, "pharmacologicalMechanismId", "pharmacologicalMechanism");
-  await fetchOptionsForInput(inputs, ProductGroupModel, "productGroupId", "productGroupName");
-  await fetchOptionsForInput(inputs, RouteModel, "routeId", "routeName");
-  await fetchOptionsForInput(inputs, ShapeModel, "shapeId", "shapeName");
-  await fetchOptionsForInput(inputs, SnomedCategoryModel, "snomedCategoryId", "categoryName");
-  await fetchOptionsForInput(inputs, ToxicityModel, "toxicityId", "toxicityName");
-  await fetchOptionsForInput(inputs, UnitModel, "unitId", "unitName");
-  await fetchOptionsForInput(inputs, UseModel, "useId", "use");
+  for (let i = 0; i < inputs.length; i++) {
+    const inp = inputs[i];
+    if (inp.type === "text") continue;
 
+    inp.options.find()
+      .then(options => {
+        if (!_.isEmpty(options)) {
+          inp.__data.options = options;
+        }
+      })
+  }
+
+  await Promise.all([
+    fetchOptionsForInput(inputs, ActiveIngredientModel, "activeIngredients", "activeIngredientName"),
+    fetchOptionsForInput(inputs, CategoryLabelModel, "categoryLabelId", "categoryLabelName"),
+    fetchOptionsForInput(inputs, CategoryTradeModel, "categoryTradeId", "categoryTradeName"),
+    fetchOptionsForInput(inputs, CharacteristicModel, "characteristicId", "characteristicName"),
+    fetchOptionsForInput(inputs, ChemicalStructureModel, "chemicalStructureId", "chemicalStructure"),
+    fetchOptionsForInput(inputs, ColorModel, "colorId", "colorName"),
+    fetchOptionsForInput(inputs, CountryModel, "distributionCountryId", "countryName"),
+    fetchOptionsForInput(inputs, EnterpriseModel, "distributionEnterpriseId", "enterpriseName"),
+    fetchOptionsForInput(inputs, FdaPharmacologicalGroupModel, "fdaPharmacologicalGroupId", "groupName"),
+    fetchOptionsForInput(inputs, OdorModel, "odorId", "odorName"),
+    fetchOptionsForInput(inputs, OtherCharacteristicModel, "otherCharacteristicId", "characteristic"),
+    fetchOptionsForInput(inputs, PackageModel, "packageId", "packageName"),
+    fetchOptionsForInput(inputs, PharmacologicalImpactModel, "pharmacologicalImpactId", "pharmacologicalImpact"),
+    fetchOptionsForInput(inputs, PharmacologicalMechanismModel, "pharmacologicalMechanismId", "pharmacologicalMechanism"),
+    fetchOptionsForInput(inputs, ProductGroupModel, "productGroupId", "productGroupName"),
+    fetchOptionsForInput(inputs, RouteModel, "routeId", "routeName"),
+    fetchOptionsForInput(inputs, ShapeModel, "shapeId", "shapeName"),
+    fetchOptionsForInput(inputs, SnomedCategoryModel, "snomedCategoryId", "categoryName"),
+    fetchOptionsForInput(inputs, ToxicityModel, "toxicityId", "toxicityName"),
+    fetchOptionsForInput(inputs, UnitModel, "unitId", "unitName"),
+    fetchOptionsForInput(inputs, UseModel, "useId", "use"),
+  ])
 
   form.__data.inputs = inputs;
 }
