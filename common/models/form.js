@@ -109,6 +109,20 @@ modifyPostProductForm = async (form) => {
   await fetchOptionsForInput(inputs, ColorModel, "colorId", "colorName");
   await fetchOptionsForInput(inputs, CountryModel, "distributionCountryId", "countryName");
   await fetchOptionsForInput(inputs, EnterpriseModel, "distributionEnterpriseId", "enterpriseName");
+  await fetchOptionsForInput(inputs, FdaPharmacologicalGroupModel, "fdaPharmacologicalGroupId", "groupName");
+  await fetchOptionsForInput(inputs, OdorModel, "odorId", "odorName");
+  await fetchOptionsForInput(inputs, OtherCharacteristicModel, "otherCharacteristicId", "characteristic");
+  await fetchOptionsForInput(inputs, PackageModel, "packageId", "packageName");
+  await fetchOptionsForInput(inputs, PharmacologicalImpactModel, "pharmacologicalImpactId", "pharmacologicalImpact");
+  await fetchOptionsForInput(inputs, PharmacologicalMechanismModel, "pharmacologicalMechanismId", "pharmacologicalMechanism");
+  await fetchOptionsForInput(inputs, ProductGroupModel, "productGroupId", "productGroupName");
+  await fetchOptionsForInput(inputs, RouteModel, "routeId", "routeName");
+  await fetchOptionsForInput(inputs, ShapeModel, "shapeId", "shapeName");
+  await fetchOptionsForInput(inputs, SnomedCategoryModel, "snomedCategoryId", "categoryName");
+  await fetchOptionsForInput(inputs, ToxicityModel, "toxicityId", "toxicityName");
+  await fetchOptionsForInput(inputs, UnitModel, "unitId", "unitName");
+  await fetchOptionsForInput(inputs, UseModel, "useId", "use");
+
 
   form.__data.inputs = inputs;
 }

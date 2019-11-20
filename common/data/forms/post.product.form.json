@@ -132,6 +132,270 @@
       "displayVietnameseName": "tá dược",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Chọn tá dược"
+    },
+    {
+      "name": "fdaPharmacologicalGroupId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhóm dược lý theo FDA Hoa Kỳ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhóm dược lý theo FDA Hoa Kỳ"
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đã kích hoạt?",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Đã kích hoạt?"
+    },
+    {
+      "name": "isBreastfeed",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Cho con bướu?",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Cho con bướu?"
+    },
+    {
+      "name": "isPregnant",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mang thai?",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Mang thai?"
+    },
+    {
+      "name": "isPrioritize",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ưu tiên?",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ưu tiên?"
+    },
+    {
+      "name": "lightSensitive",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Gây nhạy cảm với ánh sáng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Gây nhạy cảm với ánh sáng"
+    },
+    {
+      "name": "manufacturerId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhà sản xuất",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhà sản xuất"
+    },
+    {
+      "name": "noAlcohol",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuốc không có cồn",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Thuốc không có cồn"
+    },
+    {
+      "name": "noBreak",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuốc không bẻ khi uống",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Thuốc không bẻ khi uống"
+    },
+    {
+      "name": "noSugar",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuốc không đường",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Thuốc không đường"
+    },
+    {
+      "name": "odorId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "mùi vị",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn mùi vị"
+    },
+    {
+      "name": "otherCharacteristicId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "đặc trưng khác",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn đặc trưng khác"
+    },
+    {
+      "name": "packageId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "đóng gói",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn đóng gói"
+    },
+    {
+      "name": "pharmacologicalImpactId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "tác động sinh lý, dược lý",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý"
+    },
+    {
+      "name": "pharmacologicalMechanismId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "tác động sinh lý, dược lý",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý"
+    },
+    {
+      "name": "productCode",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mã sản phẩm",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Mã sản phẩm"
+    },
+    {
+      "name": "productGroupId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhóm sản phẩm",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhóm sản phẩm"
+    },
+    {
+      "name": "productNdc",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "NDC sản phẩm",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "NDC sản phẩm"
+    },
+    {
+      "name": "productSub",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên biệt dược phụ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tên biệt dược phụ"
+    },
+    {
+      "name": "registrationNumber",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số đăng ký",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Số đăng ký"
+    },
+    {
+      "name": "newRegistrationNumber",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số đăng ký mới",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Số đăng ký mới"
+    },
+    {
+      "name": "retailPrice",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giá bán lẻ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Giá bán lẻ"
+    },
+    {
+      "name": "wholesalePrice",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giá sỉ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Giá sỉ"
+    },
+    {
+      "name": "routeId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đường sử dụng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Đường sử dụng"
+    },
+    {
+      "name": "shapeId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Hình dáng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Hình dáng"
+    },
+    {
+      "name": "retailPrice",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giá bán lẻ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Giá bán lẻ"
+    },
+    {
+      "name": "bioEquivalence",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương đương sinh học",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tương đương sinh học"
+    },
+    {
+      "name": "therapeuticEquivalence",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương đương trị liệu",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tương đương trị liệu"
+    },
+    {
+      "name": "snomedCategoryId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Phân loại bệnh theo SNOMED",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Phân loại bệnh theo SNOMED"
+    },
+    {
+      "name": "technicalStandard",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tiêu chuẩn kỹ thuật",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tiêu chuẩn kỹ thuật"
+    },
+    {
+      "name": "toxicityId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Phân loại quản lý độc - nghiện",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Phân loại quản lý độc - nghiện"
+    },
+    {
+      "name": "unitId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đơn vị tính",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Đơn vị tính"
+    },
+    {
+      "name": "useId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mục đích sử dụng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Mục đích sử dụng"
     }
   ]
 }

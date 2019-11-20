@@ -595,14 +595,14 @@
         "nullable": "Y"
       }
     },
-    "noteKidney": {
+    "kidneyFailureNote": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "note_kidney",
+        "columnName": "kidney_failure_note",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -610,14 +610,14 @@
         "nullable": "Y"
       }
     },
-    "noteLiver": {
+    "liverFailureNote": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "note_liver",
+        "columnName": "liver_failure_note",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -760,14 +760,14 @@
         "nullable": "Y"
       }
     },
-    "similarBiology": {
+    "bioEquivalence": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "similar_biology",
+        "columnName": "bio_equivalence",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -775,14 +775,14 @@
         "nullable": "Y"
       }
     },
-    "similarTherapy": {
+    "therapeuticEquivalence": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "similar_therapy",
+        "columnName": "therapeutic_equivalence",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
