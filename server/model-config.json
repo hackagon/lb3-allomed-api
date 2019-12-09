@@ -146,5 +146,13 @@
   "Shape": {
     "dataSource": "allomed",
     "public": true
+  },
+  "Store": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "InventoryHeader": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

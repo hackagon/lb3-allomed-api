@@ -28,3 +28,5 @@ const discover = require('./utils');
 // discover('icd10');
 // discover('product_active_ingredient');
 // discover('shape');
+// discover('store')
+discover("inventory_header")

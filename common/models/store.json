@@ -1,10 +1,10 @@
 {
-  "name": "Unit",
+  "name": "Store",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "dbpha",
-      "table": "unit"
+      "table": "store"
     }
   },
   "properties": {
@@ -12,7 +12,6 @@
       "type": "String",
       "id": 1,
       "required": true,
-      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
@@ -25,14 +24,14 @@
         "nullable": "N"
       }
     },
-    "unitName": {
+    "storeCode": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "unit_name",
+        "columnName": "store_code",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -40,32 +39,17 @@
         "nullable": "Y"
       }
     },
-    "notes": {
+    "storeName": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "notes",
+        "columnName": "store_name",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "isActive": {
-      "type": "Boolean",
-      "required": false,
-      "length": null,
-      "precision": 1,
-      "scale": null,
-      "mysql": {
-        "columnName": "is_active",
-        "dataType": "bit",
-        "dataLength": null,
-        "dataPrecision": 1,
         "dataScale": null,
         "nullable": "Y"
       }
@@ -73,10 +57,10 @@
   },
   "validations": [],
   "relations": {
-    "products": {
+    "inventoryHeaders": {
       "type": "hasMany",
-      "model": "Product",
-      "foreignKey": "unitId"
+      "model": "InventoryHeader",
+      "foreignKey": "storeId"
     }
   },
   "acls": [],

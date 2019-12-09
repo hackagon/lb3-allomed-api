@@ -1,18 +1,32 @@
 {
-  "name": "Enterprise",
+  "name": "InventoryHeader",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "dbpha",
-      "table": "enterprise"
+      "table": "inventory_header"
     }
   },
   "properties": {
+    "documentDate": {
+      "type": "Date",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "document_date",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
     "id": {
       "type": "String",
       "id": 1,
       "required": true,
-      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
@@ -25,14 +39,59 @@
         "nullable": "N"
       }
     },
-    "enterpriseName": {
+    "inventoryDate": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "inventory_date",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "inventoryDeliveryVoucher": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "inventory_delivery_voucher",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "inventoryReceivingVoucher": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "inventory_receiving_voucher",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "invoiceNumber": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "enterprise_name",
+        "columnName": "invoice_number",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -40,113 +99,58 @@
         "nullable": "Y"
       }
     },
-    "shortName": {
+    "storeId": {
       "type": "String",
-      "required": false,
-      "length": 255,
+      "required": true,
+      "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "short_name",
+        "columnName": "store_id",
         "dataType": "varchar",
-        "dataLength": 255,
+        "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
+        "nullable": "N"
       }
     },
-    "address": {
+    "supplyId": {
       "type": "String",
-      "required": false,
-      "length": 255,
+      "required": true,
+      "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "address",
+        "columnName": "supply_id",
         "dataType": "varchar",
-        "dataLength": 255,
+        "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
+        "nullable": "N"
       }
     },
-    "phone": {
+    "userId": {
       "type": "String",
-      "required": false,
-      "length": 255,
+      "required": true,
+      "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "phone",
+        "columnName": "user_id",
         "dataType": "varchar",
-        "dataLength": 255,
+        "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "fax": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "fax",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "taxCode": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "tax_code",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "email": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "email",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
+        "nullable": "N"
       }
     }
   },
   "validations": [],
   "relations": {
-    "labelEnterpriseProducts": {
-      "type": "hasMany",
-      "model": "Product",
-      "foreignKey": "labelEnterpriseId"
-    },
-    "manufacturerProducts": {
-      "type": "hasMany",
-      "model": "Product",
-      "foreignKey": "manufacturerId"
-    },
-    "distributionProducts": {
-      "type": "hasMany",
-      "model": "Product",
-      "foreignKey": "distributionEnterpriseId"
+    "store": {
+      "type": "belongsTo",
+      "model": "Store",
+      "foreignKey": "storeId"
     }
   },
   "acls": [],
