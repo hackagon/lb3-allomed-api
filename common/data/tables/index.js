@@ -22,5 +22,8 @@ module.exports = {
   chemicalStructuresTable: require('./get.chemicalStructures.table.json'),
   fdaPharmacologicalGroupsTable: require('./get.fdaPharmacologicalGroups.table.json'),
   snomedCategoriesTable: require('./get.snomedCategories.table.json'),
-  shapesTable: require('./get.shapes.table.json')
+  shapesTable: require('./get.shapes.table.json'),
+
+  // store
+  store: require('./store/get.stores.table.json')
 }

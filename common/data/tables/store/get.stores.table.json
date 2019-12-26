@@ -1,0 +1,24 @@
+{
+  "name": "stores",
+  "displayVietnameseName": "Danh sách kho",
+  "displayEnglishName": "",
+  "headers": [
+    {
+      "name": "storeCode",
+      "displayVietnameseName": "Mã kho",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "storeName",
+      "displayVietnameseName": "Tên kho",
+      "displayEnglishName": ""
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm kho",
+      "displayEnglishName": ""
+    }
+  ]
+}

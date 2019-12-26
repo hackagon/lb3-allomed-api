@@ -1,0 +1,25 @@
+{
+  "method": "POST",
+  "name": "createStore",
+  "displayEnglishName": "",
+  "displayVietnameseName": "Thêm kho chứa",
+  "description": "",
+  "inputs": [
+    {
+      "name": "storeName",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên kho",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập tên kho"
+    },
+    {
+      "name": "storeCode",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mã kho",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập mã kho"
+    }
+  ]
+}
