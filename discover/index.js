@@ -29,4 +29,6 @@ const discover = require('./utils');
 // discover('product_active_ingredient');
 // discover('shape');
 // discover('store')
-discover("inventory_header")
+// discover("inventory_header")
+// discover("inventory_line")
+discover("conversion")

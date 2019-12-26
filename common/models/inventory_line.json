@@ -1,0 +1,283 @@
+{
+  "name": "InventoryLine",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "dbpha",
+      "table": "inventory_line"
+    }
+  },
+  "properties": {
+    "conversionId": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "conversion_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "discount": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 0,
+      "mysql": {
+        "columnName": "discount",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "discountAmount": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 11,
+      "scale": 0,
+      "mysql": {
+        "columnName": "discount_amount",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 11,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "expirationDate": {
+      "type": "Date",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "expiration_date",
+        "dataType": "date",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "id": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "id": 1,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "inventoryHeaderId": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "inventory_header_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "isPromotion": {
+      "type": "Binary",
+      "required": false,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "mysql": {
+        "columnName": "is_promotion",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "isSponsor": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "is_sponsor",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "lotNumber": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "lot_number",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "manufactureDate": {
+      "type": "Date",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "manufacture_date",
+        "dataType": "date",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "pharmacyInventoryId": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "pharmacy_inventory_id",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "productId": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "product_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "quantityExchange": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 11,
+      "scale": 0,
+      "mysql": {
+        "columnName": "quantity_exchange",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 11,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "quantityInvoice": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 11,
+      "scale": 0,
+      "mysql": {
+        "columnName": "quantity_invoice",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 11,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "unitPriceExchange": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 11,
+      "scale": 0,
+      "mysql": {
+        "columnName": "unit_price_exchange",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 11,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "unitPriceInvoice": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 11,
+      "scale": 0,
+      "mysql": {
+        "columnName": "unit_price_invoice",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 11,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "userId": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "user_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "vat": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "vat",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    }
+  }
+}

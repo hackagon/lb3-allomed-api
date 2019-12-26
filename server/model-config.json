@@ -154,5 +154,13 @@
   "InventoryHeader": {
     "dataSource": "allomed",
     "public": true
+  },
+  "InventoryLine": {
+    "dataSource": "allomed",
+    "public": true
+  },
+  "Conversion": {
+    "dataSource": "allomed",
+    "public": true
   }
 }
