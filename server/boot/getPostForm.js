@@ -12,9 +12,15 @@ module.exports = (server) => {
       switch (form.name) {
         case "createProduct":
           await modifyPostProductForm(form)
+          break;
 
         case "createActiveIngredient":
           await modifyPostActiveIngredientForm(form)
+          break;
+
+        case "createInventoryHeader":
+          await modifyPostInventoryHeaderForm(form)
+          break;
 
         default:
           break;
@@ -109,6 +115,18 @@ const modifyPostProductForm = async (form) => {
     fetchOptionsForInput(inputs, ToxicityModel, "toxicityId", "toxicityName"),
     fetchOptionsForInput(inputs, UnitModel, "unitId", "unitName"),
     fetchOptionsForInput(inputs, UseModel, "useId", "use"),
+  ])
+
+  form.inputs = inputs;
+}
+
+const modifyPostInventoryHeaderForm = async (form) => {
+  const StoreModel = app.models.Store;
+
+  const inputs = form.inputs;
+
+  await Promise.all([
+    fetchOptionsForInput(inputs, StoreModel, "storeId", "storeName"),
   ])
 
   form.inputs = inputs;

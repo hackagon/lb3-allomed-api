@@ -18,6 +18,10 @@ module.exports = (Form) => {
         await modifyPostProductForm(form)
         break;
 
+      // case 'createStore':
+      //   await modifyPostStoreForm(form)
+      //   break;
+
       default:
         const inputs = await form.inputs.find({ order: "displayIndex ASC" });
         await fetchOptions(inputs);
@@ -55,7 +59,6 @@ fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
     }
   })
   if (inputIndex > -1) inputs[inputIndex].__data.options = options;
-  console.log("run")
 }
 
 /**
@@ -79,8 +82,10 @@ modifyPostActiveIngredientForm = async (form) => {
       })
   }
 
-  await fetchOptionsForInput(inputs, CategoryModel, "categories", "categoryName");
-  await fetchOptionsForInput(inputs, TherapyModel, "therapies", "therapyName");
+  await Promise.all([
+    fetchOptionsForInput(inputs, CategoryModel, "categories", "categoryName"),
+    fetchOptionsForInput(inputs, TherapyModel, "therapies", "therapyName")
+  ])
 
   form.__data.inputs = inputs;
 }
@@ -126,7 +131,6 @@ modifyPostProductForm = async (form) => {
       })
   }
 
-
   await Promise.all([
     fetchOptionsForInput(inputs, ActiveIngredientModel, "activeIngredients", "activeIngredientName"),
     fetchOptionsForInput(inputs, CategoryLabelModel, "categoryLabelId", "categoryLabelName"),
@@ -153,3 +157,31 @@ modifyPostProductForm = async (form) => {
 
   form.__data.inputs = inputs;
 }
+
+
+/**
+ * @param form form which should be modified
+ */
+// modifyPostStoreForm = async (form) => {
+//   const StoreModel = app.models.Store;
+
+//   let inputs = await form.inputs.find({ order: "displayIndex ASC" });
+
+//   for (let i = 0; i < inputs.length; i++) {
+//     const inp = inputs[i];
+//     if (inp.type === "text") continue;
+
+//     inp.options.find()
+//       .then(options => {
+//         if (!_.isEmpty(options)) {
+//           inp.__data.options = options;
+//         }
+//       })
+//   }
+
+//   await Promise.all([
+//     fetchOptionsForInput(inputs, StoreModel, "store", "storeName"),
+//   ])
+
+//   form.__data.inputs = inputs;
+// }

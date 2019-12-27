@@ -26,5 +26,6 @@ module.exports = {
 
 
   // Store
-  postStore: require('./store/post.store.form.json')
+  postStore: require('./store/post.store.form.json'),
+  postInventoryHeader: require('./store/post.inventoryHeader.form.json')
 }
