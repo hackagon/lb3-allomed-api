@@ -385,14 +385,14 @@
         "nullable": "Y"
       }
     },
-    "registionNumberNew": {
+    "newRegistrationNumber": {
       "type": "String",
       "required": false,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "registion_number_new",
+        "columnName": "new_registration_number",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
