@@ -1,4 +1,4 @@
-const postForms = require('../../common/data/forms');
+const postForms = require('../../common/data/actionForms');
 const _ = require('lodash');
 const app = require('../server');
 

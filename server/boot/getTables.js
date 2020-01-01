@@ -1,4 +1,4 @@
-const tables = require('../../common/data/tables');
+const tables = require('../../common/data/detailForms');
 const _ = require('lodash');
 
 module.exports = (server) => {
