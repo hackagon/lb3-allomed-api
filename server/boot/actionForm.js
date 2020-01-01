@@ -8,7 +8,7 @@ module.exports = (server) => {
 
   _.keys(actionForms).forEach(key => {
     const form = actionForms[key];
-    router.get(`${restApiRoot}/action/${form.name}`, async (req, res) => {
+    router.get(`${restApiRoot}/uiforms/action/${form.name}`, async (req, res) => {
       switch (form.name) {
         case "createProduct":
           await modifyPostProductForm(form)

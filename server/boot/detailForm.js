@@ -7,7 +7,7 @@ module.exports = (server) => {
 
   _.keys(forms).forEach(key => {
     const form = forms[key];
-    router.get(`${restApiRoot}/uiforms/list/${form.name}`, (req, res) => res.json(form))
+    router.get(`${restApiRoot}/uiforms/detail/${form.name}`, (req, res) => res.json(form))
   });
 
   server.use(router);
