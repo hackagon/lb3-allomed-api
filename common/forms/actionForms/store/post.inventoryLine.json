@@ -1,0 +1,110 @@
+{
+  "method": "POST",
+  "name": "inventoryLine",
+  "displayEnglishName": "",
+  "displayVietnameseName": "Thêm dòng",
+  "description": "",
+  "inputs": [
+    {
+      "name": "inventoryHeaderId",
+      "type": "hidden",
+      "displayEnglishName": "",
+      "displayVietnameseName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "productId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Sản phẩm",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn sản phẩm",
+      "options": []
+    },
+    {
+      "name": "lotNumber",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số lô",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập số lô"
+    },
+    {
+      "name": "manufactureDate",
+      "type": "date",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày sản xuất",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn ngày sản xuất"
+    },
+    {
+      "name": "expirationDate",
+      "type": "date",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày hết hạn",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn ngày hết hạn"
+    },
+    {
+      "name": "isPromotion",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Có khuyến mãi",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Có khuyến mãi?",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    },
+    {
+      "name": "isSponsor",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Có tài trợ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Có tài trợ?",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    },
+    {
+      "name": "discountRate",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tỷ lệ giảm giá",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập tỷ lệ giảm giá"
+    },
+    {
+      "name": "discountAmount",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số tiền giảm",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập số tiền giảm"
+    },
+    {
+      "name": "vat",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuế VAT",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập thuế VAT"
+    }
+  ]
+}

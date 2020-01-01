@@ -22,6 +22,10 @@ module.exports = (server) => {
           await modifyPostInventoryHeaderForm(form)
           break;
 
+        case "inventoryLine":
+          await modifyPostInventoryLineForm(form)
+          break;
+
         default:
           break;
       }
@@ -128,6 +132,19 @@ const modifyPostInventoryHeaderForm = async (form) => {
   await Promise.all([
     // fetchOptionsForInput(inputs, StoreModel, "storeId", "storeName"),
     fetchOptionsForInput(inputs, EnterpriseModel, "supplyEnterpriseId", "enterpriseName"),
+  ])
+
+  form.inputs = inputs;
+}
+
+const modifyPostInventoryLineForm = async (form) => {
+  const ProductModel = app.models.Product;
+
+  const inputs = form.inputs;
+
+  await Promise.all([
+    // fetchOptionsForInput(inputs, StoreModel, "storeId", "storeName"),
+    fetchOptionsForInput(inputs, ProductModel, "productId", "productName"),
   ])
 
   form.inputs = inputs;
