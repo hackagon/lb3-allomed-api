@@ -7,7 +7,6 @@ module.exports = (server) => {
 
   _.keys(tables).forEach(key => {
     const table = tables[key];
-    console.log(`${restApiRoot}/tables/${table.name}`)
     router.get(`${restApiRoot}/tables/${table.name}`, (req, res) => res.json(table))
   });
 
