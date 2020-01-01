@@ -1,4 +1,4 @@
-const postForms = require('../../common/data/actionForms');
+const actionForms = require('../../common/forms/actionForms');
 const _ = require('lodash');
 const app = require('../server');
 
@@ -6,9 +6,9 @@ module.exports = (server) => {
   const router = server.loopback.Router();
   const restApiRoot = server.get('restApiRoot');
 
-  _.keys(postForms).forEach(key => {
-    const form = postForms[key];
-    router.get(`${restApiRoot}/postForms/${form.name}`, async (req, res) => {
+  _.keys(actionForms).forEach(key => {
+    const form = actionForms[key];
+    router.get(`${restApiRoot}/action/${form.name}`, async (req, res) => {
       switch (form.name) {
         case "createProduct":
           await modifyPostProductForm(form)
