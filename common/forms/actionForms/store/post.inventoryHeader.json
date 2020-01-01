@@ -1,0 +1,66 @@
+{
+  "method": "POST",
+  "name": "inventoryHeader",
+  "displayEnglishName": "",
+  "displayVietnameseName": "Thêm kho chứa",
+  "description": "",
+  "inputs": [
+    {
+      "name": "storeId",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên kho",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập tên kho"
+    },
+    {
+      "name": "inventoryReceivingVoucher",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số phiếu nhập",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập số phiếu nhập"
+    },
+    {
+      "name": "inventoryDeliveryVoucher",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số phiếu xuất",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập số phiếu xuất"
+    },
+    {
+      "name": "invoiceNumber",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số hóa đơn",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập số hóa đơn"
+    },
+    {
+      "name": "inventoryDate",
+      "type": "date",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày nhập",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập Ngày nhập"
+    },
+    {
+      "name": "documentDate",
+      "type": "date",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày chứng từ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập Ngày chứng từ"
+    },
+    {
+      "name": "supplyEnterpriseId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhà cung cấp",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn nhà cung cấp",
+      "options": []
+    }
+  ]
+}

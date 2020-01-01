@@ -1,0 +1,24 @@
+{
+  "name": "inventory",
+  "displayVietnameseName": "Danh sách phiéu",
+  "displayEnglishName": "",
+  "headers": [
+    {
+      "name": "invoiceNumber",
+      "displayVietnameseName": "Số hóa đơn",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "inventoryDate",
+      "displayVietnameseName": "Ngày nhập kho",
+      "displayEnglishName": ""
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm phiếu",
+      "displayEnglishName": ""
+    }
+  ]
+}
