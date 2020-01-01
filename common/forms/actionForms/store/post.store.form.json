@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createStore",
+  "name": "store",
   "displayEnglishName": "",
   "displayVietnameseName": "Thêm kho chứa",
   "description": "",

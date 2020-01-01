@@ -49,8 +49,7 @@ fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
       displayVietnameseName: inst[displayName]
     }
   })
-  if (inputIndex > -1) inputs[inputIndex].options =
-    options;
+  if (inputIndex > -1) inputs[inputIndex].options = options;
 }
 
 const modifyPostActiveIngredientForm = async (form) => {
