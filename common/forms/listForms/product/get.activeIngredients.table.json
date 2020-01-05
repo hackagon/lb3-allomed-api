@@ -1,0 +1,24 @@
+{
+  "name": "activeIngredients",
+  "displayVietnameseName": "Danh sách hoạt chất",
+  "displayEnglishName": "List of Active ingredients",
+  "headers": [
+    {
+      "name": "activeIngredientCode",
+      "displayVietnameseName": "Mã hoạt chất",
+      "displayEnglishName": "Active ingredient code"
+    },
+    {
+      "name": "activeIngredientName",
+      "displayVietnameseName": "Tên hoạt chất",
+      "displayEnglishName": "Active ingredient name"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm hoạt chất",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "colors",
+  "displayVietnameseName": "Danh sách màu sắc",
+  "displayEnglishName": "List of colors",
+  "headers": [
+    {
+      "name": "colorName",
+      "displayVietnameseName": "Tên màu sắc",
+      "displayEnglishName": "colorName"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm màu sắc",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

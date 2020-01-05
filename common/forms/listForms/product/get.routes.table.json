@@ -1,0 +1,19 @@
+{
+  "name": "routes",
+  "displayVietnameseName": "Danh sách đường dùng thuốc",
+  "displayEnglishName": "List of routes",
+  "headers": [
+    {
+      "name": "routeName",
+      "displayVietnameseName": "Tên đường dùng thuốc",
+      "displayEnglishName": "routeName"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm đường dùng thuốc",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

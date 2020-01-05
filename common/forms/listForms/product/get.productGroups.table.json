@@ -1,0 +1,24 @@
+{
+  "name": "productGroups",
+  "displayVietnameseName": "Danh sách nhóm sản phẩm",
+  "displayEnglishName": "List of product products",
+  "headers": [
+    {
+      "name": "productGroupName",
+      "displayVietnameseName": "Tên nhóm sản phẩm",
+      "displayEnglishName": "Product group"
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Đã kích hoạt?",
+      "displayEnglishName": "Is active?"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm nhóm sản phẩm",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

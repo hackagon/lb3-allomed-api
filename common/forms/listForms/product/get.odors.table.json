@@ -1,0 +1,19 @@
+{
+  "name": "odors",
+  "displayVietnameseName": "Danh sách mùi hương",
+  "displayEnglishName": "List of odors",
+  "headers": [
+    {
+      "name": "odorName",
+      "displayVietnameseName": "Tên mùi hương",
+      "displayEnglishName": "odorName"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm mùi hương",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

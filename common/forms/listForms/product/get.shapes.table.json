@@ -1,0 +1,29 @@
+{
+  "name": "shapes",
+  "displayVietnameseName": "Danh sách hình dạng thuốc",
+  "displayEnglishName": "List of shapes",
+  "headers": [
+    {
+      "name": "shapeName",
+      "displayVietnameseName": "Tên hình dạng thuốc",
+      "displayEnglishName": "shapeName"
+    },
+    {
+      "name": "splTerm",
+      "displayVietnameseName": "Thuật ngữ SPL",
+      "displayEnglishName": "SPL term"
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Được kích hoạt?",
+      "displayEnglishName": "Is active?"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm hình dạng thuốc",
+      "displayEnglishName": "Add new shape"
+    }
+  ]
+}

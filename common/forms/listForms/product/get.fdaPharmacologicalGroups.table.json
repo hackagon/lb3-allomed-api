@@ -1,0 +1,19 @@
+{
+  "name": "fdaPharmacologicalGroups",
+  "displayVietnameseName": "Danh sách nhóm dược lý theo FDA",
+  "displayEnglishName": "List of fda pharmacological groups",
+  "headers": [
+    {
+      "name": "groupName",
+      "displayVietnameseName": "Tên nhóm",
+      "displayEnglishName": "Group name"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm nhóm",
+      "displayEnglishName": "Add new chemical structure"
+    }
+  ]
+}

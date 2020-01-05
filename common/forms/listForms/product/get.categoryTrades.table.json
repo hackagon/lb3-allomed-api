@@ -1,0 +1,24 @@
+{
+  "name": "categoryTrades",
+  "displayVietnameseName": "Danh sách danh mục thương mại",
+  "displayEnglishName": "List of categoryTrades",
+  "headers": [
+    {
+      "name": "categoryTradeName",
+      "displayVietnameseName": "Tên danh mục thương mại",
+      "displayEnglishName": "categoryTradeName"
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Được kích hoạt?",
+      "displayEnglishName": "Is active?"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm danh mục thương mại",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

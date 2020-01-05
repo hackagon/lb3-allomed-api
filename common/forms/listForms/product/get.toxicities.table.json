@@ -1,0 +1,24 @@
+{
+  "name": "toxicities",
+  "displayVietnameseName": "Danh sách độc chất",
+  "displayEnglishName": "List of toxicities",
+  "headers": [
+    {
+      "name": "toxicityName",
+      "displayVietnameseName": "Tên độc chất",
+      "displayEnglishName": "toxicityName"
+    },
+    {
+      "name": "notes",
+      "displayVietnameseName": "Ghi chú",
+      "displayEnglishName": "notes"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm độc chất",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

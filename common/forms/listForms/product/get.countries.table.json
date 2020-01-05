@@ -1,0 +1,19 @@
+{
+  "name": "countries",
+  "displayVietnameseName": "Danh sách quốc gia",
+  "displayEnglishName": "List of countries",
+  "headers": [
+    {
+      "name": "countryName",
+      "displayVietnameseName": "Tên quốc gia",
+      "displayEnglishName": "countryName"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm quốc gia",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

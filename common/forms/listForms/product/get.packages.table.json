@@ -1,0 +1,19 @@
+{
+  "name": "packages",
+  "displayVietnameseName": "Danh sách quy cách đóng gói",
+  "displayEnglishName": "List of packages",
+  "headers": [
+    {
+      "name": "packageName",
+      "displayVietnameseName": "Tên quy cách đóng gói",
+      "displayEnglishName": "packageName"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm quy cách đóng gói",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

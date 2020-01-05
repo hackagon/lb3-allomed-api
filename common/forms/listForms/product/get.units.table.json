@@ -1,0 +1,29 @@
+{
+  "name": "units",
+  "displayVietnameseName": "Danh sách đơn vị",
+  "displayEnglishName": "List of units",
+  "headers": [
+    {
+      "name": "unitName",
+      "displayVietnameseName": "Tên đơn vị",
+      "displayEnglishName": "unitName"
+    },
+    {
+      "name": "notes",
+      "displayVietnameseName": "Ghi chú",
+      "displayEnglishName": "notes"
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Đã kích hoạt?",
+      "displayEnglishName": "Is active?"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm đơn vị",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

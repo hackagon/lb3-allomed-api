@@ -1,0 +1,19 @@
+{
+  "name": "characteristics",
+  "displayVietnameseName": "Danh sách đặc trưng",
+  "displayEnglishName": "List of characteristics",
+  "headers": [
+    {
+      "name": "characteristicName",
+      "displayVietnameseName": "Tên đặc trưng",
+      "displayEnglishName": "characteristicName"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm đặc trưng",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

@@ -189,14 +189,14 @@
         "nullable": "N"
       }
     },
-    "quantityExchange": {
+    "exchangeQuantiry": {
       "type": "Number",
       "required": false,
       "length": null,
       "precision": 11,
       "scale": 0,
       "mysql": {
-        "columnName": "quantity_exchange",
+        "columnName": "exchange_quantity",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 11,
@@ -204,14 +204,14 @@
         "nullable": "Y"
       }
     },
-    "quantityInvoice": {
+    "invoiceQuantity": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": 11,
       "scale": 0,
       "mysql": {
-        "columnName": "quantity_invoice",
+        "columnName": "invoice_quantity",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 11,
@@ -219,14 +219,14 @@
         "nullable": "N"
       }
     },
-    "unitPriceExchange": {
+    "exchangeUnitPrice": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": 11,
       "scale": 0,
       "mysql": {
-        "columnName": "unit_price_exchange",
+        "columnName": "exchange_unit_price",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 11,
@@ -234,14 +234,14 @@
         "nullable": "N"
       }
     },
-    "unitPriceInvoice": {
+    "invoiceUnitPrice": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": 11,
       "scale": 0,
       "mysql": {
-        "columnName": "unit_price_invoice",
+        "columnName": "invoice_unit_price",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 11,

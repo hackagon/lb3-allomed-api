@@ -1,0 +1,19 @@
+{
+  "name": "therapies",
+  "displayVietnameseName": "Danh sách liệu pháp điều trị",
+  "displayEnglishName": "List of therapies",
+  "headers": [
+    {
+      "name": "therapyName",
+      "displayVietnameseName": "Tên liệu pháp điều trị",
+      "displayEnglishName": "therapyName"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm liệu pháp điều trị",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "pharmacologicalImpacts",
+  "displayVietnameseName": "Danh sách yếu tố ảnh hưởng",
+  "displayEnglishName": "List of pharmacologicalImpacts",
+  "headers": [
+    {
+      "name": "pharmacologicalImpact",
+      "displayVietnameseName": "Tên yếu tố ảnh hưởng",
+      "displayEnglishName": "pharmacologicalMechanism"
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm yếu tố ảnh hưởng",
+      "displayEnglishName": "Add new active ingredient"
+    }
+  ]
+}
