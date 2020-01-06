@@ -26,5 +26,6 @@ module.exports = {
 
   // store
   store: require('./store/list.store.json'),
-  inventory: require('./store/list.inventory.json')
+  inventory: require('./store/list.inventory.json'),
+  conversion: require('./store/list.conversion.json')
 }
