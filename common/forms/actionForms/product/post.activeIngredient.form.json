@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createActiveIngredient",
+  "name": "activeIngredient",
   "displayEnglishName": "Create active ingredient",
   "displayVietnameseName": "Thêm hoạt chất",
   "description": "Form thêm mới hoạt chât",

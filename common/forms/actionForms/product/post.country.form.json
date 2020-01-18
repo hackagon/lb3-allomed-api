@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createCountry",
+  "name": "country",
   "displayEnglishName": "Create Country",
   "displayVietnameseName": "Thêm quốc gia",
   "description": "Form thêm mới quốc gia",

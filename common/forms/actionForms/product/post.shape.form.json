@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createShape",
+  "name": "shape",
   "displayEnglishName": "Create shape",
   "displayVietnameseName": "Thêm hình dạng",
   "description": "Form thêm mới hình dạng",

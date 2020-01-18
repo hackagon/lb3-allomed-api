@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createotherCharacteristic",
+  "name": "otherCharacteristic",
   "displayEnglishName": "Create other characteristic",
   "displayVietnameseName": "Thêm dặc trưng khác",
   "description": "Form thêm mới dặc trưng khác",

@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createFdaPharmacologicalGroup",
+  "name": "fdaPharmacologicalGroup",
   "displayEnglishName": "Create FDA Pharmacological Group",
   "displayVietnameseName": "Thêm phân nhóm dược lý theo FDA",
   "description": "Form thêm mới phân nhóm dược lý theo FDA",

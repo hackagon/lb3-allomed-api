@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createTherapy",
+  "name": "therapy",
   "displayEnglishName": "Create therapy",
   "displayVietnameseName": "Thêm nhóm trị liệu",
   "description": "Form thêm mới nhóm trị liệu",

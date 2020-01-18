@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createRoute",
+  "name": "route",
   "displayEnglishName": "Create route",
   "displayVietnameseName": "Thêm đường dùng",
   "description": "Form thêm mới đường dùng",

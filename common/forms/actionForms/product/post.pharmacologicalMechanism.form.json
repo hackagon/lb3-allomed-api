@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createPharmacologicalMechanism",
+  "name": "pharmacologicalMechanism",
   "displayEnglishName": "Create PharmacologicalMechanism",
   "displayVietnameseName": "Thêm cơ chế",
   "description": "Form thêm mới cơ chế",

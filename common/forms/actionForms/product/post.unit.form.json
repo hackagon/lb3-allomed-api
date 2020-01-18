@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createUnit",
+  "name": "unit",
   "displayEnglishName": "Create unit",
   "displayVietnameseName": "Thêm đơn vị tính",
   "description": "Form thêm mới đơn vị tính",

@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "createToxicity",
+  "name": "toxicity",
   "displayEnglishName": "Create toxicity",
   "displayVietnameseName": "Thêm đơn độc chất",
   "description": "Form thêm mới đơn độc chất",
