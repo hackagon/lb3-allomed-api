@@ -1,6 +1,6 @@
 {
   "name": "fdaPharmacologicalGroup",
-  "displayVietnameseName": "Danh sách nhóm dược lý theo FDA",
+  "displayVietnameseName": "Chi tiết nhóm dược lý theo FDA",
   "displayEnglishName": "List of fda pharmacological groups",
   "headers": [
     {
