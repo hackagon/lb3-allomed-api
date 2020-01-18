@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên quy cách đóng gói",
       "displayEnglishName": "packageName"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm quy cách đóng gói",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }

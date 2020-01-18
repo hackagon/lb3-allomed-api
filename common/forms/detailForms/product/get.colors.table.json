@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên màu sắc",
       "displayEnglishName": "colorName"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm màu sắc",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }

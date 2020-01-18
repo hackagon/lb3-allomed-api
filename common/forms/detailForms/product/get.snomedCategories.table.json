@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên nhóm",
       "displayEnglishName": "Snomed category"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm nhóm",
-      "displayEnglishName": "Add new chemical structure"
-    }
   ]
 }

@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên cơ chế",
       "displayEnglishName": "pharmacologicalMechanism"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm cơ chế",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }

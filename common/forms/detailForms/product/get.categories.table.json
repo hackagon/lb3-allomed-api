@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên phân nhóm",
       "displayEnglishName": "categoryName"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm phân nhóm hoạt chất",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }

@@ -13,12 +13,5 @@
       "displayVietnameseName": "Đã kích hoạt?",
       "displayEnglishName": "Is active?"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm mục đích sử dụng",
-      "displayEnglishName": "Add new use"
-    }
   ]
 }

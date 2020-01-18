@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên cấu trúc hóa học",
       "displayEnglishName": "chemicalStructure"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm cấu trúc hóa học",
-      "displayEnglishName": "Add new chemical structure"
-    }
   ]
 }

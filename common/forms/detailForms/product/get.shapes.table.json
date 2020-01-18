@@ -18,12 +18,5 @@
       "displayVietnameseName": "Được kích hoạt?",
       "displayEnglishName": "Is active?"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm hình dạng thuốc",
-      "displayEnglishName": "Add new shape"
-    }
   ]
 }

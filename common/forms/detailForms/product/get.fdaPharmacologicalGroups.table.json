@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên nhóm",
       "displayEnglishName": "Group name"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm nhóm",
-      "displayEnglishName": "Add new chemical structure"
-    }
   ]
 }

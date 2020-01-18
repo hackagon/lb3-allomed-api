@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên phân loại nhãn",
       "displayEnglishName": "Category label name"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm phân loại nhãn sản phảm",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }

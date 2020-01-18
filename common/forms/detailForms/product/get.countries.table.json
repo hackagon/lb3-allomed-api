@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên quốc gia",
       "displayEnglishName": "countryName"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm quốc gia",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }

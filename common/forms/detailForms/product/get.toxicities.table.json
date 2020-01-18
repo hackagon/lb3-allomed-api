@@ -13,12 +13,5 @@
       "displayVietnameseName": "Ghi chú",
       "displayEnglishName": "notes"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm độc chất",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }

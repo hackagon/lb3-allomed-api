@@ -18,12 +18,5 @@
       "displayVietnameseName": "Đã kích hoạt?",
       "displayEnglishName": "Is active?"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm đơn vị",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }

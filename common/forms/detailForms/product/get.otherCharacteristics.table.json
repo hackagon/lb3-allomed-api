@@ -8,12 +8,5 @@
       "displayVietnameseName": "Tên đặc trưng",
       "displayEnglishName": "Characteristic"
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm đặc trưng khác",
-      "displayEnglishName": "Add new active ingredient"
-    }
   ]
 }
