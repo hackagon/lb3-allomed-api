@@ -1,5 +1,5 @@
 {
-  "name": "snomedCategories",
+  "name": "snomedCategory",
   "displayVietnameseName": "Danh sách phân nhóm bệnh theo SNOMED",
   "displayEnglishName": "List of snomed categories",
   "headers": [
