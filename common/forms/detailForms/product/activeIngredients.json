@@ -1,0 +1,157 @@
+{
+  "name": "activeIngredient",
+  "displayVietnameseName": "Chi tiết hoạt chất",
+  "displayEnglishName": "List of Active ingredients",
+  "headers": [
+    {
+      "name": "activeIngredientCode",
+      "displayVietnameseName": "Mã hoạt chất",
+      "displayEnglishName": "Active ingredient code"
+    },
+    {
+      "name": "activeIngredientName",
+      "displayVietnameseName": "Tên hoạt chất",
+      "displayEnglishName": "Active ingredient name"
+    },
+    {
+      "name": "activeIngredientOtherName",
+      "displayVietnameseName": "Tên hoạt chất khác",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "atcCode",
+      "displayVietnameseName": "Mã ATC",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "uniiCode",
+      "displayVietnameseName": "Mã UNII",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "producerId",
+      "displayVietnameseName": "Producer Id",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "supplierId",
+      "displayVietnameseName": "Supplier Id",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "fdaCategoryId",
+      "displayVietnameseName": "FdaCategory Id",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "firstPregnancy",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "",
+      "displayVietnameseName": "",
+      "displayEnglishName": ""
+    }
+  ]
+}
