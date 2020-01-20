@@ -13,12 +13,5 @@
       "displayVietnameseName": "Ngày nhập kho",
       "displayEnglishName": ""
     }
-  ],
-  "actions": [
-    {
-      "name": "documentDate",
-      "displayVietnameseName": "Ngày chứng từ",
-      "displayEnglishName": ""
-    }
   ]
 }

@@ -13,12 +13,5 @@
       "displayVietnameseName": "Tên kho",
       "displayEnglishName": ""
     }
-  ],
-  "actions": [
-    {
-      "name": "create",
-      "displayVietnameseName": "Thêm kho",
-      "displayEnglishName": ""
-    }
   ]
 }

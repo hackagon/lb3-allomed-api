@@ -1,157 +1,409 @@
 {
+  "method": "GET",
   "name": "activeIngredient",
+  "displayEnglishName": "Active ingredient",
   "displayVietnameseName": "Chi tiết hoạt chất",
-  "displayEnglishName": "List of Active ingredients",
-  "headers": [
-    {
-      "name": "activeIngredientCode",
-      "displayVietnameseName": "Mã hoạt chất",
-      "displayEnglishName": "Active ingredient code"
-    },
+  "description": "Form thêm mới hoạt chât",
+  "inputs": [
     {
       "name": "activeIngredientName",
+      "type": "text",
+      "displayEnglishName": "Active ingredient name",
       "displayVietnameseName": "Tên hoạt chất",
-      "displayEnglishName": "Active ingredient name"
+      "englishPlaceholder": "Enter active ingredient name",
+      "vietnamesePlaceholder": "Nhập tên hoạt chất"
+    },
+    {
+      "name": "activeIngredientCode",
+      "type": "text",
+      "displayEnglishName": "Active ingredient code",
+      "displayVietnameseName": "Mã hoạt chất",
+      "englishPlaceholder": "Enter active ingredient code",
+      "vietnamesePlaceholder": "Nhập mã hoạt chất"
     },
     {
       "name": "activeIngredientOtherName",
+      "type": "text",
+      "displayEnglishName": "aksdnaksj",
       "displayVietnameseName": "Tên hoạt chất khác",
-      "displayEnglishName": ""
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập tên hoạt chất khác"
+    },
+    {
+      "name": "adr",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "ADR",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập ADR"
+    },
+    {
+      "name": "advisory",
+      "type": "textarea",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tư vấn",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập tư vấn"
+    },
+    {
+      "name": "alcoholInteraction",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương tác rựou",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tương tác rựou"
     },
     {
       "name": "atcCode",
+      "type": "text",
+      "displayEnglishName": "",
       "displayVietnameseName": "Mã ATC",
-      "displayEnglishName": ""
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Mã ATC"
     },
     {
-      "name": "uniiCode",
-      "displayVietnameseName": "Mã UNII",
-      "displayEnglishName": ""
+      "name": "breastfeed",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Cho con bướu",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Cho con bướu",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
     },
     {
-      "name": "producerId",
-      "displayVietnameseName": "Producer Id",
-      "displayEnglishName": ""
+      "name": "careful",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Cẩn trọng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Cẩn trọng"
     },
     {
-      "name": "supplierId",
-      "displayVietnameseName": "Supplier Id",
-      "displayEnglishName": ""
+      "name": "cigaretteInteraction",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương tác thuốc lá",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tương tác thuốc lá"
+    },
+    {
+      "name": "clinicalApplication",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ứng dụng lâm sàng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ứng dụng lâm sàng"
+    },
+    {
+      "name": "clinicalApplication",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ứng dụng lâm sàng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ứng dụng lâm sàng"
+    },
+    {
+      "name": "comparison",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "So sánh",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "So sánh"
+    },
+    {
+      "name": "condition",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Điều kiện",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Điều kiện"
+    },
+    {
+      "name": "confused",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhầm lẫn",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhầm lẫn"
+    },
+    {
+      "name": "contraindicated",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Chống chỉ định",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chống chỉ định"
+    },
+    {
+      "name": "dosage",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Hàm lượng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Hàm lượng"
+    },
+    {
+      "name": "experiences",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Kinh nghiệm",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Kinh nghiệm"
     },
     {
       "name": "fdaCategoryId",
-      "displayVietnameseName": "FdaCategory Id",
-      "displayEnglishName": ""
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "ID phân loại theo FDA",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "ID phân loại theo FDA"
     },
     {
       "name": "firstPregnancy",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ba tháng đầu chu kỳ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ba tháng đầu chu kỳ"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "foodInteraction",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương tác thức ăn",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tương tác thức ăn"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "hemicalProperties",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tính chất hóa học",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tính chất hóa học"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "infoOther",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thông tin khác",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Thông tin khác"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "interaction",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương tác thuốc",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tương tác thuốc"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "isChild",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Dùng được cho trẻ em",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Dùng được cho trẻ em",
+      "options": [
+        {
+          "displayEnglishName": "Có",
+          "displayVietnameseName": "Yes"
+        },
+        {
+          "displayEnglishName": "Không",
+          "displayVietnameseName": "No"
+        }
+      ]
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "isPregnancy",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Dùng được cho PNMT",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Dùng được cho PNMT",
+      "options": [
+        {
+          "displayEnglishName": "Có",
+          "displayVietnameseName": "Yes"
+        },
+        {
+          "displayEnglishName": "Không",
+          "displayVietnameseName": "No"
+        }
+      ]
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "kidneyFailure",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Suy thận",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Suy thận"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "labInteraction",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương tác lab",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tương tác lab"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "lastPregnancy",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ba tháng cuối chu kỳ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ba tháng cuối chu kỳ"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "liverFailure",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Suy gan",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Suy gan"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "midPregnancy",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ba tháng giữa chu kỳ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ba tháng giữa chu kỳ"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "otherObject",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đối tượng khác",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Đối tượng khác"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "pharmacodynamic",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Dược lý học",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Dược lý học"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "pharmacokinetic",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Dược động học",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Dược động học"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "otherObject",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đối tượng khác",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Đối tượng khác"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "producerId",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhà sản xuất",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhà sản xuất"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "references",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tài liệu tham khảo",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Tài liệu tham khảo"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "routeOfUse",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đường sử dụng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Đường sử dụng"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "supplierId",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhà cung cấp",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhà cung cấp"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "otherObject",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đối tượng khác",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Đối tượng khác"
     },
     {
-      "name": "",
-      "displayVietnameseName": "",
-      "displayEnglishName": ""
+      "name": "toxicity",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Độc chất",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Độc chất"
+    },
+    {
+      "name": "tracking",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Theo dõi",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Theo dõi"
+    },
+    {
+      "name": "uniiCode",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mã UNII",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Mã UNII"
+    },
+    {
+      "name": "usage",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Sử dụng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Sử dụng"
+    },
+    {
+      "name": "categories",
+      "type": "multiplechoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Phân loại",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Phân loại",
+      "options": []
+    },
+    {
+      "name": "therapies",
+      "type": "multiplechoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Liệu pháp điều trị",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Liệu pháp điều trị",
+      "options": []
     }
   ]
 }
