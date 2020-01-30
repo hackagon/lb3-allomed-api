@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "productGroup",
+  "name": "productGroups",
   "displayEnglishName": "Create productGroup",
   "displayVietnameseName": "Thêm nhóm sản phẩm",
   "description": "Form thêm mới nhóm sản phẩm",

@@ -1,7 +1,7 @@
 {
   "method": "POST",
   "name": "odor",
-  "displayEnglishName": "Create odor",
+  "displayEnglishName": "Create odors",
   "displayVietnameseName": "Thêm mùi hương",
   "description": "Form thêm mới mùi hương",
   "inputs": [

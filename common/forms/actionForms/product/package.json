@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "package",
+  "name": "packages",
   "displayEnglishName": "Create Package",
   "displayVietnameseName": "Thêm quy cách đóng gói",
   "description": "Form thêm mới quy cách đóng gói",

@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "category",
+  "name": "categories",
   "displayEnglishName": "Create category",
   "displayVietnameseName": "Thêm phân nhóm",
   "description": "Form thêm mới phân nhóm",

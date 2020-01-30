@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "use",
+  "name": "uses",
   "displayEnglishName": "Create Use",
   "displayVietnameseName": "Thêm mục đích sử dụng",
   "description": "Form thêm mới mục đích sử dụng",

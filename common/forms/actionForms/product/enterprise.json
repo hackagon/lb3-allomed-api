@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "enterprise",
+  "name": "enterprises",
   "displayEnglishName": "Create Enterprise",
   "displayVietnameseName": "Thêm doanh nghiệp",
   "description": "Form thêm mới doanh nghiệp",

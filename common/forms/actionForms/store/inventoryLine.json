@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "inventoryLine",
+  "name": "inventoryLines",
   "displayEnglishName": "",
   "displayVietnameseName": "Thêm dòng",
   "description": "",

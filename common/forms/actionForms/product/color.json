@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "color",
+  "name": "colors",
   "displayEnglishName": "Create color",
   "displayVietnameseName": "Thêm màu sắc",
   "description": "Form thêm mới màu sắc",

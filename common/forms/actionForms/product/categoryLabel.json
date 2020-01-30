@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "categoryLabel",
+  "name": "categoryLabels",
   "displayEnglishName": "Create category label",
   "displayVietnameseName": "Thêm phân loại nhãn",
   "description": "Form thêm mới phân loại nhãn",

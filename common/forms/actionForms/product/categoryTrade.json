@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "categoryTrade",
+  "name": "categoryTrades",
   "displayEnglishName": "Create category trade",
   "displayVietnameseName": "Thêm danh mục thương mại",
   "description": "Form thêm mới đường dùng",

@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "chemicalStructure",
+  "name": "chemicalStructures",
   "displayEnglishName": "Create ChemicalStructure",
   "displayVietnameseName": "Thêm cấu trúc hóa học",
   "description": "Form thêm mới cấu trúc hóa học",

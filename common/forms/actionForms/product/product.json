@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "product",
+  "name": "products",
   "displayEnglishName": "Create Product",
   "displayVietnameseName": "Thêm sản phẩm",
   "description": "Form thêm mới sản phẩm",

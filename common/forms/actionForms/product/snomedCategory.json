@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "snomedCategory",
+  "name": "snomedCategories",
   "displayEnglishName": "Create Snomed Category",
   "displayVietnameseName": "Thêm phân nhóm bệnh SNOMED",
   "description": "Form thêm mới nhóm bệnh",

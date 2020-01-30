@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "pharmacologicalImpact",
+  "name": "pharmacologicalImpacts",
   "displayEnglishName": "Create PharmacologicalImpact",
   "displayVietnameseName": "Thêm yếu tố tác động",
   "description": "Form thêm mới yếu tố tác động",
