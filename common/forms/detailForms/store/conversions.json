@@ -1,0 +1,27 @@
+{
+  "name": "conversions",
+  "displayVietnameseName": "Chi tiết quy đổi",
+  "displayEnglishName": "",
+  "headers": [
+    {
+      "name": "conversionName",
+      "displayVietnameseName": "Tên quy cách",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "fromUnitName",
+      "displayVietnameseName": "Tên đơn vị góc",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "toUnitName",
+      "displayVietnameseName": "Tên đơn vị quy đổi",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "quantity",
+      "displayVietnameseName": "Số lượng",
+      "displayEnglishName": ""
+    }
+  ]
+}

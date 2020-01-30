@@ -1,0 +1,43 @@
+{
+  "method": "POST",
+  "name": "conversions",
+  "displayEnglishName": "",
+  "displayVietnameseName": "Thêm quy đổi",
+  "description": "",
+  "inputs": [
+    {
+      "name": "conversionName",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên quy cách",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập tên quy cách"
+    },
+    {
+      "name": "fromUnitName",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Từ đơn vị",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": []
+    },
+    {
+      "name": "toUnitName",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đến đơn vị",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": []
+    },
+    {
+      "name": "quantity",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số lượng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    }
+  ]
+}
