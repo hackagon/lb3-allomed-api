@@ -14,7 +14,7 @@
       "vietnamesePlaceholder": "Nhập tên quy cách"
     },
     {
-      "name": "fromUnitName",
+      "name": "fromUnitId",
       "type": "text",
       "displayEnglishName": "",
       "displayVietnameseName": "Từ đơn vị",
@@ -23,7 +23,7 @@
       "options": []
     },
     {
-      "name": "toUnitName",
+      "name": "toUnitId",
       "type": "text",
       "displayEnglishName": "",
       "displayVietnameseName": "Đến đơn vị",

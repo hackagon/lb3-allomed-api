@@ -10,19 +10,23 @@ module.exports = (server) => {
     const form = actionForms[key];
     router.get(`${restApiRoot}/uiforms/action/${form.name}`, async (req, res) => {
       switch (form.name) {
-        case "createProduct":
+        case "products":
           await modifyPostProductForm(form)
           break;
 
-        case "createActiveIngredient":
+        case "activeIngredients":
           await modifyPostActiveIngredientForm(form)
           break;
 
-        case "inventoryHeader":
+        case "inventoryHeaders":
           await modifyPostInventoryHeaderForm(form)
           break;
 
-        case "inventoryLine":
+        case "conversions":
+          await modifyPostConversionForm(form)
+          break;
+
+        case "inventoryLines":
           await modifyPostInventoryLineForm(form)
           break;
 
@@ -145,6 +149,19 @@ const modifyPostInventoryLineForm = async (form) => {
   await Promise.all([
     // fetchOptionsForInput(inputs, StoreModel, "storeId", "storeName"),
     fetchOptionsForInput(inputs, ProductModel, "productId", "productName"),
+  ])
+
+  form.inputs = inputs;
+}
+
+const modifyPostConversionForm = async (form) => {
+  const ModelUnit = app.models.Unit;
+
+  const inputs = form.inputs;
+
+  await Promise.all([
+    fetchOptionsForInput(inputs, ModelUnit, "fromUnitId", "unitName"),
+    fetchOptionsForInput(inputs, ModelUnit, "toUnitId", "unitName")
   ])
 
   form.inputs = inputs;

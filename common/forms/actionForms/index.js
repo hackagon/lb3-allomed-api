@@ -28,5 +28,6 @@ module.exports = {
   // Store
   postStore: require('./store/store.json'),
   postInventoryHeader: require('./store/inventoryHeader.json'),
-  postInventoryLine: require('./store/inventoryLine.json')
+  postInventoryLine: require('./store/inventoryLine.json'),
+  postConversion: require('./store/conversion.json')
 }
