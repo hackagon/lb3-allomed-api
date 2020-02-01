@@ -22,6 +22,11 @@
       "name": "quantity",
       "displayVietnameseName": "Số lượng",
       "displayEnglishName": ""
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Đã kích hoạt?",
+      "displayEnglishName": ""
     }
   ]
 }

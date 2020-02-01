@@ -42,6 +42,7 @@
       "type": "String",
       "required": true,
       "length": 50,
+      "defaultFn": "uuidv4",
       "precision": null,
       "scale": null,
       "id": 1,
@@ -60,6 +61,7 @@
       "length": null,
       "precision": 1,
       "scale": null,
+      "default": true,
       "mysql": {
         "columnName": "is_active",
         "dataType": "bit",

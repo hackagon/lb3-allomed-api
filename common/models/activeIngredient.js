@@ -31,10 +31,6 @@ module.exports = (ActiveIngredient) => {
     ctx.result = { ...activeIngredient.__data, categories, therapies }
   })
 
-  ActiveIngredient.afterRemote('create', async (ctx) => {
-    console.log('run')
-  })
-
   /**
    * @todo: POST /api/ActiveIngredients --> save activeIngredient record and related record
    */
