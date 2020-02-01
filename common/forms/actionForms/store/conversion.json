@@ -15,7 +15,7 @@
     },
     {
       "name": "fromUnitId",
-      "type": "text",
+      "type": "singleChoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Từ đơn vị",
       "englishPlaceholder": "",
@@ -24,7 +24,7 @@
     },
     {
       "name": "toUnitId",
-      "type": "text",
+      "type": "singleChoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Đến đơn vị",
       "englishPlaceholder": "",
