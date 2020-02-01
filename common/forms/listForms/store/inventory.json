@@ -4,8 +4,23 @@
   "displayEnglishName": "",
   "headers": [
     {
+      "name": "storeName",
+      "displayVietnameseName": "Tên kho",
+      "displayEnglishName": ""
+    },
+    {
       "name": "invoiceNumber",
       "displayVietnameseName": "Số hóa đơn",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "inventoryDate",
+      "displayVietnameseName": "Ngày nhập kho",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "inventoryReceivingVoucher",
+      "displayVietnameseName": "Số phiếu nhập",
       "displayEnglishName": ""
     },
     {

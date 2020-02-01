@@ -24,7 +24,7 @@
     {
       "name": "activeIngredientOtherName",
       "type": "text",
-      "displayEnglishName": "aksdnaksj",
+      "displayEnglishName": "",
       "displayVietnameseName": "Tên hoạt chất khác",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Nhập tên hoạt chất khác"
