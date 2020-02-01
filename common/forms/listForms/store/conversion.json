@@ -32,7 +32,7 @@
   "actions": [
     {
       "name": "create",
-      "displayVietnameseName": "Thêm kho",
+      "displayVietnameseName": "Thêm quy cách",
       "displayEnglishName": ""
     }
   ]
