@@ -70,11 +70,11 @@
     },
     "id": {
       "type": "String",
+      "id": 1,
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
-      "id": 1,
       "mysql": {
         "columnName": "id",
         "dataType": "varchar",
@@ -279,5 +279,15 @@
         "nullable": "Y"
       }
     }
-  }
+  },
+  "validations": [],
+  "relations": {
+    "inventoryHeader": {
+      "type": "belongsTo",
+      "model": "InventoryHeader",
+      "foreignKey": "inventoryHeaderId"
+    }
+  },
+  "acls": [],
+  "methods": {}
 }

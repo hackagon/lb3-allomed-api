@@ -151,6 +151,11 @@
       "type": "belongsTo",
       "model": "Store",
       "foreignKey": "storeId"
+    },
+    "inventoryLines": {
+      "type": "hasMany",
+      "model": "InventoryLine",
+      "foreignKey": "inventoryHeaderId"
     }
   },
   "acls": [],
