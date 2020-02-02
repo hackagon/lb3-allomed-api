@@ -114,14 +114,14 @@
         "nullable": "N"
       }
     },
-    "supplyId": {
+    "supplyEnterpriseId": {
       "type": "String",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "supply_id",
+        "columnName": "supply_enterprise_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,

@@ -27,6 +27,11 @@
       "name": "inventoryDate",
       "displayVietnameseName": "Ngày nhập kho",
       "displayEnglishName": ""
+    },
+    {
+      "name": "supplyEnterpriseName",
+      "displayVietnameseName": "Ngày nhập kho",
+      "displayEnglishName": ""
     }
   ],
   "actions": [
