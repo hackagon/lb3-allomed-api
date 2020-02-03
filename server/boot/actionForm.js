@@ -134,7 +134,7 @@ const modifyPostInventoryHeaderForm = async (form) => {
   const inputs = form.inputs;
 
   await Promise.all([
-    // fetchOptionsForInput(inputs, StoreModel, "storeId", "storeName"),
+    fetchOptionsForInput(inputs, StoreModel, "storeId", "storeName"),
     fetchOptionsForInput(inputs, EnterpriseModel, "supplyEnterpriseId", "enterpriseName"),
   ])
 
