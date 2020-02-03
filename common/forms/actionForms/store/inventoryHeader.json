@@ -7,11 +7,11 @@
   "inputs": [
     {
       "name": "storeId",
-      "type": "text",
+      "type": "singleChoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Tên kho",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhập tên kho"
+      "vietnamesePlaceholder": "Chọn kho"
     },
     {
       "name": "inventoryReceivingVoucher",

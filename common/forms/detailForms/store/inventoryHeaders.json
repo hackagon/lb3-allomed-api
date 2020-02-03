@@ -1,0 +1,42 @@
+{
+  "name": "inventoryHeaders",
+  "displayVietnameseName": "Chi tiết phiéu",
+  "displayEnglishName": "",
+  "headers": [
+    {
+      "name": "storeName",
+      "displayVietnameseName": "Tên kho",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "inventoryReceivingVoucher",
+      "displayVietnameseName": "Số phiếu nhập",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "inventoryDeliveryVoucher",
+      "displayVietnameseName": "Số phiếu xuất",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "invoiceNumber",
+      "displayVietnameseName": "Số hóa đơn",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "inventoryDate",
+      "displayVietnameseName": "Ngày nhập kho",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "documentDate",
+      "displayVietnameseName": "Ngày chứng từ",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "supplyEnterpriseId",
+      "displayVietnameseName": "Nhà cung cấp",
+      "displayEnglishName": ""
+    }
+  ]
+}

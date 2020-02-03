@@ -1,0 +1,52 @@
+{
+  "name": "inventoryLines",
+  "displayVietnameseName": "Chi tiết một dòng phiéu",
+  "displayEnglishName": "",
+  "headers": [
+    {
+      "name": "productName",
+      "displayVietnameseName": "Tên sản phẩm",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "lotNumber",
+      "displayVietnameseName": "Số lô",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "manufactureDate",
+      "displayVietnameseName": "Ngày sản xuất",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "expirationDate",
+      "displayVietnameseName": "Ngày hết hạn",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "isPromotion",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Có khuyến mãi"
+    },
+    {
+      "name": "isSponsor",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Có tài trợ"
+    },
+    {
+      "name": "discountRate",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tỷ lệ giảm giá"
+    },
+    {
+      "name": "discountAmount",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số tiền giảm"
+    },
+    {
+      "name": "vat",
+      "displayEnglishName": "",
+      "englishPlaceholder": ""
+    }
+  ]
+}
