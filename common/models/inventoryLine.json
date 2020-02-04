@@ -84,14 +84,14 @@
         "nullable": "N"
       }
     },
-    "inventoryHeaderId": {
+    "inventoryId": {
       "type": "String",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "inventory_header_id",
+        "columnName": "inventory_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -282,10 +282,10 @@
   },
   "validations": [],
   "relations": {
-    "inventoryHeader": {
+    "inventory": {
       "type": "belongsTo",
-      "model": "InventoryHeader",
-      "foreignKey": "inventoryHeaderId"
+      "model": "Inventory",
+      "foreignKey": "inventoryId"
     }
   },
   "acls": [],

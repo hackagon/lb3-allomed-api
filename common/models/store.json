@@ -58,9 +58,9 @@
   },
   "validations": [],
   "relations": {
-    "inventoryHeaders": {
+    "inventories": {
       "type": "hasMany",
-      "model": "InventoryHeader",
+      "model": "Inventory",
       "foreignKey": "storeId"
     }
   },

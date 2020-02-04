@@ -26,7 +26,7 @@ module.exports = {
 
   // store
   store: require('./store/stores.json'),
-  inventoryHeaders: require('./store/inventoryHeaders.json'),
+  inventories: require('./store/inventories.json'),
   inventoryLines: require('./store/inventoryLines.json'),
   conversion: require('./store/conversions.json')
 }

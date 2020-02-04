@@ -151,7 +151,7 @@
     "dataSource": "allomed",
     "public": true
   },
-  "InventoryHeader": {
+  "Inventory": {
     "dataSource": "allomed",
     "public": true
   },

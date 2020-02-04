@@ -18,8 +18,8 @@ module.exports = (server) => {
           await modifyPostActiveIngredientForm(form)
           break;
 
-        case "inventoryHeaders":
-          await modifyPostInventoryHeaderForm(form)
+        case "inventories":
+          await modifyPostInventoryForm(form)
           break;
 
         case "conversions":
@@ -127,7 +127,7 @@ const modifyPostProductForm = async (form) => {
   form.inputs = inputs;
 }
 
-const modifyPostInventoryHeaderForm = async (form) => {
+const modifyPostInventoryForm = async (form) => {
   const StoreModel = app.models.Store;
   const EnterpriseModel = app.models.Enterprise;
 

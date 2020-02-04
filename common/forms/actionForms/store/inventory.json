@@ -1,6 +1,6 @@
 {
   "method": "POST",
-  "name": "inventoryHeaders",
+  "name": "inventories",
   "displayEnglishName": "",
   "displayVietnameseName": "Thêm phiếu",
   "description": "",

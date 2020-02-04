@@ -6,7 +6,7 @@
   "description": "",
   "inputs": [
     {
-      "name": "inventoryHeaderId",
+      "name": "inventoryId",
       "type": "hidden",
       "displayEnglishName": "",
       "displayVietnameseName": "",

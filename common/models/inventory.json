@@ -1,10 +1,10 @@
 {
-  "name": "InventoryHeader",
+  "name": "Inventory",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "dbpha",
-      "table": "inventory_header"
+      "table": "inventory"
     }
   },
   "properties": {
@@ -155,7 +155,7 @@
     "inventoryLines": {
       "type": "hasMany",
       "model": "InventoryLine",
-      "foreignKey": "inventoryHeaderId"
+      "foreignKey": "inventoryId"
     }
   },
   "acls": [],
