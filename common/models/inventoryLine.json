@@ -13,6 +13,7 @@
       "required": false,
       "length": 50,
       "precision": null,
+      "defaultFn": "uuidv4",
       "scale": null,
       "mysql": {
         "columnName": "conversion_id",
