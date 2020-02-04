@@ -40,12 +40,11 @@
     },
     "id": {
       "type": "String",
-      "id": 1,
       "required": true,
       "length": 50,
-      "defaultFn": "uuidv4",
       "precision": null,
       "scale": null,
+      "id": 1,
       "mysql": {
         "columnName": "id",
         "dataType": "varchar",
@@ -56,12 +55,11 @@
       }
     },
     "isActive": {
-      "type": "Boolean",
+      "type": "Binary",
       "required": true,
       "length": null,
       "precision": 1,
       "scale": null,
-      "default": true,
       "mysql": {
         "columnName": "is_active",
         "dataType": "bit",
@@ -101,9 +99,5 @@
         "nullable": "N"
       }
     }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
+  }
 }

@@ -162,5 +162,9 @@
   "Conversion": {
     "dataSource": "allomed",
     "public": true
+  },
+  "MonthSummary": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

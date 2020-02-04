@@ -31,4 +31,5 @@ const discover = require('./utils');
 // discover('store')
 // discover("inventory")
 // discover("inventory_line")
-discover("conversion")
+// discover("conversion")
+discover("month_summary")
