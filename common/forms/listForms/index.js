@@ -25,7 +25,7 @@ module.exports = {
   shapesTable: require('./product/shapes.json'),
 
   // store
-  store: require('./store/store.json'),
-  inventory: require('./store/inventory.json'),
-  conversion: require('./store/conversion.json')
+  store: require('./store/stores.json'),
+  inventory: require('./store/inventories.json'),
+  conversion: require('./store/conversions.json')
 }

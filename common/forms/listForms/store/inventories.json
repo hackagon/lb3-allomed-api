@@ -1,6 +1,6 @@
 {
   "name": "inventories",
-  "displayVietnameseName": "Danh sách phiéu",
+  "displayVietnameseName": "Danh sách phiếu",
   "displayEnglishName": "",
   "headers": [
     {
@@ -30,7 +30,7 @@
     },
     {
       "name": "supplyEnterpriseName",
-      "displayVietnameseName": "Ngày nhập kho",
+      "displayVietnameseName": "Tên nhà cung cấp",
       "displayEnglishName": ""
     }
   ],
