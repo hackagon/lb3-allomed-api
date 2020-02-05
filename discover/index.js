@@ -32,4 +32,4 @@ const discover = require('./utils');
 // discover("inventory")
 // discover("inventory_line")
 // discover("conversion")
-discover("month_summary")
+// discover("month_summary")
