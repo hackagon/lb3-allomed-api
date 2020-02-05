@@ -73,6 +73,7 @@
       "type": "String",
       "id": 1,
       "required": true,
+      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
@@ -160,21 +161,6 @@
         "nullable": "Y"
       }
     },
-    "pharmacyInventoryId": {
-      "type": "String",
-      "required": true,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "pharmacy_inventory_id",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      }
-    },
     "productId": {
       "type": "String",
       "required": true,
@@ -190,14 +176,14 @@
         "nullable": "N"
       }
     },
-    "exchangeQuantiry": {
+    "converseQuantity": {
       "type": "Number",
       "required": false,
       "length": null,
       "precision": 11,
       "scale": 0,
       "mysql": {
-        "columnName": "exchange_quantity",
+        "columnName": "converse_quantity",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 11,
@@ -220,14 +206,14 @@
         "nullable": "N"
       }
     },
-    "exchangeUnitPrice": {
+    "converseUnitPrice": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": 11,
       "scale": 0,
       "mysql": {
-        "columnName": "exchange_unit_price",
+        "columnName": "converse_unit_price",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 11,
@@ -252,7 +238,6 @@
     },
     "userId": {
       "type": "String",
-      "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
@@ -262,7 +247,7 @@
         "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "vat": {
