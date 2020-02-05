@@ -938,6 +938,11 @@
       "type": "belongsTo",
       "model": "SnomedCategoryGroup",
       "foreignKey": "snomedCategoryGroupId"
+    },
+    "prices": {
+      "type": "hasMany",
+      "model": "Price",
+      "foreignKey": "productId"
     }
   },
   "acls": [],
