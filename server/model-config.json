@@ -166,5 +166,9 @@
   "MonthSummary": {
     "dataSource": "allomed",
     "public": true
+  },
+  "Price": {
+    "dataSource": "allomed",
+    "public": true
   }
 }
