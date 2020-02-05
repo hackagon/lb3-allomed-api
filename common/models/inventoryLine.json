@@ -287,6 +287,11 @@
       "type": "belongsTo",
       "model": "Inventory",
       "foreignKey": "inventoryId"
+    },
+    "conversion": {
+      "type": "belongsTo",
+      "model": "Conversion",
+      "foreignKey": "conversionId"
     }
   },
   "acls": [],

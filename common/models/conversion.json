@@ -40,11 +40,11 @@
     },
     "id": {
       "type": "String",
+      "id": 1,
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
-      "id": 1,
       "mysql": {
         "columnName": "id",
         "dataType": "varchar",
@@ -55,7 +55,7 @@
       }
     },
     "isActive": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": true,
       "length": null,
       "precision": 1,
@@ -99,5 +99,15 @@
         "nullable": "N"
       }
     }
-  }
+  },
+  "validations": [],
+  "relations": {
+    "inventoryLines": {
+      "type": "hasMany",
+      "model": "InventoryLine",
+      "foreignKey": "conversionId"
+    }
+  },
+  "acls": [],
+  "methods": {}
 }

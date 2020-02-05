@@ -26,8 +26,8 @@
     "id": {
       "type": "String",
       "id": 1,
-      "defaultFn": "uuidv4",
       "required": true,
+      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
       "scale": null,
