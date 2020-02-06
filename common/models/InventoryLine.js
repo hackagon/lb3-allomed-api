@@ -2,6 +2,9 @@ const _ = require('lodash');
 const app = require('../../server/server')
 
 module.exports = (ModelInventoryLine) => {
+  /**
+   * @todo    calculate converseQuantity, converseUnitPrice before save
+   */
   ModelInventoryLine.observe("before save", async ctx => {
     const instance__inventory_line = ctx.instance;
     if (instance__inventory_line.__data.conversionId) {
