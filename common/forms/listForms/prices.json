@@ -20,12 +20,12 @@
     },
     {
       "name": "beginDate",
-      "displayVietnameseName": "Bắt đầu",
+      "displayVietnameseName": "Ngày có hiệu lực",
       "displayEnglishName": ""
     },
     {
       "name": "endDate",
-      "displayVietnameseName": "Hết hiệu lực",
+      "displayVietnameseName": "Ngày hết hiệu lực",
       "displayEnglishName": ""
     },
     {

@@ -1,0 +1,67 @@
+{
+  "method": "POST",
+  "name": "prices",
+  "displayEnglishName": "",
+  "displayVietnameseName": "Thêm kho giá tiền",
+  "description": "",
+  "inputs": [
+    {
+      "name": "productId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Sản phẩm",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "conversionId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Quy đổi",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "price",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giá tiền",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "beginDate",
+      "type": "date",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày có hiệu lực",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "endDate",
+      "type": "date",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày hết hiệu lực",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "isActive",
+      "type": "radio",
+      "displayEnglishName": "Is active?",
+      "displayVietnameseName": "Được kích hoạt?",
+      "englishPlaceholder": "Choose",
+      "vietnamesePlaceholder": "Chọn",
+      "options": [
+        {
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có"
+        },
+        {
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không"
+        }
+      ]
+    }
+  ]
+}

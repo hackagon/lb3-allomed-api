@@ -30,6 +30,10 @@ module.exports = (server) => {
           await modifyPostInventoryLineForm(form)
           break;
 
+        case "prices":
+          await modifyPostPriceForm(form)
+          break;
+
         default:
           break;
       }
@@ -164,6 +168,20 @@ const modifyPostConversionForm = async (form) => {
   await Promise.all([
     fetchOptionsForInput(inputs, ModelUnit, "fromUnitId", "unitName"),
     fetchOptionsForInput(inputs, ModelUnit, "toUnitId", "unitName")
+  ])
+
+  form.inputs = inputs;
+}
+
+const modifyPostPriceForm = async (form) => {
+  const ModelProduct = app.models.Product;
+  const ModelConversion = app.models.Conversion;
+
+  const inputs = form.inputs;
+
+  await Promise.all([
+    fetchOptionsForInput(inputs, ModelProduct, "productId", "productName"),
+    fetchOptionsForInput(inputs, ModelConversion, "conversionId", "conversionName"),
   ])
 
   form.inputs = inputs;
