@@ -1,16 +1,36 @@
 {
-  "name": "stores",
-  "displayVietnameseName": "Chi tiết kho",
+  "name": "prices",
+  "displayVietnameseName": "Danh sách giá",
   "displayEnglishName": "",
   "headers": [
     {
-      "name": "storeCode",
-      "displayVietnameseName": "Mã kho",
+      "name": "productName",
+      "displayVietnameseName": "Tên sản phẩm",
       "displayEnglishName": ""
     },
     {
-      "name": "storeName",
-      "displayVietnameseName": "Tên kho",
+      "name": "conversionName",
+      "displayVietnameseName": "Quy đổi",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "price",
+      "displayVietnameseName": "Giá",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "beginDate",
+      "displayVietnameseName": "Ngày có hiệu lực",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "endDate",
+      "displayVietnameseName": "Ngày hết hiệu lực",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Đã kích hoạt?",
       "displayEnglishName": ""
     }
   ]
