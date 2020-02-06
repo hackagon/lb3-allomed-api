@@ -178,7 +178,6 @@
     },
     "converseQuantity": {
       "type": "Number",
-      "required": false,
       "length": null,
       "precision": 11,
       "scale": 0,
@@ -208,7 +207,6 @@
     },
     "converseUnitPrice": {
       "type": "Number",
-      "required": true,
       "length": null,
       "precision": 11,
       "scale": 0,
@@ -218,7 +216,7 @@
         "dataLength": null,
         "dataPrecision": 11,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "invoiceUnitPrice": {
