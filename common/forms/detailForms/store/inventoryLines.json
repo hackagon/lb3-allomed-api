@@ -25,12 +25,12 @@
     },
     {
       "name": "invoiceUnitPrice",
-      "displayVietnameseName": "Số lượng",
+      "displayVietnameseName": "Đơn giá",
       "displayEnglishName": ""
     },
     {
-      "name": "converseQuantity",
-      "displayVietnameseName": "Số lượng quy đổi",
+      "name": "converseUnitPrice",
+      "displayVietnameseName": "Đơn giá quy đổi",
       "displayEnglishName": ""
     },
     {
