@@ -9,6 +9,31 @@
       "displayEnglishName": ""
     },
     {
+      "name": "conversionName",
+      "displayVietnameseName": "Quy cách",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "invoiceQuantity",
+      "displayVietnameseName": "Số lượng",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "converseQuantity",
+      "displayVietnameseName": "Số lượng quy đổi",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "invoiceUnitPrice",
+      "displayVietnameseName": "Số lượng",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "converseQuantity",
+      "displayVietnameseName": "Số lượng quy đổi",
+      "displayEnglishName": ""
+    },
+    {
       "name": "lotNumber",
       "displayVietnameseName": "Số lô",
       "displayEnglishName": ""
