@@ -22,12 +22,15 @@ module.exports = (Conversion) => {
     const ModelUnit = app.models.Unit;
 
     const instance__conversions = ctx.result;
-    await Promise.map(instance__conversions, async inst => {
-      const instance__from_unit = await ModelUnit.findById(inst.__data.fromUnitId)
-      const instance__to_unit = await ModelUnit.findById(inst.__data.toUnitId)
-      inst.__data.fromUnitName = instance__from_unit.__data.unitName
-      inst.__data.toUnitName = instance__to_unit.__data.unitName
-      return inst
+    await Promise.map(instance__conversions, inst => {
+      return Promise.all([
+        ModelUnit.findById(inst.__data.fromUnitId),
+        ModelUnit.findById(inst.__data.toUnitId)
+      ])
+        .then(res => {
+          inst.__data.fromUnitName = res[0].__data.unitName
+          inst.__data.toUnitName = res[1].__data.unitName
+        })
     })
   })
 }

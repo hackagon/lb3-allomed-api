@@ -137,6 +137,11 @@
       "type": "belongsTo",
       "model": "Product",
       "foreignKey": "productId"
+    },
+    "conversion": {
+      "type": "belongsTo",
+      "model": "Conversion",
+      "foreignKey": "conversionId"
     }
   },
   "acls": [],
