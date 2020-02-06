@@ -132,7 +132,6 @@
     },
     "userId": {
       "type": "String",
-      "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
