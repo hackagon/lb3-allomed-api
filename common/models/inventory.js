@@ -19,11 +19,16 @@ module.exports = (ModelInventory) => {
   })
 
   /**
-   * @todo  
+   * @todo    GET inventories/id including inventoryLines
    */
+  ModelInventory.afterRemote("findById", async ctx => {
+    const instance__inventory = ctx.result;
+    const inventoryLines = await instance__inventory.inventoryLines.find();
+    _.set(instance__inventory, "__data.inventoryLines", inventoryLines);
+  })
 
   /**
-   * @todo    get inventory including inventoryLines
+   * @todo    reponse POST inventory including inventoryLines
    */
   ModelInventory.afterRemote("create", async ctx => {
     const instance__inventory = ctx.result;
