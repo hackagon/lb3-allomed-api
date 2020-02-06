@@ -19,6 +19,10 @@ module.exports = (ModelInventory) => {
   })
 
   /**
+   * @todo  
+   */
+
+  /**
    * @todo    get inventory including inventoryLines
    */
   ModelInventory.afterRemote("create", async ctx => {
