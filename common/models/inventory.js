@@ -12,10 +12,28 @@ module.exports = (ModelInventory) => {
 
     const inventoryId = _.get(ctx, "instance.__data.id")
     const inventoryLines = _.get(ctx, "options.req.body.inventoryLines", []);
-    await Promise.map(inventoryLines, inventoryLine => {
-      _.set(inventoryLine, "inventoryId", inventoryId);
-      return ModelInventoryLine.create(inventoryLine);
-    })
+
+    if (ctx.isNewInstance) {
+      // POST /inventories
+      await Promise.map(inventoryLines, inventoryLine => {
+        _.set(inventoryLine, "inventoryId", inventoryId);
+        return ModelInventoryLine.create(inventoryLine);
+      })
+
+    } else {
+      // PUT /inventories
+      await Promise.each(inventoryLines, inventoryLine => {
+        return ModelInventoryLine.findById(inventoryLine.id)
+          .then(instance__inventoryLine => {
+            instance__inventoryLine.__data = {
+              ...instance__inventoryLine.__data,
+              ...inventoryLine
+            }
+            return instance__inventoryLine.save()
+          })
+      })
+
+    }
   })
 
   /**
