@@ -57,9 +57,9 @@
       "type": "String",
       "id": 1,
       "required": true,
+      "defaultFn": "uuidv4",
       "length": 50,
       "precision": null,
-      "defaultFn": "uuidv4",
       "scale": null,
       "mysql": {
         "columnName": "id",
@@ -71,7 +71,7 @@
       }
     },
     "isActive": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": true,
       "length": null,
       "precision": 1,

@@ -1,0 +1,44 @@
+{
+  "name": "prices",
+  "displayVietnameseName": "Danh sách giá",
+  "displayEnglishName": "",
+  "headers": [
+    {
+      "name": "productName",
+      "displayVietnameseName": "Tên sản phẩm",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "conversionName",
+      "displayVietnameseName": "Quy đổi",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "price",
+      "displayVietnameseName": "Giá",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "beginDate",
+      "displayVietnameseName": "Bắt đầu",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "endDate",
+      "displayVietnameseName": "Hết hiệu lực",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "isActive",
+      "displayVietnameseName": "Đã kích hoạt?",
+      "displayEnglishName": ""
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm giá",
+      "displayEnglishName": ""
+    }
+  ]
+}
