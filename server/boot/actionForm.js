@@ -143,12 +143,14 @@ const modifyPostInventoryForm = async (form) => {
 
 const modifyPostInventoryLineForm = async (form) => {
   const ProductModel = app.models.Product;
+  const ConversionModel = app.models.Conversion;
 
   const inputs = form.inputs;
 
   await Promise.all([
     // fetchOptionsForInput(inputs, StoreModel, "storeId", "storeName"),
     fetchOptionsForInput(inputs, ProductModel, "productId", "productName"),
+    fetchOptionsForInput(inputs, ConversionModel, "conversionId", "conversionName"),
   ])
 
   form.inputs = inputs;

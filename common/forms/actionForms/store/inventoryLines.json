@@ -23,6 +23,15 @@
       "options": []
     },
     {
+      "name": "conversionId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Quy đổi",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": []
+    },
+    {
       "name": "lotNumber",
       "type": "text",
       "displayEnglishName": "",
