@@ -943,6 +943,11 @@
       "type": "hasMany",
       "model": "Price",
       "foreignKey": "productId"
+    },
+    "inventoryLines": {
+      "type": "hasMany",
+      "model": "InventoryLine",
+      "foreignKey": "productId"
     }
   },
   "acls": [],

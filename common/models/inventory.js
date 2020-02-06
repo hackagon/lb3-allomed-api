@@ -24,7 +24,21 @@ module.exports = (ModelInventory) => {
   ModelInventory.afterRemote("findById", async ctx => {
     const instance__inventory = ctx.result;
     const inventoryLines = await instance__inventory.inventoryLines.find();
-    _.set(instance__inventory, "__data.inventoryLines", inventoryLines);
+
+    await Promise.each(inventoryLines, inventoryLine => {
+      return Promise.all([
+        inventoryLine.product.get(),
+        inventoryLine.conversion.get()
+      ])
+        .then(res => {
+          inventoryLine.__data.productName = res[0].__data.productName;
+          inventoryLine.__data.conversionName = res[1].__data.conversionName;
+          return inventoryLine;
+        })
+    })
+      .then(res => {
+        _.set(instance__inventory, "__data.inventoryLines", res);
+      })
   })
 
   /**
