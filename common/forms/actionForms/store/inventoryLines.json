@@ -47,6 +47,22 @@
       "vietnamesePlaceholder": "Chọn ngày hết hạn"
     },
     {
+      "name": "invoiceQuantity",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số lượng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "invoiceUnitPrice",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đơn giá",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
       "name": "isPromotion",
       "type": "radio",
       "displayEnglishName": "",
