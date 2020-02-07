@@ -170,5 +170,9 @@
   "Price": {
     "dataSource": "allomed",
     "public": true
+  },
+  "SalesSlip": {
+    "dataSource": "allomed",
+    "public": true
   }
 }
