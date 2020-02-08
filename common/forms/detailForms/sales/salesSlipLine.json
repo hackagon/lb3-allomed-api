@@ -14,8 +14,48 @@
       "displayEnglishName": ""
     },
     {
-      "name": "unit",
+      "name": "unitName",
       "displayVietnameseName": "Tên sản phẩm",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "price",
+      "displayVietnameseName": "Đơn giá",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "quantity",
+      "displayVietnameseName": "Số lượng",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "quantity",
+      "displayVietnameseName": "Số lượng",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "subtotal",
+      "displayVietnameseName": "Thành tiền",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "discountRate",
+      "displayVietnameseName": "Tỷ lệ giảm giá",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "discountAmount",
+      "displayVietnameseName": "Số tiền được giảm",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "realSubtotal",
+      "displayVietnameseName": "Thành tiền thực tế",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "use",
+      "displayVietnameseName": "Cách dùng",
       "displayEnglishName": ""
     }
   ]
