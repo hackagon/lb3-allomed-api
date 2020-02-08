@@ -1,37 +1,77 @@
 {
   "name": "salesSlips",
-  "displayVietnameseName": "Danh sách phiếu bán hàng",
+  "displayVietnameseName": "Chi tiết phiếu bán hàng",
   "displayEnglishName": "",
   "headers": [
     {
-      "name": "productName",
-      "displayVietnameseName": "Tên sản phẩm",
+      "name": "saleCode",
+      "displayVietnameseName": "Mã phiếu",
       "displayEnglishName": ""
     },
     {
-      "name": "conversionName",
-      "displayVietnameseName": "Quy đổi",
+      "name": "saleType",
+      "displayVietnameseName": "Loại phiếu",
       "displayEnglishName": ""
     },
     {
-      "name": "price",
-      "displayVietnameseName": "Giá",
+      "name": "discountRate",
+      "displayVietnameseName": "Tỷ lệ giảm giá",
       "displayEnglishName": ""
     },
     {
-      "name": "beginDate",
-      "displayVietnameseName": "Ngày có hiệu lực",
+      "name": "discountAmount",
+      "displayVietnameseName": "Số tiền được giảm",
       "displayEnglishName": ""
     },
     {
-      "name": "endDate",
-      "displayVietnameseName": "Ngày hết hiệu lực",
-      "displayEnglishName": ""
+      "name": "customerName",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên khách hàng"
     },
     {
-      "name": "isActive",
-      "displayVietnameseName": "Đã kích hoạt?",
-      "displayEnglishName": ""
+      "name": "customerYob",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Năm sinh"
+    },
+    {
+      "name": "customerPhone",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số điện thoại"
+    },
+    {
+      "name": "customerGender",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giới tính"
+    },
+    {
+      "name": "customerAddress",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Địa chỉa khách hàng"
+    },
+    {
+      "name": "patientName",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên bệnh nhân"
+    },
+    {
+      "name": "patientYob",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Năm sinh"
+    },
+    {
+      "name": "patientPhone",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số điện thoại"
+    },
+    {
+      "name": "patientGender",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giới tính"
+    },
+    {
+      "name": "patientAddress",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Địa chỉ bệnh nhân"
     }
   ]
 }

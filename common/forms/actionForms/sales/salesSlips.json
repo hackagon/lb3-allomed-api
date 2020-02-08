@@ -6,6 +6,14 @@
   "description": "",
   "inputs": [
     {
+      "name": "saleCode",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mã phiếu",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
       "name": "saleType",
       "type": "radio",
       "displayEnglishName": "",
