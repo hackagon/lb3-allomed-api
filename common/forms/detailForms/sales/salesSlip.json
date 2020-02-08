@@ -1,6 +1,6 @@
 {
-  "name": "prices",
-  "displayVietnameseName": "Chi tiết giá",
+  "name": "salesSlips",
+  "displayVietnameseName": "Danh sách phiếu bán hàng",
   "displayEnglishName": "",
   "headers": [
     {

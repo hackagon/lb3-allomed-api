@@ -29,4 +29,9 @@ module.exports = {
   inventories: require('./store/inventories.json'),
   inventoryLines: require('./store/inventoryLines.json'),
   conversion: require('./store/conversions.json')
+
+  // price
+
+
+  // sales
 }
