@@ -147,6 +147,11 @@
       "type": "hasMany",
       "model": "Product",
       "foreignKey": "distributionEnterpriseId"
+    },
+    "inventories": {
+      "type": "hasMany",
+      "model": "Inventory",
+      "foreignKey": "enterpriseId"
     }
   },
   "acls": [],

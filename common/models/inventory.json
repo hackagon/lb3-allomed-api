@@ -156,6 +156,11 @@
       "type": "hasMany",
       "model": "InventoryLine",
       "foreignKey": "inventoryId"
+    },
+    "supplyEnterprise": {
+      "type": "belongsTo",
+      "model": "Enterprise",
+      "foreignKey": "enterpriseId"
     }
   },
   "acls": [],

@@ -37,6 +37,24 @@ module.exports = (ModelInventory) => {
   })
 
   /**
+   * @todo    GET inventories
+   */
+  ModelInventory.afterRemote("find", async ctx => {
+
+    const instance__inventories = ctx.result;
+    await Promise.map(instance__inventories, instance__inventory => {
+      Promise.all([
+        instance__inventory.store.get(),
+        instance__inventory.supplyEnterprise.get()
+      ])
+        .then(res => {
+          instance__inventory.__data.storeName = res[0].__data.storeName;
+          instance__inventory.__data.supplyEnterpriseName = res[1].__data.enterpriseName;
+        })
+    })
+  })
+
+  /**
    * @todo    GET inventories/id including inventoryLines
    */
   ModelInventory.afterRemote("findById", async ctx => {

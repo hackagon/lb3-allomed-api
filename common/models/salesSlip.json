@@ -8,18 +8,35 @@
     }
   },
   "properties": {
-    "createdAt": {
-      "type": "Date",
-      "required": false,
-      "length": null,
+    "id": {
+      "type": "String",
+      "id": 1,
+      "required": true,
+      "defaultFn": "uuidv4",
+      "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "created_at",
-        "dataType": "datetime",
-        "dataLength": null,
+        "columnName": "id",
+        "dataType": "varchar",
+        "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "saleType": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "sale_type",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
         "nullable": "Y"
       }
     },
@@ -32,6 +49,21 @@
       "mysql": {
         "columnName": "customer_address",
         "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "customerGender": {
+      "type": "Binary",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "customer_gender",
+        "dataType": "varbinary",
         "dataLength": 255,
         "dataPrecision": null,
         "dataScale": null,
@@ -113,30 +145,14 @@
         "nullable": "Y"
       }
     },
-    "id": {
-      "type": "String",
-      "required": true,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "id": 1,
-      "mysql": {
-        "columnName": "id",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "N"
-      }
-    },
-    "note": {
+    "notes": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "note",
+        "columnName": "notes",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -152,6 +168,21 @@
       "scale": null,
       "mysql": {
         "columnName": "patient_address",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "patientGender": {
+      "type": "String",
+      "required": false,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "patient_gender",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
@@ -249,6 +280,21 @@
         "nullable": "Y"
       }
     },
+    "createdAt": {
+      "type": "Date",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "created_at",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
     "updatedAt": {
       "type": "Date",
       "required": false,
@@ -279,5 +325,9 @@
         "nullable": "Y"
       }
     }
-  }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
 }
