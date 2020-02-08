@@ -30,5 +30,8 @@ module.exports = {
   conversion: require('./store/conversions.json'),
 
   // price
-  price: require('./prices.json')
+  price: require('./prices.json'),
+
+  // sales
+  salesSlip: require('./sales/salesSlips.json')
 }

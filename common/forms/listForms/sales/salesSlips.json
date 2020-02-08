@@ -1,0 +1,34 @@
+{
+  "name": "salesSlips",
+  "displayVietnameseName": "Danh sách phiếu bán hàng",
+  "displayEnglishName": "",
+  "headers": [
+    {
+      "name": "saleCode",
+      "displayVietnameseName": "Mã phiếu",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "saleType",
+      "displayVietnameseName": "Loại phiếu",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "customerName",
+      "displayVietnameseName": "Tên khách hàng",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "patientName",
+      "displayVietnameseName": "tên bệnh nhân",
+      "displayEnglishName": ""
+    }
+  ],
+  "actions": [
+    {
+      "name": "create",
+      "displayVietnameseName": "Thêm phiếu bán hàng",
+      "displayEnglishName": ""
+    }
+  ]
+}
