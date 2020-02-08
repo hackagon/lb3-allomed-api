@@ -160,7 +160,7 @@
     "supplyEnterprise": {
       "type": "belongsTo",
       "model": "Enterprise",
-      "foreignKey": "enterpriseId"
+      "foreignKey": "supplyEnterpriseId"
     }
   },
   "acls": [],

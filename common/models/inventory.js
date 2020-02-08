@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const app = require('../../server/server')
 const Promise = require("bluebird");
+const moment = require('moment');
 
 module.exports = (ModelInventory) => {
 
@@ -42,12 +43,14 @@ module.exports = (ModelInventory) => {
   ModelInventory.afterRemote("find", async ctx => {
 
     const instance__inventories = ctx.result;
-    await Promise.map(instance__inventories, instance__inventory => {
-      Promise.all([
+    await Promise.map(instance__inventories, (instance__inventory, index) => {
+      return Promise.all([
         instance__inventory.store.get(),
         instance__inventory.supplyEnterprise.get()
       ])
         .then(res => {
+          instance__inventory.__data.inventoryDate = moment(instance__inventory.__data.inventoryDate).format("DD MMM YYYY")
+          instance__inventory.__data.documentDate = moment(instance__inventory.__data.documentDate).format("DD MMM YYYY")
           instance__inventory.__data.storeName = res[0].__data.storeName;
           instance__inventory.__data.supplyEnterpriseName = res[1].__data.enterpriseName;
         })

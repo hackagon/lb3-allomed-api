@@ -151,7 +151,7 @@
     "inventories": {
       "type": "hasMany",
       "model": "Inventory",
-      "foreignKey": "enterpriseId"
+      "foreignKey": "supplyEnterpriseId"
     }
   },
   "acls": [],
