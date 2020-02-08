@@ -142,6 +142,11 @@
       "type": "belongsTo",
       "model": "Conversion",
       "foreignKey": "conversionId"
+    },
+    "salesSlipLines": {
+      "type": "hasMany",
+      "model": "SalesSlipLine",
+      "foreignKey": "priceId"
     }
   },
   "acls": [],

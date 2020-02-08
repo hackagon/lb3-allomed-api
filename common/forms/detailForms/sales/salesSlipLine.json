@@ -1,0 +1,22 @@
+{
+  "name": "salesSlipLines",
+  "displayVietnameseName": "Chi tiết một dòng phiếu bán hàng",
+  "displayEnglishName": "",
+  "headers": [
+    {
+      "name": "productCode",
+      "displayVietnameseName": "Mã sản phẩm",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "productName",
+      "displayVietnameseName": "Tên sản phẩm",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "unit",
+      "displayVietnameseName": "Tên sản phẩm",
+      "displayEnglishName": ""
+    }
+  ]
+}

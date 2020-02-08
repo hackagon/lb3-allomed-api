@@ -205,14 +205,14 @@
         "nullable": "N"
       }
     },
-    "unit": {
+    "unitId": {
       "type": "String",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "unit",
+        "columnName": "unit_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -272,6 +272,21 @@
       "type": "belongsTo",
       "model": "SalesSlip",
       "foreignKey": "salesSlipId"
+    },
+    "unit": {
+      "type": "belongsTo",
+      "model": "Unit",
+      "foreignKey": "unitId"
+    },
+    "conversion": {
+      "type": "belongsTo",
+      "model": "Conversion",
+      "foreignKey": "conversionId"
+    },
+    "price": {
+      "type": "belongsTo",
+      "model": "Price",
+      "foreignKey": "priceId"
     }
   },
   "acls": [],

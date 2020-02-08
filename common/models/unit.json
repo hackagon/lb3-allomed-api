@@ -77,6 +77,11 @@
       "type": "hasMany",
       "model": "Product",
       "foreignKey": "unitId"
+    },
+    "salesSlipLines": {
+      "type": "hasMany",
+      "model": "SalesSlipLine",
+      "foreignKey": "unitId"
     }
   },
   "acls": [],
