@@ -40,6 +40,51 @@
         "nullable": "Y"
       }
     },
+    "discountId": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "discount_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "discountRate": {
+      "type": "Number",
+      "required": false,
+      "length": 50,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "discount_rate",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      }
+    },
+    "discountAmount": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 11,
+      "scale": 0,
+      "mysql": {
+        "columnName": "discount_amount",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 11,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
     "customerAddress": {
       "type": "String",
       "required": false,
@@ -127,21 +172,6 @@
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "Y"
-      }
-    },
-    "discountId": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "discount_id",
-        "dataType": "varchar",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
         "nullable": "Y"
       }
     },
