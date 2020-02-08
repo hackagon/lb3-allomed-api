@@ -1,0 +1,50 @@
+{
+  "method": "POST",
+  "name": "salesSlips",
+  "displayEnglishName": "",
+  "displayVietnameseName": "Thêm phiếu bán hàng",
+  "description": "",
+  "inputs": [
+    {
+      "name": "sale_type",
+      "type": "radio",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Loại phiếu",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": [
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Bán theo liều",
+          "value": 1
+        },
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Bán theo kê đơn",
+          "value": 2
+        },
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Bán theo vãng lai",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "discount_rate",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mã kho",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập mã kho"
+    },
+    {
+      "name": "discount_rate",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mã kho",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập mã kho"
+    }
+  ]
+}
