@@ -174,5 +174,9 @@
   "SalesSlip": {
     "dataSource": "allomed",
     "public": true
+  },
+  "SalesSlipLine": {
+    "dataSource": "allomed",
+    "public": true
   }
 }

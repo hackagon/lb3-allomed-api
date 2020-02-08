@@ -1,0 +1,278 @@
+{
+  "name": "SalesSlipLine",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "dbpha",
+      "table": "sales_slip_line"
+    }
+  },
+  "properties": {
+    "converseQuantity": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "converse_quantity",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "conversionId": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "conversion_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "createdAt": {
+      "type": "Date",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "created_at",
+        "dataType": "datetime",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "discountAmount": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "discount_amount",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "discountRate": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 2,
+      "mysql": {
+        "columnName": "discount_rate",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 2,
+        "nullable": "Y"
+      }
+    },
+    "id": {
+      "type": "String",
+      "id": 1,
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "isPromotion": {
+      "type": "Binary",
+      "required": false,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "mysql": {
+        "columnName": "is_promotion",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "pharmacyInventoryId": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "pharmacy_inventory_id",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "priceId": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "price_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "productId": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "product_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "quantity": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "quantity",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "salesSlipId": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "sales_slip_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "storeId": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "store_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "unit": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "unit",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "unitPrice": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 2,
+      "mysql": {
+        "columnName": "unit_price",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 2,
+        "nullable": "Y"
+      }
+    },
+    "userId": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "user_id",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "vat": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 5,
+      "scale": 0,
+      "mysql": {
+        "columnName": "vat",
+        "dataType": "decimal",
+        "dataLength": null,
+        "dataPrecision": 5,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "salesSlip": {
+      "type": "belongsTo",
+      "model": "SalesSlip",
+      "foreignKey": "salesSlipId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

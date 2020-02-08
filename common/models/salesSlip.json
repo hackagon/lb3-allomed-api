@@ -327,7 +327,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "salesSlipLines": {
+      "type": "hasMany",
+      "model": "SalesSlipLine",
+      "foreignKey": "salesSlipId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
