@@ -28,10 +28,11 @@ module.exports = {
   store: require('./store/stores.json'),
   inventories: require('./store/inventories.json'),
   inventoryLines: require('./store/inventoryLines.json'),
-  conversion: require('./store/conversions.json')
+  conversion: require('./store/conversions.json'),
 
   // price
-
+  price: require('./prices.json'),
 
   // sales
+  salesSlips: require('./sales/salesSlip.json'),
 }
