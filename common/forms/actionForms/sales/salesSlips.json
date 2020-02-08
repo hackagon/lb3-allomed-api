@@ -6,7 +6,7 @@
   "description": "",
   "inputs": [
     {
-      "name": "sale_type",
+      "name": "saleType",
       "type": "radio",
       "displayEnglishName": "",
       "displayVietnameseName": "Loại phiếu",
@@ -31,20 +31,134 @@
       ]
     },
     {
-      "name": "discount_rate",
+      "name": "discountRate",
       "type": "number",
       "displayEnglishName": "",
-      "displayVietnameseName": "Mã kho",
+      "displayVietnameseName": "Tỷ lệ giảm giá",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhập mã kho"
+      "vietnamesePlaceholder": ""
     },
     {
-      "name": "discount_rate",
+      "name": "discountAmount",
       "type": "number",
       "displayEnglishName": "",
-      "displayVietnameseName": "Mã kho",
+      "displayVietnameseName": "Số tiền được giảm",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhập mã kho"
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "customerName",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên khách hàng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "customerYob",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Năm sinh",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "customerPhone",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số điện thoại",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "customerGender",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giới tính",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": [
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Nam",
+          "value": "male"
+        },
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Nữ",
+          "value": "female"
+        },
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Không xác định",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "customerAddress",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Địa chỉa khách hàng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "patientName",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên bệnh nhân",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "patientYob",
+      "type": "number",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Năm sinh",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "patientPhone",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số điện thoại",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "patientGender",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giới tính",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": [
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Nam",
+          "value": "male"
+        },
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Nữ",
+          "value": "female"
+        },
+        {
+          "displayEnglishName": "",
+          "displayVietnameseName": "Không xác định",
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "name": "patientAddress",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Địa chỉ bệnh nhân",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
     }
   ]
 }

@@ -32,5 +32,8 @@ module.exports = {
   postConversion: require('./store/conversions.json'),
 
   // price
-  price: require("./price.json")
+  price: require("./price.json"),
+
+  // sale
+  salesSlips: require("./sales/salesSlips.json")
 }
