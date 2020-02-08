@@ -35,5 +35,6 @@ module.exports = {
   price: require("./price.json"),
 
   // sale
-  salesSlips: require("./sales/salesSlips.json")
+  salesSlips: require("./sales/salesSlips.json"),
+  salesSlipLines: require("./sales/salesSlipLines.json")
 }

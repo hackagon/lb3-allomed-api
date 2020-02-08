@@ -35,4 +35,5 @@ module.exports = {
 
   // sales
   salesSlips: require('./sales/salesSlip.json'),
+  salesSlipLines: require('./sales/salesSlipLine.json')
 }

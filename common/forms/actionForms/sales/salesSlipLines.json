@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "name": "salesSlipLines",
+  "displayEnglishName": "",
+  "displayVietnameseName": "Thêm phiếu một dòng phiêu bán hàng",
+  "description": "",
+  "inputs": [
+    {
+      "name": "saleCode",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mã phiếu",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    }
+  ]
+}
