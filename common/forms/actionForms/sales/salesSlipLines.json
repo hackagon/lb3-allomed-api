@@ -6,12 +6,22 @@
   "description": "",
   "inputs": [
     {
-      "name": "saleCode",
-      "type": "text",
+      "name": "productId",
+      "type": "singleChoice",
       "displayEnglishName": "",
-      "displayVietnameseName": "Mã phiếu",
+      "displayVietnameseName": "Tên sản phẩm",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": ""
+      "vietnamesePlaceholder": "",
+      "options": []
+    },
+    {
+      "name": "unitId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đơn vị tính",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": []
     }
   ]
 }
