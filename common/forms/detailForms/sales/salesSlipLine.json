@@ -29,11 +29,6 @@
       "displayEnglishName": ""
     },
     {
-      "name": "quantity",
-      "displayVietnameseName": "Số lượng",
-      "displayEnglishName": ""
-    },
-    {
       "name": "subtotal",
       "displayVietnameseName": "Thành tiền",
       "displayEnglishName": ""
