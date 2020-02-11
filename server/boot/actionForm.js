@@ -195,6 +195,7 @@ const modifyPostSalesSlipLineForm = async (form) => {
   const ModelProduct = app.models.Product;
   const ModelUnit = app.models.Unit;
   const ModelConversion = app.models.Conversion;
+  const ModelPrice = app.models.Price;
 
   const inputs = form.inputs;
 
@@ -202,6 +203,7 @@ const modifyPostSalesSlipLineForm = async (form) => {
     fetchOptionsForInput(inputs, ModelProduct, "productId", "productName"),
     fetchOptionsForInput(inputs, ModelUnit, "unitId", "unitName"),
     fetchOptionsForInput(inputs, ModelConversion, "conversionId", "conversionName"),
+    fetchOptionsForInput(inputs, ModelPrice, "priceId", "price")
   ])
 
   form.inputs = inputs;
