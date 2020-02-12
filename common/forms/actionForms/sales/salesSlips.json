@@ -15,7 +15,7 @@
     },
     {
       "name": "saleType",
-      "type": "radio",
+      "type": "singleChoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Loại phiếu",
       "englishPlaceholder": "",

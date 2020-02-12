@@ -16,6 +16,16 @@ module.exports = (ModelSalesSlip) => {
         _.set(salesSlipLine, "salesSlipId", salesSlipId)
         return ModelSalesSlipLine.create(salesSlipLine)
       })
+    } else {
+      // PUT /salesSlips
+      // await Promise.each(salesSlipLines, salesSlipLine => {
+      //   return ModelSalesSlipLine.findById(salesSlipLine.id)
+      //     .then(instance__salesSlipLine => {
+      //       instance__salesSlipLine.__data = {
+      //         ...
+      //       }
+      //     })
+      // })
     }
   })
 
