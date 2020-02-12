@@ -18,18 +18,26 @@ module.exports = (ModelSalesSlip) => {
       })
     } else {
       // PUT /salesSlips
-      // await Promise.each(salesSlipLines, salesSlipLine => {
-      //   return ModelSalesSlipLine.findById(salesSlipLine.id)
-      //     .then(instance__salesSlipLine => {
-      //       instance__salesSlipLine.__data = {
-      //         ...
-      //       }
-      //     })
-      // })
+      await Promise.each(salesSlipLines, salesSlipLine => {
+        return ModelSalesSlipLine.findById(salesSlipLine.id)
+          .then(instance__salesSlipLine => {
+            instance__salesSlipLine.__data = {
+              ...instance__salesSlipLine.__data,
+              ...salesSlipLine
+            }
+            return instance__salesSlipLine.save()
+          })
+      })
     }
   })
 
   ModelSalesSlip.afterRemote("create", async ctx => {
+    const instance__salesSlip = ctx.result;
+    const salesSlipLines = await instance__salesSlip.salesSlipLines.find();
+    _.set(instance__salesSlip, "__data.salesSlipLines", salesSlipLines)
+  })
+
+  ModelSalesSlip.afterRemote("replaceById", async ctx => {
     const instance__salesSlip = ctx.result;
     const salesSlipLines = await instance__salesSlip.salesSlipLines.find();
     _.set(instance__salesSlip, "__data.salesSlipLines", salesSlipLines)

@@ -89,6 +89,15 @@ module.exports = (ModelInventory) => {
   })
 
   /**
+   * @todo    reponse PUT inventory including inventoryLines
+   */
+  ModelInventory.afterRemote("replaceById", async ctx => {
+    const instance__inventory = ctx.result;
+    const inventoryLines = await instance__inventory.inventoryLines.find();
+    _.set(instance__inventory, "__data.inventoryLines", inventoryLines);
+  })
+
+  /**
    * @todo    delete inventory including inventoryLines
    */
 
