@@ -61,6 +61,12 @@ module.exports = (ModelSalesSlip) => {
   })
 
   ModelSalesSlip.observe("after delete", async ctx => {
-
+    const ModelSalesSlipLine = app.models.SalesSlipLine;
+    const salesSlipLineId = _.get(ctx, "where.id", "");
+    await ModelSalesSlipLine.destroyAll({
+      where: {
+        salesSlipLineId
+      }
+    });
   })
 }
