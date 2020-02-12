@@ -6,6 +6,15 @@
   "description": "",
   "inputs": [
     {
+      "name": "storeId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên kho",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": []
+    },
+    {
       "name": "productId",
       "type": "singleChoice",
       "displayEnglishName": "",
@@ -41,14 +50,6 @@
       "vietnamesePlaceholder": ""
     },
     {
-      "name": "subtotal",
-      "type": "number",
-      "displayEnglishName": "",
-      "displayVietnameseName": "Thành tiền",
-      "englishPlaceholder": "",
-      "vietnamesePlaceholder": ""
-    },
-    {
       "name": "discountRate",
       "type": "number",
       "displayEnglishName": "",
@@ -61,13 +62,6 @@
       "type": "number",
       "displayEnglishName": "",
       "displayVietnameseName": "Số tiền được giảm",
-      "englishPlaceholder": "",
-      "vietnamesePlaceholder": ""
-    },
-    {
-      "name": "realSubtotal",
-      "displayVietnameseName": "Thành tiền thực tế",
-      "displayEnglishName": "",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": ""
     },

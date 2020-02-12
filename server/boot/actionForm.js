@@ -196,10 +196,12 @@ const modifyPostSalesSlipLineForm = async (form) => {
   const ModelUnit = app.models.Unit;
   const ModelConversion = app.models.Conversion;
   const ModelPrice = app.models.Price;
+  const ModelStore = app.models.Store;
 
   const inputs = form.inputs;
 
   await Promise.all([
+    fetchOptionsForInput(inputs, ModelStore, "storeId", "storeName"),
     fetchOptionsForInput(inputs, ModelProduct, "productId", "productName"),
     fetchOptionsForInput(inputs, ModelUnit, "unitId", "unitName"),
     fetchOptionsForInput(inputs, ModelConversion, "conversionId", "conversionName"),

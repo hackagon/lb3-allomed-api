@@ -10,7 +10,6 @@
   "properties": {
     "converseQuantity": {
       "type": "Number",
-      "required": true,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -20,7 +19,7 @@
         "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "conversionId": {
@@ -117,7 +116,6 @@
     },
     "pharmacyInventoryId": {
       "type": "String",
-      "required": true,
       "length": 255,
       "precision": null,
       "scale": null,
@@ -127,7 +125,7 @@
         "dataLength": 255,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "priceId": {
@@ -162,7 +160,7 @@
     },
     "quantity": {
       "type": "Number",
-      "required": false,
+      "required": true,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -237,7 +235,6 @@
     },
     "userId": {
       "type": "String",
-      "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
@@ -247,7 +244,7 @@
         "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "N"
+        "nullable": "Y"
       }
     },
     "vat": {

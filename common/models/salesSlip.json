@@ -101,7 +101,7 @@
       }
     },
     "customerGender": {
-      "type": "Binary",
+      "type": "Boolean",
       "required": false,
       "length": 255,
       "precision": null,
