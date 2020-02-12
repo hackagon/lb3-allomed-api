@@ -62,6 +62,11 @@
       "type": "hasMany",
       "model": "Inventory",
       "foreignKey": "storeId"
+    },
+    "salesSlipLines": {
+      "type": "hasMany",
+      "model": "SalesSlipLine",
+      "foreignKey": "storeId"
     }
   },
   "acls": [],

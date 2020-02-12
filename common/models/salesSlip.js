@@ -31,6 +31,7 @@ module.exports = (ModelSalesSlip) => {
 
     await Promise.each(salesSlipLines, salesSlipLine => {
       return Promise.all([
+        salesSlipLine.product.get(),
 
       ])
         .then(res => {
