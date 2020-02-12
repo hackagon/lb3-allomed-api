@@ -111,7 +111,7 @@
       "name": "discountRate",
       "type": "number",
       "displayEnglishName": "",
-      "displayVietnameseName": "Tỷ lệ giảm giá",
+      "displayVietnameseName": "Tỷ lệ giảm giá (%)",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Nhập tỷ lệ giảm giá"
     },

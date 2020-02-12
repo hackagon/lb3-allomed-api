@@ -42,7 +42,7 @@
       "name": "discountRate",
       "type": "number",
       "displayEnglishName": "",
-      "displayVietnameseName": "Tỷ lệ giảm giá",
+      "displayVietnameseName": "Tỷ lệ giảm giá (%)",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": ""
     },

@@ -61,7 +61,7 @@
     {
       "name": "discountRate",
       "displayEnglishName": "",
-      "displayVietnameseName": "Tỷ lệ giảm giá"
+      "displayVietnameseName": "Tỷ lệ giảm giá (%)"
     },
     {
       "name": "discountAmount",
