@@ -69,8 +69,8 @@ module.exports = (ModelInventory) => {
         inventoryLine.conversion.get()
       ])
         .then(res => {
-          inventoryLine.__data.productName = res[0].__data.productName;
-          inventoryLine.__data.conversionName = res[1].__data.conversionName;
+          inventoryLine.__data.productName = res[0] && res[0].__data.productName;
+          inventoryLine.__data.conversionName = res[1] && res[1].__data.conversionName;
           return inventoryLine;
         })
     })
