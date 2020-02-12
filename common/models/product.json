@@ -948,6 +948,11 @@
       "type": "hasMany",
       "model": "InventoryLine",
       "foreignKey": "productId"
+    },
+    "salesSlipLines": {
+      "type": "hasMany",
+      "model": "SalesSlipLine",
+      "foreignKey": "productId"
     }
   },
   "acls": [],

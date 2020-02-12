@@ -359,6 +359,11 @@
       "type": "belongsTo",
       "model": "Price",
       "foreignKey": "priceId"
+    },
+    "product": {
+      "type": "belongsTo",
+      "model": "Product",
+      "foreignKey": "productId"
     }
   },
   "acls": [],

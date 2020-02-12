@@ -25,7 +25,22 @@ module.exports = (ModelSalesSlip) => {
     _.set(instance__salesSlip, "__data.salesSlipLines", salesSlipLines)
   })
 
-  ModelSalesSlip.afterRemote("findById")
+  ModelSalesSlip.afterRemote("findById", async ctx => {
+    const instance__salesSlip = ctx.result;
+    const salesSlipLines = await instance__salesSlip.salesSlipLines.find();
+
+    await Promise.each(salesSlipLines, salesSlipLine => {
+      return Promise.all([
+
+      ])
+        .then(res => {
+
+        })
+    })
+      .then(res => {
+        _.set(instance__salesSlip, "__data.salesSlipLines", res)
+      })
+  })
 
   ModelSalesSlip.observe("after delete", async ctx => {
 
