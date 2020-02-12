@@ -49,8 +49,23 @@
       "displayEnglishName": ""
     },
     {
-      "name": "use",
-      "displayVietnameseName": "Cách dùng",
+      "name": "useMorning",
+      "displayVietnameseName": "Dùng buổi sáng",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "useNoon",
+      "displayVietnameseName": "Cách buổi trưa",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "useAfternoon",
+      "displayVietnameseName": "Cách buổi chiều",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "useEvening",
+      "displayVietnameseName": "Cách buổi tối",
       "displayEnglishName": ""
     }
   ]

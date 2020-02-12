@@ -66,8 +66,29 @@
       "vietnamesePlaceholder": ""
     },
     {
-      "name": "use",
-      "displayVietnameseName": "Cách dùng",
+      "name": "useMorning",
+      "displayVietnameseName": "Dùng buổi sáng",
+      "displayEnglishName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "useNoon",
+      "displayVietnameseName": "Dùng buổi trưa",
+      "displayEnglishName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "useAfternoon",
+      "displayVietnameseName": "Dùng buổi chiều",
+      "displayEnglishName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": ""
+    },
+    {
+      "name": "useEvening",
+      "displayVietnameseName": "Dùng buổi tối",
       "displayEnglishName": "",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": ""
