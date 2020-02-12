@@ -11,10 +11,23 @@ module.exports = (ModelSalesSlip) => {
     const salesSlipLines = _.get(ctx, "options.req.body.salesSlipLines", []);
 
     if (ctx.isNewInstance) {
+      // POST /salesSlips
       await Promise.map(salesSlipLines, salesSlipLine => {
         _.set(salesSlipLine, "salesSlipId", salesSlipId)
         return ModelSalesSlipLine.create(salesSlipLine)
       })
     }
+  })
+
+  ModelSalesSlip.afterRemote("create", async ctx => {
+    const instance__salesSlip = ctx.result;
+    const salesSlipLines = await instance__salesSlip.salesSlipLines.find();
+    _.set(instance__salesSlip, "__data.salesSlipLines", salesSlipLines)
+  })
+
+  ModelSalesSlip.afterRemote("findById")
+
+  ModelSalesSlip.observe("after delete", async ctx => {
+
   })
 }

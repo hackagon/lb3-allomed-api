@@ -33,7 +33,6 @@ module.exports = (ModelInventory) => {
             return instance__inventoryLine.save()
           })
       })
-
     }
   })
 
