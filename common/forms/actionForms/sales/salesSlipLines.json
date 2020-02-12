@@ -67,6 +67,7 @@
     },
     {
       "name": "useMorning",
+      "type": "text",
       "displayVietnameseName": "Dùng buổi sáng",
       "displayEnglishName": "",
       "englishPlaceholder": "",
@@ -74,6 +75,7 @@
     },
     {
       "name": "useNoon",
+      "type": "text",
       "displayVietnameseName": "Dùng buổi trưa",
       "displayEnglishName": "",
       "englishPlaceholder": "",
@@ -81,6 +83,7 @@
     },
     {
       "name": "useAfternoon",
+      "type": "text",
       "displayVietnameseName": "Dùng buổi chiều",
       "displayEnglishName": "",
       "englishPlaceholder": "",
@@ -88,6 +91,7 @@
     },
     {
       "name": "useEvening",
+      "type": "text",
       "displayVietnameseName": "Dùng buổi tối",
       "displayEnglishName": "",
       "englishPlaceholder": "",
