@@ -143,6 +143,22 @@
         "dataScale": null,
         "nullable": "Y"
       }
+    },
+    "status": {
+      "type": "Boolean",
+      "required": false,
+      "default": false,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "mysql": {
+        "columnName": "status",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "Y"
+      }
     }
   },
   "validations": [],

@@ -1,11 +1,21 @@
 {
   "name": "inventories",
-  "displayVietnameseName": "Danh sách phiếu (lập phiếu chờ)",
+  "displayVietnameseName": "Chi tiết phiéu",
   "displayEnglishName": "",
   "headers": [
     {
       "name": "storeName",
       "displayVietnameseName": "Tên kho",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "inventoryReceivingVoucher",
+      "displayVietnameseName": "Số phiếu nhập",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "inventoryDeliveryVoucher",
+      "displayVietnameseName": "Số phiếu xuất",
       "displayEnglishName": ""
     },
     {
@@ -19,25 +29,18 @@
       "displayEnglishName": ""
     },
     {
-      "name": "inventoryReceivingVoucher",
-      "displayVietnameseName": "Số phiếu nhập",
-      "displayEnglishName": ""
-    },
-    {
       "name": "documentDate",
       "displayVietnameseName": "Ngày chứng từ",
       "displayEnglishName": ""
     },
     {
-      "name": "supplyEnterpriseName",
-      "displayVietnameseName": "Tên nhà cung cấp",
+      "name": "supplyEnterpriseId",
+      "displayVietnameseName": "Nhà cung cấp",
       "displayEnglishName": ""
-    }
-  ],
-  "actions": [
+    },
     {
-      "name": "create",
-      "displayVietnameseName": "Thêm phiếu",
+      "name": "status",
+      "displayVietnameseName": "Trạng thái",
       "displayEnglishName": ""
     }
   ]

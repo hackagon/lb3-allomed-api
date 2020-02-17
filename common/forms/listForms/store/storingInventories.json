@@ -1,6 +1,6 @@
 {
   "name": "inventories",
-  "displayVietnameseName": "Danh sách phiếu (lập phiếu chờ)",
+  "displayVietnameseName": "Danh sách phiếu (Chờ ghi sổ kho)",
   "displayEnglishName": "",
   "headers": [
     {
@@ -31,6 +31,11 @@
     {
       "name": "supplyEnterpriseName",
       "displayVietnameseName": "Tên nhà cung cấp",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "status",
+      "displayVietnameseName": "Trạng thái",
       "displayEnglishName": ""
     }
   ],
