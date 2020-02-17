@@ -114,13 +114,13 @@
         "nullable": "Y"
       }
     },
-    "pharmacyInventoryId": {
+    "inventoryStoringId": {
       "type": "String",
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "pharmacy_inventory_id",
+        "columnName": "inventory_storing_id",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
