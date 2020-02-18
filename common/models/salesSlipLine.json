@@ -369,6 +369,11 @@
       "type": "belongsTo",
       "model": "Store",
       "foreignKey": "storeId"
+    },
+    "inventoryStoring": {
+      "type": "belongsTo",
+      "model": "InventoryStoring",
+      "foreignKey": "inventoryStoringId"
     }
   },
   "acls": [],
