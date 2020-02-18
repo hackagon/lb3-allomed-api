@@ -179,7 +179,7 @@
       "displayVietnameseName": "Đối tượng khác"
     },
     {
-      "name": "producerId",
+      "name": "producerName",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhà sản xuất"
     },
@@ -194,7 +194,7 @@
       "displayVietnameseName": "Đường sử dụng"
     },
     {
-      "name": "supplierId",
+      "name": "supplierName",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhà cung cấp"
     },
@@ -224,12 +224,12 @@
       "displayVietnameseName": "Sử dụng"
     },
     {
-      "name": "categories",
+      "name": "categoryNames",
       "displayEnglishName": "",
       "displayVietnameseName": "Phân loại"
     },
     {
-      "name": "therapies",
+      "name": "therapyNames",
       "displayEnglishName": "",
       "displayVietnameseName": "Liệu pháp điều trị"
     }

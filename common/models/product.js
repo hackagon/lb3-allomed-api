@@ -1,5 +1,6 @@
 const _ = require('lodash');
 const app = require('../../server/server')
+const Promise = require('bluebird')
 
 module.exports = (Product) => {
 
@@ -25,8 +26,8 @@ module.exports = (Product) => {
 
     const ProductActiveIngredient = app.models.ProductActiveIngredient
 
-    await activeIngredientIds.forEach(async (ingreId) => {
-      await ProductActiveIngredient.create({
+    await Promise.map(activeIngredientIds, ingreId => {
+      ProductActiveIngredient.create({
         productId: product.id,
         activeIngredientId: ingreId
       })

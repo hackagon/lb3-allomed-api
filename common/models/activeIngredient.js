@@ -25,11 +25,21 @@ module.exports = (ActiveIngredient) => {
     const activeIngredient = ctx.result;
     const res_categories = await activeIngredient.categories.find()
     const res_therapies = await activeIngredient.therapies.find()
+    const res_supplierName = await activeIngredient.supplyEnterprise.get()
+    const res_producerName = await activeIngredient.produceEnterprise.get();
 
-    const categories = res_categories.map(item => ({ categoryId: item.id, categoryName: item.categoryName }))
-    const therapies = res_therapies.map(item => ({ therapyId: item.id, therapyName: item.therapyName }))
+    const categoryNames = res_categories.map(item => ({ categoryId: item.id, categoryName: item.categoryName }))
+    const therapyNames = res_therapies.map(item => ({ therapyId: item.id, therapyName: item.therapyName }))
+    const supplierName = res_supplierName && res_supplierName.__data.enterpriseName
+    const producerName = res_producerName && res_producerName.__data.enterpriseName
 
-    ctx.result = { ...activeIngredient.__data, categories, therapies }
+    ctx.result = {
+      ...activeIngredient.__data,
+      categoryNames,
+      therapyNames,
+      supplierName,
+      producerName
+    }
   })
 
   /**

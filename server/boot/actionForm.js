@@ -58,7 +58,7 @@ fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
   // fetchOptions(inputs);
   const inputIndex = inputs.findIndex(elm => elm.name === inputName)
   const instances = await Model.find();
-  options = instances.map(inst => {
+  const options = instances.map(inst => {
     return {
       id: inst.id,
       value: inst.id,
@@ -113,7 +113,7 @@ const modifyPostProductForm = async (form) => {
   const inputs = form.inputs;
 
   await Promise.all([
-    fetchOptionsForInput(inputs, ActiveIngredientModel, "activeIngredients", "activeIngredientName"),
+    fetchOptionsForInput(inputs, ActiveIngredientModel, "activeIngredientIds", "activeIngredientName"),
     fetchOptionsForInput(inputs, CategoryLabelModel, "categoryLabelId", "categoryLabelName"),
     fetchOptionsForInput(inputs, CategoryTradeModel, "categoryTradeId", "categoryTradeName"),
     fetchOptionsForInput(inputs, CharacteristicModel, "characteristicId", "characteristicName"),

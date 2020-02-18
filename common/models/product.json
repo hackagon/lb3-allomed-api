@@ -85,21 +85,6 @@
         "nullable": "Y"
       }
     },
-    "activeIngredientId": {
-      "type": "String",
-      "required": false,
-      "length": 255,
-      "precision": null,
-      "scale": null,
-      "mysql": {
-        "columnName": "active_ingredient_id",
-        "dataType": "varchar",
-        "dataLength": 255,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
     "dosageForm": {
       "type": "String",
       "required": false,

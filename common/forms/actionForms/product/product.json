@@ -11,17 +11,15 @@
       "displayEnglishName": "Product name",
       "displayVietnameseName": "Tên sản phẩm",
       "englishPlaceholder": "Enter product name",
-      "vietnamesePlaceholder": "Nhập tên sản phẩm",
-      "needQuery": false
+      "vietnamesePlaceholder": "Nhập tên sản phẩm"
     },
     {
-      "name": "activeIngredients",
+      "name": "activeIngredientIds",
       "type": "multiplechoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Hoạt chất",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn hoạt chất",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn hoạt chất"
     },
     {
       "name": "age",
@@ -29,8 +27,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Tuổi",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn tuổi",
-      "needQuery": false
+      "vietnamesePlaceholder": "Chọn tuổi"
     },
     {
       "name": "categoryLabelId",
@@ -38,8 +35,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Nhãn",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn nhãn",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn nhãn"
     },
     {
       "name": "categoryTradeId",
@@ -47,8 +43,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Danh mục thương mại",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn danh mục thương mại",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn danh mục thương mại"
     },
     {
       "name": "characteristicId",
@@ -56,8 +51,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Đặc trưng",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn đặc trưng",
-      "needQuery": false
+      "vietnamesePlaceholder": "Chọn đặc trưng"
     },
     {
       "name": "chemicalStructureId",
@@ -65,8 +59,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Cấu trúc hóa học",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn cấu trúc hóa học",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn cấu trúc hóa học"
     },
     {
       "name": "colorId",
@@ -74,8 +67,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "màu sắc",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn màu sắc",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn màu sắc"
     },
     {
       "name": "cytochromeInteraction",
@@ -83,8 +75,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Thuốc tương tác qua Cytochrom P450",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Thuốc tương tác qua Cytochrom P450",
-      "needQuery": false
+      "vietnamesePlaceholder": "Thuốc tương tác qua Cytochrom P450"
     },
     {
       "name": "dateExpiry",
@@ -92,8 +83,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Ngày hết hạn lưu hành trên thị trường (Ngày hết hạn)",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Ngày hết hạn lưu hành trên thị trường (Ngày hết hạn)",
-      "needQuery": false
+      "vietnamesePlaceholder": "Ngày hết hạn lưu hành trên thị trường (Ngày hết hạn)"
     },
     {
       "name": "dateOfIssue",
@@ -101,8 +91,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Ngày bắt đầu dưa ra thị trường (Ngày cấp)",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Ngày bắt đầu dưa ra thị trường (Ngày cấp)",
-      "needQuery": false
+      "vietnamesePlaceholder": "Ngày bắt đầu dưa ra thị trường (Ngày cấp)"
     },
     {
       "name": "decisionNumber",
@@ -110,8 +99,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Số quyết định cấp số đăng ký",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Số quyết định cấp số đăng ký",
-      "needQuery": false
+      "vietnamesePlaceholder": "Số quyết định cấp số đăng ký"
     },
     {
       "name": "distributionCountryId",
@@ -119,8 +107,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Nước phân phối",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn nước phân phối",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn nước phân phối"
     },
     {
       "name": "distributionEnterpriseId",
@@ -128,8 +115,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Công ty phân phối",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn công ty phân phối",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn công ty phân phối"
     },
     {
       "name": "dosageForm",
@@ -137,8 +123,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "dạng bào chế",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn dạng bào chế",
-      "needQuery": false
+      "vietnamesePlaceholder": "Chọn dạng bào chế"
     },
     {
       "name": "excipient",
@@ -146,8 +131,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "tá dược",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn tá dược",
-      "needQuery": false
+      "vietnamesePlaceholder": "Chọn tá dược"
     },
     {
       "name": "fdaPharmacologicalGroupId",
@@ -155,8 +139,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Nhóm dược lý theo FDA Hoa Kỳ",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhóm dược lý theo FDA Hoa Kỳ",
-      "needQuery": true
+      "vietnamesePlaceholder": "Nhóm dược lý theo FDA Hoa Kỳ"
     },
     {
       "name": "isActive",
@@ -165,7 +148,6 @@
       "displayVietnameseName": "Đã kích hoạt?",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Đã kích hoạt?",
-      "needQuery": false,
       "options": [
         {
           "displayEnglishName": "Yes",
@@ -186,7 +168,6 @@
       "displayVietnameseName": "Cho con bướu?",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Cho con bướu?",
-      "needQuery": false,
       "options": [
         {
           "displayEnglishName": "Yes",
@@ -207,7 +188,6 @@
       "displayVietnameseName": "Mang thai?",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Mang thai?",
-      "needQuery": false,
       "options": [
         {
           "displayEnglishName": "Yes",
@@ -228,7 +208,6 @@
       "displayVietnameseName": "Ưu tiên?",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Ưu tiên?",
-      "needQuery": false,
       "options": [
         {
           "displayEnglishName": "Yes",
@@ -248,8 +227,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Gây nhạy cảm với ánh sáng",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Gây nhạy cảm với ánh sáng",
-      "needQuery": false
+      "vietnamesePlaceholder": "Gây nhạy cảm với ánh sáng"
     },
     {
       "name": "manufacturerId",
@@ -257,8 +235,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Nhà sản xuất",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhà sản xuất",
-      "needQuery": true
+      "vietnamesePlaceholder": "Nhà sản xuất"
     },
     {
       "name": "noAlcohol",
@@ -267,7 +244,6 @@
       "displayVietnameseName": "Thuốc không có cồn",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Thuốc không có cồn",
-      "needQuery": false,
       "options": [
         {
           "displayEnglishName": "Yes",
@@ -288,7 +264,6 @@
       "displayVietnameseName": "Thuốc không bẻ khi uống",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Thuốc không bẻ khi uống",
-      "needQuery": false,
       "options": [
         {
           "displayEnglishName": "Yes",
@@ -309,7 +284,6 @@
       "displayVietnameseName": "Thuốc không đường",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Thuốc không đường",
-      "needQuery": false,
       "options": [
         {
           "displayEnglishName": "Yes",
@@ -329,8 +303,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "mùi vị",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn mùi vị",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn mùi vị"
     },
     {
       "name": "otherCharacteristicId",
@@ -338,8 +311,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "đặc trưng khác",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn đặc trưng khác",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn đặc trưng khác"
     },
     {
       "name": "packageId",
@@ -347,8 +319,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "đóng gói",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn đóng gói",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn đóng gói"
     },
     {
       "name": "pharmacologicalImpactId",
@@ -356,8 +327,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "tác động sinh lý, dược lý",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý"
     },
     {
       "name": "pharmacologicalMechanismId",
@@ -365,8 +335,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "tác động sinh lý, dược lý",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý",
-      "needQuery": true
+      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý"
     },
     {
       "name": "productCode",
@@ -374,8 +343,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Mã sản phẩm",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Mã sản phẩm",
-      "needQuery": false
+      "vietnamesePlaceholder": "Mã sản phẩm"
     },
     {
       "name": "productGroupId",
@@ -383,8 +351,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Nhóm sản phẩm",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhóm sản phẩm",
-      "needQuery": true
+      "vietnamesePlaceholder": "Nhóm sản phẩm"
     },
     {
       "name": "productNdc",
@@ -392,8 +359,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "NDC sản phẩm",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "NDC sản phẩm",
-      "needQuery": false
+      "vietnamesePlaceholder": "NDC sản phẩm"
     },
     {
       "name": "productSub",
@@ -401,8 +367,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Tên biệt dược phụ",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Tên biệt dược phụ",
-      "needQuery": false
+      "vietnamesePlaceholder": "Tên biệt dược phụ"
     },
     {
       "name": "registrationNumber",
@@ -410,8 +375,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Số đăng ký",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Số đăng ký",
-      "needQuery": false
+      "vietnamesePlaceholder": "Số đăng ký"
     },
     {
       "name": "newRegistrationNumber",
@@ -419,8 +383,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Số đăng ký mới",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Số đăng ký mới",
-      "needQuery": false
+      "vietnamesePlaceholder": "Số đăng ký mới"
     },
     {
       "name": "retailPrice",
@@ -428,8 +391,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Giá bán lẻ",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Giá bán lẻ",
-      "needQuery": false
+      "vietnamesePlaceholder": "Giá bán lẻ"
     },
     {
       "name": "wholesalePrice",
@@ -437,8 +399,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Giá sỉ",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Giá sỉ",
-      "needQuery": false
+      "vietnamesePlaceholder": "Giá sỉ"
     },
     {
       "name": "routeId",
@@ -446,8 +407,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Đường sử dụng",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Đường sử dụng",
-      "needQuery": true
+      "vietnamesePlaceholder": "Đường sử dụng"
     },
     {
       "name": "shapeId",
@@ -455,8 +415,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Hình dáng",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Hình dáng",
-      "needQuery": true
+      "vietnamesePlaceholder": "Hình dáng"
     },
     {
       "name": "bioEquivalence",
@@ -464,8 +423,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Tương đương sinh học",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Tương đương sinh học",
-      "needQuery": false
+      "vietnamesePlaceholder": "Tương đương sinh học"
     },
     {
       "name": "therapeuticEquivalence",
@@ -473,8 +431,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Tương đương trị liệu",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Tương đương trị liệu",
-      "needQuery": false
+      "vietnamesePlaceholder": "Tương đương trị liệu"
     },
     {
       "name": "snomedCategoryId",
@@ -482,8 +439,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Phân loại bệnh theo SNOMED",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Phân loại bệnh theo SNOMED",
-      "needQuery": true
+      "vietnamesePlaceholder": "Phân loại bệnh theo SNOMED"
     },
     {
       "name": "technicalStandard",
@@ -491,8 +447,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Tiêu chuẩn kỹ thuật",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Tiêu chuẩn kỹ thuật",
-      "needQuery": false
+      "vietnamesePlaceholder": "Tiêu chuẩn kỹ thuật"
     },
     {
       "name": "toxicityId",
@@ -500,8 +455,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Phân loại quản lý độc - nghiện",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Phân loại quản lý độc - nghiện",
-      "needQuery": true
+      "vietnamesePlaceholder": "Phân loại quản lý độc - nghiện"
     },
     {
       "name": "unitId",
@@ -509,8 +463,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Đơn vị tính",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Đơn vị tính",
-      "needQuery": true
+      "vietnamesePlaceholder": "Đơn vị tính"
     },
     {
       "name": "useId",
@@ -518,8 +471,7 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Mục đích sử dụng",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Mục đích sử dụng",
-      "needQuery": true
+      "vietnamesePlaceholder": "Mục đích sử dụng"
     }
   ]
 }
