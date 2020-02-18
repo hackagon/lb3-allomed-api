@@ -1,10 +1,10 @@
 {
-  "name": "MonthSummary",
+  "name": "InventoryStoring",
   "options": {
     "idInjection": false,
     "mysql": {
       "schema": "dbpha",
-      "table": "month_summary"
+      "table": "inventory_storing"
     }
   },
   "properties": {

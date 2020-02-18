@@ -164,7 +164,7 @@
     "dataSource": "allomed",
     "public": true
   },
-  "MonthSummary": {
+  "InventoryStoring": {
     "dataSource": "allomed",
     "public": true
   },
