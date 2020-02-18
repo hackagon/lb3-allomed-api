@@ -192,7 +192,7 @@
       "vietnamesePlaceholder": "Tính chất hóa học"
     },
     {
-      "name": "infoOther",
+      "name": "otherInfo",
       "type": "text",
       "displayEnglishName": "",
       "displayVietnameseName": "Thông tin khác",

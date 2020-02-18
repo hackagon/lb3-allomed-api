@@ -584,14 +584,14 @@
         "nullable": "Y"
       }
     },
-    "infoOther": {
+    "otherInfo": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "info_other",
+        "columnName": "other_info",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
