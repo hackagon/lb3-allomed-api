@@ -323,11 +323,12 @@
     },
     {
       "name": "producerId",
-      "type": "text",
+      "type": "singleChoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhà sản xuất",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhà sản xuất"
+      "vietnamesePlaceholder": "Nhà sản xuất",
+      "options": []
     },
     {
       "name": "references",
@@ -347,11 +348,12 @@
     },
     {
       "name": "supplierId",
-      "type": "text",
+      "type": "singleChoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhà cung cấp",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhà cung cấp"
+      "vietnamesePlaceholder": "Nhà cung cấp",
+      "options": []
     },
     {
       "name": "otherObject",

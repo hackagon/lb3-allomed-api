@@ -70,14 +70,17 @@ fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
 }
 
 const modifyPostActiveIngredientForm = async (form) => {
-  const CategoryModel = app.models.Category;
-  const TherapyModel = app.models.Therapy;
+  const ModelCategory = app.models.Category;
+  const ModelTherapy = app.models.Therapy;
+  const ModelEnterprise = app.models.Enterprise
 
   const inputs = form.inputs;
 
   await Promise.all([
-    fetchOptionsForInput(inputs, CategoryModel, "categoryIds", "categoryName"),
-    fetchOptionsForInput(inputs, TherapyModel, "therapyIds", "therapyName")
+    fetchOptionsForInput(inputs, ModelCategory, "categoryIds", "categoryName"),
+    fetchOptionsForInput(inputs, ModelTherapy, "therapyIds", "therapyName"),
+    fetchOptionsForInput(inputs, ModelEnterprise, "supplierId", "enterpriseName"),
+    fetchOptionsForInput(inputs, ModelEnterprise, "producerId", "enterpriseName")
   ])
 
   form.inputs = inputs;

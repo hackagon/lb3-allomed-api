@@ -664,6 +664,16 @@
       "model": "Product",
       "foreignKey": "",
       "through": "ProductActiveIngredient"
+    },
+    "supplyEnterprise": {
+      "type": "belongsTo",
+      "model": "Enterprise",
+      "foreignKey": "supplierId"
+    },
+    "produceEnterprise": {
+      "type": "belongsTo",
+      "model": "Enterprise",
+      "foreignKey": "producerId"
     }
   },
   "acls": [],

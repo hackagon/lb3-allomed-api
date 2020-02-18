@@ -152,6 +152,16 @@
       "type": "hasMany",
       "model": "Inventory",
       "foreignKey": "supplyEnterpriseId"
+    },
+    "supplyActiveIngredients": {
+      "type": "hasMany",
+      "model": "ActiveIngredient",
+      "foreignKey": "supplierId"
+    },
+    "produceActiveIngredients": {
+      "type": "hasMany",
+      "model": "ActiveIngredient",
+      "foreignKey": "producerId"
     }
   },
   "acls": [],
