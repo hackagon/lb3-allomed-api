@@ -85,14 +85,14 @@
         "nullable": "N"
       }
     },
-    "openingQuantiy": {
+    "existingQuantiy": {
       "type": "Number",
       "required": false,
       "length": null,
       "precision": 11,
       "scale": 0,
       "mysql": {
-        "columnName": "opening_quantiy",
+        "columnName": "existing_quantiy",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 11,
