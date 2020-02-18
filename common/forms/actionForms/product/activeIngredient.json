@@ -394,7 +394,7 @@
       "vietnamesePlaceholder": "Sử dụng"
     },
     {
-      "name": "categories",
+      "name": "categoryIds",
       "type": "multiplechoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Phân loại",
@@ -403,7 +403,7 @@
       "options": []
     },
     {
-      "name": "therapies",
+      "name": "therapyIds",
       "type": "multiplechoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Liệu pháp điều trị",

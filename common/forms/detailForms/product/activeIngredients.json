@@ -41,17 +41,7 @@
     {
       "name": "breastfeed",
       "displayEnglishName": "",
-      "displayVietnameseName": "Cho con bướu",
-      "options": [
-        {
-          "displayEnglishName": "Yes",
-          "displayVietnameseName": "Có"
-        },
-        {
-          "displayEnglishName": "No",
-          "displayVietnameseName": "Không"
-        }
-      ]
+      "displayVietnameseName": "Cho con bướu"
     },
     {
       "name": "careful",
@@ -136,32 +126,12 @@
     {
       "name": "isChild",
       "displayEnglishName": "",
-      "displayVietnameseName": "Dùng được cho trẻ em",
-      "options": [
-        {
-          "displayEnglishName": "Có",
-          "displayVietnameseName": "Yes"
-        },
-        {
-          "displayEnglishName": "Không",
-          "displayVietnameseName": "No"
-        }
-      ]
+      "displayVietnameseName": "Dùng được cho trẻ em"
     },
     {
       "name": "isPregnancy",
       "displayEnglishName": "",
-      "displayVietnameseName": "Dùng được cho PNMT",
-      "options": [
-        {
-          "displayEnglishName": "Có",
-          "displayVietnameseName": "Yes"
-        },
-        {
-          "displayEnglishName": "Không",
-          "displayVietnameseName": "No"
-        }
-      ]
+      "displayVietnameseName": "Dùng được cho PNMT"
     },
     {
       "name": "kidneyFailure",
@@ -256,14 +226,12 @@
     {
       "name": "categories",
       "displayEnglishName": "",
-      "displayVietnameseName": "Phân loại",
-      "options": []
+      "displayVietnameseName": "Phân loại"
     },
     {
       "name": "therapies",
       "displayEnglishName": "",
-      "displayVietnameseName": "Liệu pháp điều trị",
-      "options": []
+      "displayVietnameseName": "Liệu pháp điều trị"
     }
   ]
 }

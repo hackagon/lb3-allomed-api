@@ -1,5 +1,6 @@
 const _ = require('lodash');
 const app = require('../../server/server')
+const Promise = require('bluebird');
 
 module.exports = (ActiveIngredient) => {
 
@@ -35,25 +36,26 @@ module.exports = (ActiveIngredient) => {
    * @todo: POST /api/ActiveIngredients --> save activeIngredient record and related record
    */
   ActiveIngredient.observe("after save", async (ctx) => {
+    const ActiveIngredientCategory = app.models.ActiveIngredientCategory
+    const ActiveIngredientTherapy = app.models.ActiveIngredientTherapy
+
     const activeIngredient = ctx.instance;
     await activeIngredient.categories.destroyAll();
     await activeIngredient.therapies.destroyAll();
 
-    const categories = _.get(ctx, "options.req.body.categories", [])
-    const therapies = _.get(ctx, "options.req.body.therapies", [])
+    const categoryIds = _.get(ctx, "options.req.body.categoryIds", [])
+    const therapyIds = _.get(ctx, "options.req.body.therapyIds", [])
 
-    const ActiveIngredientCategory = app.models.ActiveIngredientCategory
-    const ActiveIngredientTherapy = app.models.ActiveIngredientTherapy
 
-    await categories.forEach(async (cate) => {
-      await ActiveIngredientCategory.create({
+    await Promise.map(categoryIds, cate => {
+      ActiveIngredientCategory.create({
         activeIngredientId: activeIngredient.id,
         categoryId: cate
       })
     })
 
-    await therapies.forEach(async therapy => {
-      await ActiveIngredientTherapy.create({
+    await Promise.map(therapyIds, therapy => {
+      ActiveIngredientTherapy.create({
         activeIngredientId: activeIngredient.id,
         therapyId: therapy
       })

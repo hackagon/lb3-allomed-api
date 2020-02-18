@@ -76,8 +76,8 @@ const modifyPostActiveIngredientForm = async (form) => {
   const inputs = form.inputs;
 
   await Promise.all([
-    fetchOptionsForInput(inputs, CategoryModel, "categories", "categoryName"),
-    fetchOptionsForInput(inputs, TherapyModel, "therapies", "therapyName")
+    fetchOptionsForInput(inputs, CategoryModel, "categoryIds", "categoryName"),
+    fetchOptionsForInput(inputs, TherapyModel, "therapyIds", "therapyName")
   ])
 
   form.inputs = inputs;
@@ -157,7 +157,6 @@ const modifyPostInventoryLineForm = async (form) => {
   const inputs = form.inputs;
 
   await Promise.all([
-    // fetchOptionsForInput(inputs, StoreModel, "storeId", "storeName"),
     fetchOptionsForInput(inputs, ProductModel, "productId", "productName"),
     fetchOptionsForInput(inputs, ConversionModel, "conversionId", "conversionName"),
   ])
