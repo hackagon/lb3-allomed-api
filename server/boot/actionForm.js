@@ -61,6 +61,7 @@ fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
   options = instances.map(inst => {
     return {
       id: inst.id,
+      value: inst.id,
       displayEnglishName: inst[displayName],
       displayVietnameseName: inst[displayName]
     }

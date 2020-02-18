@@ -71,11 +71,13 @@
       "options": [
         {
           "displayEnglishName": "Yes",
-          "displayVietnameseName": "Có"
+          "displayVietnameseName": "Có",
+          "value": 1
         },
         {
           "displayEnglishName": "No",
-          "displayVietnameseName": "Không"
+          "displayVietnameseName": "Không",
+          "value": 0
         }
       ]
     },
@@ -217,11 +219,13 @@
       "options": [
         {
           "displayEnglishName": "Có",
-          "displayVietnameseName": "Yes"
+          "displayVietnameseName": "Yes",
+          "value": 1
         },
         {
           "displayEnglishName": "Không",
-          "displayVietnameseName": "No"
+          "displayVietnameseName": "No",
+          "value": 0
         }
       ]
     },
@@ -235,11 +239,13 @@
       "options": [
         {
           "displayEnglishName": "Có",
-          "displayVietnameseName": "Yes"
+          "displayVietnameseName": "Yes",
+          "value": 1
         },
         {
           "displayEnglishName": "Không",
-          "displayVietnameseName": "No"
+          "displayVietnameseName": "No",
+          "value": 0
         }
       ]
     },
