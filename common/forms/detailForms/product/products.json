@@ -5,13 +5,243 @@
   "headers": [
     {
       "name": "productName",
-      "displayVietnameseName": "Tên sản phẩm",
-      "displayEnglishName": "productName"
+      "displayEnglishName": "Product name",
+      "displayVietnameseName": "Tên sản phẩm"
+    },
+    {
+      "name": "activeIngredientIds",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Hoạt chất"
+    },
+    {
+      "name": "age",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tuổi"
+    },
+    {
+      "name": "categoryLabelId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhãn"
+    },
+    {
+      "name": "categoryTradeId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Danh mục thương mại"
+    },
+    {
+      "name": "characteristicId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đặc trưng"
+    },
+    {
+      "name": "chemicalStructureId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Cấu trúc hóa học"
+    },
+    {
+      "name": "colorId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "màu sắc"
+    },
+    {
+      "name": "cytochromeInteraction",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuốc tương tác qua Cytochrom P450"
+    },
+    {
+      "name": "dateExpiry",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày hết hạn lưu hành trên thị trường (Ngày hết hạn)"
+    },
+    {
+      "name": "dateOfIssue",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ngày bắt đầu dưa ra thị trường (Ngày cấp)"
+    },
+    {
+      "name": "decisionNumber",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số quyết định cấp số đăng ký"
+    },
+    {
+      "name": "distributionCountryId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nước phân phối"
+    },
+    {
+      "name": "distributionEnterpriseId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Công ty phân phối"
+    },
+    {
+      "name": "dosageForm",
+      "displayEnglishName": "",
+      "displayVietnameseName": "dạng bào chế"
+    },
+    {
+      "name": "excipient",
+      "displayEnglishName": "",
+      "displayVietnameseName": "tá dược"
+    },
+    {
+      "name": "fdaPharmacologicalGroupId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhóm dược lý theo FDA Hoa Kỳ"
+    },
+    {
+      "name": "isActive",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đã kích hoạt?"
+    },
+    {
+      "name": "isBreastfeed",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Cho con bướu?"
+    },
+    {
+      "name": "isPregnant",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mang thai?"
+    },
+    {
+      "name": "isPrioritize",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ưu tiên?"
+    },
+    {
+      "name": "lightSensitive",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Gây nhạy cảm với ánh sáng"
+    },
+    {
+      "name": "manufacturerId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhà sản xuất"
+    },
+    {
+      "name": "noAlcohol",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuốc không có cồn"
+    },
+    {
+      "name": "noBreak",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuốc không bẻ khi uống"
+    },
+    {
+      "name": "noSugar",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thuốc không đường"
+    },
+    {
+      "name": "odorId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "mùi vị"
+    },
+    {
+      "name": "otherCharacteristicId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "đặc trưng khác"
+    },
+    {
+      "name": "packageId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "đóng gói"
+    },
+    {
+      "name": "pharmacologicalImpactId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "tác động sinh lý, dược lý"
+    },
+    {
+      "name": "pharmacologicalMechanismId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "tác động sinh lý, dược lý"
+    },
+    {
+      "name": "productCode",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mã sản phẩm"
+    },
+    {
+      "name": "productGroupId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nhóm sản phẩm"
+    },
+    {
+      "name": "productNdc",
+      "displayEnglishName": "",
+      "displayVietnameseName": "NDC sản phẩm"
+    },
+    {
+      "name": "productSub",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tên biệt dược phụ"
+    },
+    {
+      "name": "registrationNumber",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số đăng ký"
+    },
+    {
+      "name": "newRegistrationNumber",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Số đăng ký mới"
     },
     {
       "name": "retailPrice",
-      "displayVietnameseName": "Giá bán lẻ",
-      "displayEnglishName": "Retail price"
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giá bán lẻ"
+    },
+    {
+      "name": "wholesalePrice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giá sỉ"
+    },
+    {
+      "name": "routeId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đường sử dụng"
+    },
+    {
+      "name": "shapeId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Hình dáng"
+    },
+    {
+      "name": "bioEquivalence",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương đương sinh học"
+    },
+    {
+      "name": "therapeuticEquivalence",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tương đương trị liệu"
+    },
+    {
+      "name": "snomedCategoryId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Phân loại bệnh theo SNOMED"
+    },
+    {
+      "name": "technicalStandard",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Tiêu chuẩn kỹ thuật"
+    },
+    {
+      "name": "toxicityId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Phân loại quản lý độc - nghiện"
+    },
+    {
+      "name": "unitId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đơn vị tính"
+    },
+    {
+      "name": "useId",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Mục đích sử dụng"
     }
   ]
 }
