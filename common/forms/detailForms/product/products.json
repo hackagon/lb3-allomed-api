@@ -9,7 +9,7 @@
       "displayVietnameseName": "Tên sản phẩm"
     },
     {
-      "name": "activeIngredientIds",
+      "name": "activeIngredientNames",
       "displayEnglishName": "",
       "displayVietnameseName": "Hoạt chất"
     },
@@ -19,27 +19,27 @@
       "displayVietnameseName": "Tuổi"
     },
     {
-      "name": "categoryLabelId",
+      "name": "categoryLabelName",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhãn"
     },
     {
-      "name": "categoryTradeId",
+      "name": "categoryTradeName",
       "displayEnglishName": "",
       "displayVietnameseName": "Danh mục thương mại"
     },
     {
-      "name": "characteristicId",
+      "name": "characteristicName",
       "displayEnglishName": "",
       "displayVietnameseName": "Đặc trưng"
     },
     {
-      "name": "chemicalStructureId",
+      "name": "chemicalStructureName",
       "displayEnglishName": "",
       "displayVietnameseName": "Cấu trúc hóa học"
     },
     {
-      "name": "colorId",
+      "name": "colorName",
       "displayEnglishName": "",
       "displayVietnameseName": "màu sắc"
     },
@@ -64,12 +64,12 @@
       "displayVietnameseName": "Số quyết định cấp số đăng ký"
     },
     {
-      "name": "distributionCountryId",
+      "name": "distributionCountryName",
       "displayEnglishName": "",
       "displayVietnameseName": "Nước phân phối"
     },
     {
-      "name": "distributionEnterpriseId",
+      "name": "distributionEnterpriseName",
       "displayEnglishName": "",
       "displayVietnameseName": "Công ty phân phối"
     },
@@ -84,7 +84,7 @@
       "displayVietnameseName": "tá dược"
     },
     {
-      "name": "fdaPharmacologicalGroupId",
+      "name": "fdaPharmacologicalGroupName",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhóm dược lý theo FDA Hoa Kỳ"
     },
@@ -114,7 +114,7 @@
       "displayVietnameseName": "Gây nhạy cảm với ánh sáng"
     },
     {
-      "name": "manufacturerId",
+      "name": "manufacturerName",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhà sản xuất"
     },
@@ -134,27 +134,27 @@
       "displayVietnameseName": "Thuốc không đường"
     },
     {
-      "name": "odorId",
+      "name": "odorName",
       "displayEnglishName": "",
       "displayVietnameseName": "mùi vị"
     },
     {
-      "name": "otherCharacteristicId",
+      "name": "otherCharacteristicName",
       "displayEnglishName": "",
       "displayVietnameseName": "đặc trưng khác"
     },
     {
-      "name": "packageId",
+      "name": "packageName",
       "displayEnglishName": "",
       "displayVietnameseName": "đóng gói"
     },
     {
-      "name": "pharmacologicalImpactId",
+      "name": "pharmacologicalImpactName",
       "displayEnglishName": "",
       "displayVietnameseName": "tác động sinh lý, dược lý"
     },
     {
-      "name": "pharmacologicalMechanismId",
+      "name": "pharmacologicalMechanismName",
       "displayEnglishName": "",
       "displayVietnameseName": "tác động sinh lý, dược lý"
     },
@@ -164,7 +164,7 @@
       "displayVietnameseName": "Mã sản phẩm"
     },
     {
-      "name": "productGroupId",
+      "name": "productGroupName",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhóm sản phẩm"
     },
@@ -199,12 +199,12 @@
       "displayVietnameseName": "Giá sỉ"
     },
     {
-      "name": "routeId",
+      "name": "routeName",
       "displayEnglishName": "",
       "displayVietnameseName": "Đường sử dụng"
     },
     {
-      "name": "shapeId",
+      "name": "shapeName",
       "displayEnglishName": "",
       "displayVietnameseName": "Hình dáng"
     },
@@ -219,7 +219,7 @@
       "displayVietnameseName": "Tương đương trị liệu"
     },
     {
-      "name": "snomedCategoryId",
+      "name": "snomedCategoryName",
       "displayEnglishName": "",
       "displayVietnameseName": "Phân loại bệnh theo SNOMED"
     },
@@ -229,17 +229,17 @@
       "displayVietnameseName": "Tiêu chuẩn kỹ thuật"
     },
     {
-      "name": "toxicityId",
+      "name": "toxicityName",
       "displayEnglishName": "",
       "displayVietnameseName": "Phân loại quản lý độc - nghiện"
     },
     {
-      "name": "unitId",
+      "name": "unitName",
       "displayEnglishName": "",
       "displayVietnameseName": "Đơn vị tính"
     },
     {
-      "name": "useId",
+      "name": "useName",
       "displayEnglishName": "",
       "displayVietnameseName": "Mục đích sử dụng"
     }

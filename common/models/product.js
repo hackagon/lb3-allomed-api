@@ -33,4 +33,9 @@ module.exports = (Product) => {
       })
     })
   })
+
+  Product.afterRemote("findById", async ctx => {
+    const instance__product = ctx.result;
+    
+  })
 }
