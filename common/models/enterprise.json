@@ -141,7 +141,7 @@
     "manufacturerProducts": {
       "type": "hasMany",
       "model": "Product",
-      "foreignKey": "manufacturerId"
+      "foreignKey": "manufacturingEnterpriseId"
     },
     "distributionProducts": {
       "type": "hasMany",

@@ -24,25 +24,25 @@ module.exports = (ActiveIngredient) => {
   ActiveIngredient.afterRemote('findById', async (ctx) => {
     const instance_activeIngredient = ctx.result;
     await Promise.all([
-      instance_categories = await instance_activeIngredient.categories.find(),
-      instance_therapies = await instance_activeIngredient.therapies.find(),
-      instance_supplierName = await instance_activeIngredient.supplyEnterprise.get(),
-      instance_producerName = await instance_activeIngredient.produceEnterprise.get()
+      instance_categories = instance_activeIngredient.categories.find(),
+      instance_therapies = instance_activeIngredient.therapies.find(),
+      instance_supplierName = instance_activeIngredient.supplyEnterprise.get(),
+      instance_producerName = instance_activeIngredient.produceEnterprise.get()
     ])
-    .then(res => {
-      const categoryNames = res[0].map(item => ({ categoryId: item.id, categoryName: item.categoryName }))
-      const therapyNames = res[1].map(item => ({ therapyId: item.id, therapyName: item.therapyName }))
-      const supplierName = res[2] && res[2].__data.enterpriseName
-      const producerName = res[3] && res[3].__data.enterpriseName
-  
-      ctx.result = {
-        ...instance_activeIngredient.__data,
-        categoryNames,
-        therapyNames,
-        supplierName,
-        producerName
-      }
-    })
+      .then(res => {
+        const categoryNames = res[0].map(item => ({ categoryId: item.id, categoryName: item.categoryName }))
+        const therapyNames = res[1].map(item => ({ therapyId: item.id, therapyName: item.therapyName }))
+        const supplierName = res[2] && res[2].__data.enterpriseName
+        const producerName = res[3] && res[3].__data.enterpriseName
+
+        ctx.result = {
+          ...instance_activeIngredient.__data,
+          categoryNames,
+          therapyNames,
+          supplierName,
+          producerName
+        }
+      })
   })
 
   /**
@@ -61,14 +61,14 @@ module.exports = (ActiveIngredient) => {
 
 
     await Promise.map(categoryIds, cate => {
-      ActiveIngredientCategory.create({
+      return ActiveIngredientCategory.create({
         activeIngredientId: activeIngredient.id,
         categoryId: cate
       })
     })
 
     await Promise.map(therapyIds, therapy => {
-      ActiveIngredientTherapy.create({
+      return ActiveIngredientTherapy.create({
         activeIngredientId: activeIngredient.id,
         therapyId: therapy
       })

@@ -1,6 +1,10 @@
+const EventEmitter = require('events');
 const actionForms = require('../../common/forms/actionForms');
 const _ = require('lodash');
 const app = require('../server');
+
+const emitter = new EventEmitter();
+emitter.setMaxListeners(20)
 
 module.exports = (server) => {
   const router = server.loopback.Router();

@@ -230,7 +230,7 @@
       "vietnamesePlaceholder": "Gây nhạy cảm với ánh sáng"
     },
     {
-      "name": "manufacturerId",
+      "name": "manufacturingEnterpriseId",
       "type": "singleChoice",
       "displayEnglishName": "",
       "displayVietnameseName": "Nhà sản xuất",

@@ -400,14 +400,14 @@
         "nullable": "Y"
       }
     },
-    "manufacturerId": {
+    "manufacturingEnterpriseId": {
       "type": "String",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "manufacturer_id",
+        "columnName": "manufacturing_enterprise_Id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,
@@ -844,10 +844,10 @@
       "model": "Enterprise",
       "foreignKey": "labelEnterpriseId"
     },
-    "manufacturer": {
+    "manufacturingEnterprise": {
       "type": "belongsTo",
-      "model": "Manufacturer",
-      "foreignKey": "manufacturerId"
+      "model": "Enterprise",
+      "foreignKey": "manufacturingEnterpriseId"
     },
     "distributionEnterprise": {
       "type": "belongsTo",
