@@ -46,7 +46,15 @@ module.exports = Product => {
     const color = await instance__product.color.get();
     const characteristic = await instance__product.characteristic.get();
     const package = await instance__product.package.get();
-    const country = await instance__product.country.get();
+    // coutry
+    const distributionCountry = await instance__product.distributionCountry.get();
+    const manufacturingCountry = await instance__product.manufacturingCountry.get();
+
+    // enterprise
+    const distributionEnterprise = await instance__product.distributionEnterprise.get();
+    const manufacturingEnterprise = await instance__product.manufacturingEnterprise.get();
+    const labelEnterprise = await instance__product.labelEnterprise.get();
+
     const pharmacologicalMechanism = await instance__product.pharmacologicalMechanism.get();
     const pharmacologicalImpact = await instance__product.pharmacologicalImpact.get();
     const unit = await instance__product.unit.get();
