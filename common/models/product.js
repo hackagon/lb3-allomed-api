@@ -1,6 +1,7 @@
 const _ = require("lodash");
 const app = require("../../server/server");
 const Promise = require("bluebird");
+const utils = require("../../utils/fetchData");
 
 module.exports = Product => {
   /**
@@ -39,35 +40,38 @@ module.exports = Product => {
 
   Product.afterRemote("findById", async ctx => {
     const instance__product = ctx.result;
-
-    const activeIngredients = await instance__product.activeIngredients.find();
-    const route = await instance__product.route.get();
-    const categoryTrade = await instance__product.categoryTrade.get();
-    const color = await instance__product.color.get();
-    const characteristic = await instance__product.characteristic.get();
-    const package = await instance__product.package.get();
-    // coutry
-    const distributionCountry = await instance__product.distributionCountry.get();
-    const manufacturingCountry = await instance__product.manufacturingCountry.get();
-
-    // enterprise
-    const distributionEnterprise = await instance__product.distributionEnterprise.get();
-    const manufacturingEnterprise = await instance__product.manufacturingEnterprise.get();
-    const labelEnterprise = await instance__product.labelEnterprise.get();
-
-    const pharmacologicalMechanism = await instance__product.pharmacologicalMechanism.get();
-    const pharmacologicalImpact = await instance__product.pharmacologicalImpact.get();
-    const unit = await instance__product.unit.get();
-    const toxicity = await instance__product.toxicity.get();
-    const productGroup = await instance__product.productGroup.get();
-    const ordor = await instance__product.ordor.get();
-    const shape = await instance__product.shape.get();
-    const otherCharacteristic = await instance__product.otherCharacteristic.get();
-    const enterprise = await instance__product.enterprise.get();
-    const categoryLabel = await instance__product.categoryLabel.get();
-    const use = await instance__product.use.get();
-    const chemicalStructure = await instance__product.chemicalStructure.get();
-    const fdaPharmacologicalGroup = await instance__product.fdaPharmacologicalGroup.get();
-    const snomedCategory = await instance__product.snomedCategory.get();
-  });
+    await Promise.all([
+      utils.getRelationInstanceField(instance__product, "activeIngredients", "activeIngredientName", "collection", "activeIngredientNames"),
+      utils.getRelationInstanceField(instance__product, "route", "routeName", "item"),
+      utils.getRelationInstanceField(instance__product, "categoryTrade", "categoryTradeName", "item"),
+      utils.getRelationInstanceField(instance__product, "color", "colorName", "item"),
+      utils.getRelationInstanceField(instance__product, "characteristic", "characteristicName", "item"),
+      utils.getRelationInstanceField(instance__product, "package", "packageName", "item"),
+      utils.getRelationInstanceField(instance__product, "distributionCountry", "countryName", "item"),
+      utils.getRelationInstanceField(instance__product, "manufacturingCountry", "countryName", "item"),
+      utils.getRelationInstanceField(instance__product, "distributionEnterprise", "enterpriseName", "item"),
+      utils.getRelationInstanceField(instance__product, "manufacturingEnterprise", "enterpriseName", "item"),
+      utils.getRelationInstanceField(instance__product, "labelEnterprise", "enterpriseName", "item"),
+      utils.getRelationInstanceField(instance__product, "pharmacologicalMechanism", "pharmacologicalMechanismName", "item"),
+      utils.getRelationInstanceField(instance__product, "pharmacologicalImpact", "pharmacologicalImpactName", "item"),
+      utils.getRelationInstanceField(instance__product, "unit", "unitName", "item"),
+      utils.getRelationInstanceField(instance__product, "toxicity", "toxicityName", "item"),
+      utils.getRelationInstanceField(instance__product, "productGroup", "productGroupName", "item"),
+      utils.getRelationInstanceField(instance__product, "odor", "odorName", "item"),
+      utils.getRelationInstanceField(instance__product, "shape", "shapeName", "item"),
+      utils.getRelationInstanceField(instance__product, "otherCharacteristic", "otherCharacteristicName", "item"),
+      utils.getRelationInstanceField(instance__product, "categoryLabel", "categoryLabelName", "item"),
+      utils.getRelationInstanceField(instance__product, "route", "routeName", "item"),
+      utils.getRelationInstanceField(instance__product, "use", "useName", "item"),
+      utils.getRelationInstanceField(instance__product, "chemicalStructure", "chemicalStructureName", "item"),
+      utils.getRelationInstanceField(instance__product, "fdaPharmacologicalGroup", "fdaPharmacologicalGroupName", "item"),
+      utils.getRelationInstanceField(instance__product, "snomedCategory", "snomedCategoryName", "item")
+    ])
+      .then(res => {
+        res.forEach(e => {
+          _.assign(instance__product.__data, e, {})
+        })
+      })
+  })
 };
+

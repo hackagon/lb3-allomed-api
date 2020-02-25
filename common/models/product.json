@@ -919,10 +919,10 @@
       "model": "FdaPharmacologicalGroup",
       "foreignKey": "fdaPharmacologicalGroupId"
     },
-    "snomedCategoryGroup": {
+    "snomedCategory": {
       "type": "belongsTo",
-      "model": "SnomedCategoryGroup",
-      "foreignKey": "snomedCategoryGroupId"
+      "model": "SnomedCategory",
+      "foreignKey": "snomedCategoryId"
     },
     "prices": {
       "type": "hasMany",
@@ -938,6 +938,11 @@
       "type": "hasMany",
       "model": "SalesSlipLine",
       "foreignKey": "productId"
+    },
+    "shape": {
+      "type": "belongsTo",
+      "model": "Shape",
+      "foreignKey": "shapeId"
     }
   },
   "acls": [],

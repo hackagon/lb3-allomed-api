@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const app = require('../../server/server')
 const Promise = require('bluebird');
+const utils = require("../../utils/fetchData");
 
 module.exports = (ActiveIngredient) => {
 
@@ -24,24 +25,15 @@ module.exports = (ActiveIngredient) => {
   ActiveIngredient.afterRemote('findById', async (ctx) => {
     const instance_activeIngredient = ctx.result;
     await Promise.all([
-      instance_categories = instance_activeIngredient.categories.find(),
-      instance_therapies = instance_activeIngredient.therapies.find(),
-      instance_supplierName = instance_activeIngredient.supplyEnterprise.get(),
-      instance_producerName = instance_activeIngredient.produceEnterprise.get()
+      utils.getRelationInstanceField(instance_activeIngredient, "categories", "categoryName", "categoryNames"),
+      utils.getRelationInstanceField(instance_activeIngredient, "therapies", "therapyName", "therapyNames"),
+      utils.getRelationInstanceField(instance_activeIngredient, "supplyEnterprise", "enterpriseName"),
+      utils.getRelationInstanceField(instance_activeIngredient, "produceEnterprise", "enterpriseName"),
     ])
       .then(res => {
-        const categoryNames = res[0].map(item => ({ categoryId: item.id, categoryName: item.categoryName }))
-        const therapyNames = res[1].map(item => ({ therapyId: item.id, therapyName: item.therapyName }))
-        const supplierName = res[2] && res[2].__data.enterpriseName
-        const producerName = res[3] && res[3].__data.enterpriseName
-
-        ctx.result = {
-          ...instance_activeIngredient.__data,
-          categoryNames,
-          therapyNames,
-          supplierName,
-          producerName
-        }
+        res.forEach(e => {
+          _.assign(instance_activeIngredient.__data, e, {})
+        })
       })
   })
 

@@ -24,14 +24,14 @@
         "nullable": "N"
       }
     },
-    "categoryName": {
+    "snomedCategoryName": {
       "type": "String",
       "required": false,
       "length": 255,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "category_name",
+        "columnName": "snomed_category_name",
         "dataType": "varchar",
         "dataLength": 255,
         "dataPrecision": null,
