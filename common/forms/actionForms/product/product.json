@@ -107,7 +107,17 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Nước phân phối",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn nước phân phối"
+      "vietnamesePlaceholder": "Chọn nước phân phối",
+      "options": []
+    },
+    {
+      "name": "manufacturingCountryId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Nước phân phối",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Chọn nước phân phối",
+      "options": []
     },
     {
       "name": "distributionEnterpriseId",
