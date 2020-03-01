@@ -88,12 +88,12 @@
   },
   "validations": [],
   "relations": {
-    "distributionCountryProducts": {
+    "distributionProducts": {
       "type": "hasMany",
       "model": "Product",
       "foreignKey": "distributionCountryId"
     },
-    "manufacturingCountryProducts": {
+    "manufacturingProducts": {
       "type": "hasMany",
       "model": "Product",
       "foreignKey": "manufacturingCountryId"
