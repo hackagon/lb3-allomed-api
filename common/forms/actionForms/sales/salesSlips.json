@@ -107,7 +107,7 @@
       "name": "customerAddress",
       "type": "text",
       "displayEnglishName": "",
-      "displayVietnameseName": "Địa chỉa khách hàng",
+      "displayVietnameseName": "Địa chỉ khách hàng",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": ""
     },

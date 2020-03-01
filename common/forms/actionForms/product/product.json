@@ -235,7 +235,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Nhà sản xuất",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhà sản xuất"
+      "vietnamesePlaceholder": "Nhà sản xuất",
+      "options": []
     },
     {
       "name": "noAlcohol",
@@ -303,7 +304,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "mùi vị",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn mùi vị"
+      "vietnamesePlaceholder": "Chọn mùi vị",
+      "options": []
     },
     {
       "name": "otherCharacteristicId",
@@ -311,7 +313,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "đặc trưng khác",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn đặc trưng khác"
+      "vietnamesePlaceholder": "Chọn đặc trưng khác",
+      "options": []
     },
     {
       "name": "packageId",
@@ -319,7 +322,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "đóng gói",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn đóng gói"
+      "vietnamesePlaceholder": "Chọn đóng gói",
+      "options": []
     },
     {
       "name": "pharmacologicalImpactId",
@@ -327,7 +331,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "tác động sinh lý, dược lý",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý"
+      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý",
+      "options": []
     },
     {
       "name": "pharmacologicalMechanismId",
@@ -335,7 +340,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "tác động sinh lý, dược lý",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý"
+      "vietnamesePlaceholder": "Chọn tác động sinh lý, dược lý",
+      "options": []
     },
     {
       "name": "productCode",
@@ -351,7 +357,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Nhóm sản phẩm",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Nhóm sản phẩm"
+      "vietnamesePlaceholder": "Nhóm sản phẩm",
+      "options": []
     },
     {
       "name": "productNdc",
@@ -415,7 +422,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Hình dáng",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Hình dáng"
+      "vietnamesePlaceholder": "Hình dáng",
+      "options": []
     },
     {
       "name": "bioEquivalence",
@@ -439,7 +447,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Phân loại bệnh theo SNOMED",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Phân loại bệnh theo SNOMED"
+      "vietnamesePlaceholder": "Phân loại bệnh theo SNOMED",
+      "options": []
     },
     {
       "name": "technicalStandard",
@@ -455,7 +464,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Phân loại quản lý độc - nghiện",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Phân loại quản lý độc - nghiện"
+      "vietnamesePlaceholder": "Phân loại quản lý độc - nghiện",
+      "options": []
     },
     {
       "name": "unitId",
@@ -463,7 +473,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Đơn vị tính",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Đơn vị tính"
+      "vietnamesePlaceholder": "Đơn vị tính",
+      "options": []
     },
     {
       "name": "useId",
@@ -471,7 +482,8 @@
       "displayEnglishName": "",
       "displayVietnameseName": "Mục đích sử dụng",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Mục đích sử dụng"
+      "vietnamesePlaceholder": "Mục đích sử dụng",
+      "options": []
     }
   ]
 }

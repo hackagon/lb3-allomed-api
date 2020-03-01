@@ -9,9 +9,9 @@
       "name": "otherCharacteristicName",
       "type": "text",
       "displayEnglishName": "Other characteristic name",
-      "displayVietnameseName": "Tên dặc trưng khác",
+      "displayVietnameseName": "Tên đặc trưng khác",
       "englishPlaceholder": "Enter other characteristic name",
-      "vietnamesePlaceholder": "Nhập tên dặc trưng khác"
+      "vietnamesePlaceholder": "Nhập tên đặc trưng khác"
     }
   ]
 }
