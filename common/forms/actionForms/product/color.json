@@ -12,6 +12,14 @@
       "displayVietnameseName": "Tên màu sắc",
       "englishPlaceholder": "Enter color name",
       "vietnamesePlaceholder": "Nhập tên màu sắc"
+    },
+    {
+      "name": "colorCode",
+      "type": "text",
+      "displayEnglishName": "Color code",
+      "displayVietnameseName": " Mã màu sắc",
+      "englishPlaceholder": "Enter color code",
+      "vietnamesePlaceholder": "Nhập mã màu sắc"
     }
   ]
 }
