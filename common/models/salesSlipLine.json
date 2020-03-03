@@ -350,6 +350,11 @@
       "model": "Unit",
       "foreignKey": "unitId"
     },
+    "usingUnit": {
+      "type": "belongsTo",
+      "model": "Unit",
+      "foreignKey": "usingUnitId"
+    },
     "conversion": {
       "type": "belongsTo",
       "model": "Conversion",
