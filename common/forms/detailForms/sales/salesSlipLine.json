@@ -19,6 +19,11 @@
       "displayEnglishName": ""
     },
     {
+      "name": "usingUnitName",
+      "displayVietnameseName": "Tên sản phẩm",
+      "displayEnglishName": ""
+    },
+    {
       "name": "price",
       "displayVietnameseName": "Đơn giá",
       "displayEnglishName": ""

@@ -213,6 +213,7 @@ const modifyPostSalesSlipLineForm = async (form) => {
     fetchOptionsForInput(inputs, ModelStore, "storeId", "storeName"),
     fetchOptionsForInput(inputs, ModelProduct, "productId", "productName"),
     fetchOptionsForInput(inputs, ModelUnit, "unitId", "unitName"),
+    fetchOptionsForInput(inputs, ModelUnit, "usingUnitId", "unitName"),
     fetchOptionsForInput(inputs, ModelConversion, "conversionId", "conversionName"),
     fetchOptionsForInput(inputs, ModelPrice, "priceId", "price")
   ])

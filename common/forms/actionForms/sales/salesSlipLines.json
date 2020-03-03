@@ -33,6 +33,15 @@
       "options": []
     },
     {
+      "name": "usingUnitId",
+      "type": "singleChoice",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Đơn vị dùng",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": []
+    },
+    {
       "name": "priceId",
       "type": "singleChoice",
       "displayEnglishName": "",

@@ -56,6 +56,7 @@ module.exports = (ModelSalesSlip) => {
         salesSlipLine.product.get(),
         salesSlipLine.price.get(),
         salesSlipLine.unit.get(),
+        salesSlipLine.usingUnit.get(),
         salesSlipLine.conversion.get()
       ])
         .then(res => {
@@ -63,7 +64,8 @@ module.exports = (ModelSalesSlip) => {
           const productName = res[1] && res[1].__data.productName;
           const price = res[2] && res[2].__data.price;
           const unitName = res[3] && res[3].__data.unitName;
-          const conversionName = res[4] && res[4].__data.conversionName;
+          const usingUnitName = res[4] && res[4].__data.usingUnitName;
+          const conversionName = res[5] && res[5].__data.conversionName;
           const subtotal = price * salesSlipLine.__data.quantity
           const discountRate = salesSlipLine.__data.discountRate
           const discountAmount = salesSlipLine.__data.discountAmount ? salesSlipLine.__data.discountAmount : subtotal * discountRate / 100
@@ -71,7 +73,7 @@ module.exports = (ModelSalesSlip) => {
 
           salesSlipLine.__data = {
             ...salesSlipLine.__data,
-            storeName, productName, unitName, conversionName, subtotal, realSubtotal
+            storeName, productName, unitName, usingUnitName, conversionName, subtotal, realSubtotal
           }
           return salesSlipLine
         })
