@@ -1,5 +1,13 @@
+/**
+ * @todo  fetch relation data
+ * @param instance
+ * @param relationName  relation name that defined in relations area of model
+ * @param relationFieldName  field name of relational instance
+ * @param type  item (default) | collection
+ * @param returnName  if type=collection needs defined returnName
+ */
 // type = collection | item
-module.exports.getRelationInstanceField = async (instance, relationName, relationFieldName, type, returnName) => {
+module.exports.getRelationInstanceField = async (instance, relationName, relationFieldName, type = "item", returnName) => {
   switch (type) {
     case "collection":
       const relation__instances = await instance[relationName].find();

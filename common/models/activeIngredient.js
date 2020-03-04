@@ -24,8 +24,8 @@ module.exports = (ActiveIngredient) => {
   ActiveIngredient.afterRemote('findById', async (ctx) => {
     const instance_activeIngredient = ctx.result;
     await Promise.all([
-      utils.getRelationInstanceField(instance_activeIngredient, "categories", "categoryName", "categoryNames"),
-      utils.getRelationInstanceField(instance_activeIngredient, "therapies", "therapyName", "therapyNames"),
+      utils.getRelationInstanceField(instance_activeIngredient, "categories", "categoryName", "collection", "categoryNames"),
+      utils.getRelationInstanceField(instance_activeIngredient, "therapies", "therapyName", "collection", "therapyNames"),
       utils.getRelationInstanceField(instance_activeIngredient, "supplyEnterprise", "enterpriseName"),
       utils.getRelationInstanceField(instance_activeIngredient, "produceEnterprise", "enterpriseName"),
     ])
