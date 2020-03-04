@@ -34,6 +34,17 @@ module.exports = (ModelSalesSlip) => {
     }
   })
 
+  ModelSalesSlip.afterRemote("find", function (ctx, instance__salesSlipLines, next) {
+    ctx.result = _.map(instance__salesSlipLines, item => ({
+      id: item.id,
+      saleCode: item.saleCode,
+      saleType: item.saleType,
+      customerName: item.customerName,
+      patientName: item.patientName
+    }))
+    next()
+  })
+
   ModelSalesSlip.afterRemote("create", async ctx => {
     const instance__salesSlip = ctx.result;
     const salesSlipLines = await instance__salesSlip.salesSlipLines.find();

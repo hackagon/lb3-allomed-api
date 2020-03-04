@@ -233,13 +233,13 @@
         "nullable": "Y"
       }
     },
-    "userId": {
+    "usingUnitId": {
       "type": "String",
       "length": 50,
       "precision": null,
       "scale": null,
       "mysql": {
-        "columnName": "user_id",
+        "columnName": "using_unit_id",
         "dataType": "varchar",
         "dataLength": 50,
         "dataPrecision": null,

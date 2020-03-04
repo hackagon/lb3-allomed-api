@@ -7,15 +7,14 @@ module.exports = Product => {
   /**
    * @todo: filter fields
    */
-  Product.afterRemote("find", async ctx => {
-    var items = ctx.result;
-    if (Array.isArray(items)) {
-      ctx.result = items.map(item => ({
-        id: item.id,
-        productName: item.productName,
-        retailPrice: item.retailPrice
-      }));
-    }
+  Product.afterRemote("find", (ctx, instance__products, next) => {
+    ctx.result = _.map(instance__products, item => ({
+      id: item.id,
+      productName: item.productName,
+      retailPrice: item.retailPrice
+    }));
+
+    next()
   });
 
   Product.observe("after save", async ctx => {

@@ -8,15 +8,14 @@ module.exports = (ActiveIngredient) => {
   /**
    * @todo: filter fields
   */
-  ActiveIngredient.afterRemote('find', async (ctx) => {
-    var items = ctx.result;
-    if (Array.isArray(items)) {
-      ctx.result = items.map(item => ({
-        id: item.id,
-        activeIngredientCode: item.activeIngredientCode,
-        activeIngredientName: item.activeIngredientName
-      }))
-    }
+  ActiveIngredient.afterRemote('find', (ctx, instance__activeIngredients, next) => {
+    ctx.result = _.map(instance__activeIngredients, item => ({
+      id: item.id,
+      activeIngredientCode: item.activeIngredientCode,
+      activeIngredientName: item.activeIngredientName
+    }))
+
+    next()
   })
 
   /** 
