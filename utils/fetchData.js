@@ -7,7 +7,7 @@
  * @param returnName
  */
 // type = collection | item
-module.exports.getRelationInstanceField = async (instance, relationName, relationFieldName, type = "item", returnName) => {
+module.exports.getRelationInstanceField = async (instance, relationName, relationFieldName, type, returnName) => {
   switch (type) {
     case "collection":
       const relation__instances = await instance[relationName].find();
