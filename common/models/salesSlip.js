@@ -2,6 +2,7 @@ const _ = require('lodash');
 const app = require('../../server/server')
 const Promise = require("bluebird");
 const moment = require('moment');
+const utils = require('../../utils/fetchData');
 
 module.exports = (ModelSalesSlip) => {
   ModelSalesSlip.observe("after save", async ctx => {
@@ -63,30 +64,17 @@ module.exports = (ModelSalesSlip) => {
 
     await Promise.each(salesSlipLines, salesSlipLine => {
       return Promise.all([
-        salesSlipLine.store.get(),
-        salesSlipLine.product.get(),
-        salesSlipLine.price.get(),
-        salesSlipLine.unit.get(),
-        salesSlipLine.usingUnit.get(),
-        salesSlipLine.conversion.get()
+        utils.getRelationInstanceField(salesSlipLine, "store", "storeName"),
+        utils.getRelationInstanceField(salesSlipLine, "product", "productName"),
+        utils.getRelationInstanceField(salesSlipLine, "price", "price", "item", "name"),
+        utils.getRelationInstanceField(salesSlipLine, "unit", "unitName"),
+        utils.getRelationInstanceField(salesSlipLine, "usingUnit", "usingUnitName"),
+        utils.getRelationInstanceField(salesSlipLine, "conversion", "conversionName"),
       ])
         .then(res => {
-          const storeName = res[0] && res[0].__data.storeName;
-          const productName = res[1] && res[1].__data.productName;
-          const price = res[2] && res[2].__data.price;
-          const unitName = res[3] && res[3].__data.unitName;
-          const usingUnitName = res[4] && res[4].__data.usingUnitName;
-          const conversionName = res[5] && res[5].__data.conversionName;
-          const subtotal = price * salesSlipLine.__data.quantity
-          const discountRate = salesSlipLine.__data.discountRate
-          const discountAmount = salesSlipLine.__data.discountAmount ? salesSlipLine.__data.discountAmount : subtotal * discountRate / 100
-          const realSubtotal = subtotal - discountAmount;
-
-          salesSlipLine.__data = {
-            ...salesSlipLine.__data,
-            storeName, productName, unitName, usingUnitName, conversionName, subtotal, realSubtotal
-          }
-          return salesSlipLine
+          res.forEach(e => {
+            _.assign(salesSlipLine.__data, e, {})
+          })
         })
     })
       .then(res => {

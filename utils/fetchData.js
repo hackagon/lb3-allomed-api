@@ -4,7 +4,7 @@
  * @param relationName  relation name that defined in relations area of model
  * @param relationFieldName  field name of relational instance
  * @param type  item (default) | collection
- * @param returnName  if type=collection needs defined returnName
+ * @param returnName
  */
 // type = collection | item
 module.exports.getRelationInstanceField = async (instance, relationName, relationFieldName, type = "item", returnName) => {
@@ -21,7 +21,7 @@ module.exports.getRelationInstanceField = async (instance, relationName, relatio
       const relation__instance = await instance[relationName].get();
       if (!relation__instance) return { [`${relationName}Name`]: null }
       return {
-        [`${relationName}Name`]: relation__instance.__data[relationFieldName]
+        [returnName || `${relationName}Name`]: relation__instance.__data[relationFieldName]
       }
   }
 }
