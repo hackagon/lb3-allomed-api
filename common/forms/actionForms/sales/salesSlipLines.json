@@ -27,7 +27,7 @@
       "name": "unitId",
       "type": "singleChoice",
       "displayEnglishName": "",
-      "displayVietnameseName": "Đơn vị tính",
+      "displayVietnameseName": "Đơn vị bán",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "",
       "options": []
@@ -45,7 +45,7 @@
       "name": "priceId",
       "type": "singleChoice",
       "displayEnglishName": "",
-      "displayVietnameseName": "Đơn vị tính",
+      "displayVietnameseName": "Giá bán",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "",
       "options": []

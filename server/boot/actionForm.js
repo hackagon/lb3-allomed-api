@@ -39,7 +39,7 @@ module.exports = (server) => {
           break;
 
         case "salesSlipLines":
-          await modifyPostSalesSlipLineForm(form)
+          await modifyPostSalesSlipLineForm(form, req.query)
           break;
 
         default:
@@ -58,10 +58,10 @@ module.exports = (server) => {
  * @param inputName  name of input which should have many options
  * @param displayName fieldName which is chosen to display as options
  */
-fetchOptionsForInput = async (inputs, Model, inputName, displayName) => {
+const fetchOptionsForInput = async (inputs, Model, inputName, displayName, query = {}) => {
   // fetchOptions(inputs);
   const inputIndex = inputs.findIndex(elm => elm.name === inputName)
-  const instances = await Model.find();
+  const instances = await Model.find({ where: query });
   const options = instances.map(inst => {
     return {
       id: inst.id,
@@ -200,12 +200,14 @@ const modifyPostPriceForm = async (form) => {
   form.inputs = inputs;
 }
 
-const modifyPostSalesSlipLineForm = async (form) => {
+const modifyPostSalesSlipLineForm = async (form, query) => {
   const ModelProduct = app.models.Product;
   const ModelUnit = app.models.Unit;
   const ModelConversion = app.models.Conversion;
   const ModelPrice = app.models.Price;
   const ModelStore = app.models.Store;
+
+  const { productId } = query;
 
   const inputs = form.inputs;
 
@@ -215,7 +217,7 @@ const modifyPostSalesSlipLineForm = async (form) => {
     fetchOptionsForInput(inputs, ModelUnit, "unitId", "unitName"),
     fetchOptionsForInput(inputs, ModelUnit, "usingUnitId", "unitName"),
     fetchOptionsForInput(inputs, ModelConversion, "conversionId", "conversionName"),
-    fetchOptionsForInput(inputs, ModelPrice, "priceId", "price")
+    fetchOptionsForInput(inputs, ModelPrice, "priceId", "price", { productId })
   ])
 
   form.inputs = inputs;
