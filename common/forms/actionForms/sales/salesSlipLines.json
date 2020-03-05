@@ -2,7 +2,7 @@
   "method": "POST",
   "name": "salesSlipLines",
   "displayEnglishName": "",
-  "displayVietnameseName": "Thêm phiếu một dòng phiêu bán hàng",
+  "displayVietnameseName": "Thêm một dòng phiếu bán hàng",
   "description": "",
   "inputs": [
     {
