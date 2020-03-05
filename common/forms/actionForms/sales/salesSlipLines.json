@@ -51,6 +51,15 @@
       "options": []
     },
     {
+      "name": "price",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Giá bán (nhập)",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "",
+      "options": []
+    },
+    {
       "name": "quantity",
       "type": "number",
       "displayEnglishName": "",

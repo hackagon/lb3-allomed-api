@@ -73,7 +73,7 @@ module.exports = (ModelSalesSlip) => {
         .then(res => {
           const storeName = res[0] && res[0].__data.storeName;
           const productName = res[1] && res[1].__data.productName;
-          const price = res[2] && res[2].__data.price;
+          const price = res[2] ? res[2].__data.price : salesSlipLine.price;
           const unitName = res[3] && res[3].__data.unitName;
           const usingUnitName = res[4] && res[4].__data.usingUnitName;
           const conversionName = res[5] && res[5].__data.conversionName;
@@ -84,7 +84,7 @@ module.exports = (ModelSalesSlip) => {
 
           salesSlipLine.__data = {
             ...salesSlipLine.__data,
-            storeName, productName, unitName, usingUnitName, conversionName, subtotal, realSubtotal
+            storeName, productName, price, unitName, usingUnitName, conversionName, subtotal, realSubtotal
           }
           return salesSlipLine
         })

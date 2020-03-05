@@ -218,14 +218,14 @@
         "nullable": "N"
       }
     },
-    "unitPrice": {
+    "price": {
       "type": "Number",
       "required": false,
       "length": null,
       "precision": 10,
       "scale": 2,
       "mysql": {
-        "columnName": "unit_price",
+        "columnName": "price",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 10,
