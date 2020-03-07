@@ -25,9 +25,9 @@
       "name": "age",
       "type": "number",
       "displayEnglishName": "",
-      "displayVietnameseName": "Tuổi",
+      "displayVietnameseName": "Tuổi thọ sản phẩm",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Chọn tuổi"
+      "vietnamesePlaceholder": ""
     },
     {
       "name": "categoryLabelId",

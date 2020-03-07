@@ -90,6 +90,9 @@ module.exports = (ModelSalesSlip) => {
         })
     })
       .then(res => {
+
+        const total = _.chain(res).map(i => i.realSubtotal).reduce((a, b) => a + b).value();
+
         _.set(instance__salesSlip, "__data.salesSlipLines", res)
       })
   })
