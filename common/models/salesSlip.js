@@ -91,9 +91,14 @@ module.exports = (ModelSalesSlip) => {
     })
       .then(res => {
 
-        const total = _.chain(res).map(i => i.realSubtotal).reduce((a, b) => a + b).value();
+        const total = _.chain(res).map(i => i.__data.realSubtotal).reduce((a, b) => a + b).value();
+        const discountRate = instance__salesSlip.__data.discountRate
+        const discountAmount = instance__salesSlip.__data.discountAmount ? instance__salesSlip.__data.discountAmount : total * discountRate / 100;
+        const realSubtotal = total - discountAmount;
 
         _.set(instance__salesSlip, "__data.salesSlipLines", res)
+        _.set(instance__salesSlip, "__data.total", total);
+        _.set(instance__salesSlip, "__data.realSubtotal", realSubtotal);
       })
   })
 
