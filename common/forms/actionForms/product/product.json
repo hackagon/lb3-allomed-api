@@ -175,9 +175,9 @@
       "name": "isBreastfeed",
       "type": "radio",
       "displayEnglishName": "",
-      "displayVietnameseName": "Cho con bướu?",
+      "displayVietnameseName": "Cho con bú?",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Cho con bướu?",
+      "vietnamesePlaceholder": "Cho con bú?",
       "options": [
         {
           "displayEnglishName": "Yes",

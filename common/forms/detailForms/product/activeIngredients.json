@@ -41,7 +41,7 @@
     {
       "name": "breastfeed",
       "displayEnglishName": "",
-      "displayVietnameseName": "Cho con bướu"
+      "displayVietnameseName": "Cho con bú"
     },
     {
       "name": "careful",
@@ -52,11 +52,6 @@
       "name": "cigaretteInteraction",
       "displayEnglishName": "",
       "displayVietnameseName": "Tương tác thuốc lá"
-    },
-    {
-      "name": "clinicalApplication",
-      "displayEnglishName": "",
-      "displayVietnameseName": "Ứng dụng lâm sàng"
     },
     {
       "name": "clinicalApplication",
@@ -104,6 +99,16 @@
       "displayVietnameseName": "Ba tháng đầu chu kỳ"
     },
     {
+      "name": "midPregnancy",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ba tháng giữa chu kỳ"
+    },
+    {
+      "name": "lastPregnancy",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ba tháng cuối chu kỳ"
+    },
+    {
       "name": "foodInteraction",
       "displayEnglishName": "",
       "displayVietnameseName": "Tương tác thức ăn"
@@ -144,19 +149,9 @@
       "displayVietnameseName": "Tương tác lab"
     },
     {
-      "name": "lastPregnancy",
-      "displayEnglishName": "",
-      "displayVietnameseName": "Ba tháng cuối chu kỳ"
-    },
-    {
       "name": "liverFailure",
       "displayEnglishName": "",
       "displayVietnameseName": "Suy gan"
-    },
-    {
-      "name": "midPregnancy",
-      "displayEnglishName": "",
-      "displayVietnameseName": "Ba tháng giữa chu kỳ"
     },
     {
       "name": "otherObject",

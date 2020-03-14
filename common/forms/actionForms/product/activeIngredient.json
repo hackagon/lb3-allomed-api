@@ -65,9 +65,9 @@
       "name": "breastfeed",
       "type": "radio",
       "displayEnglishName": "",
-      "displayVietnameseName": "Cho con bướu",
+      "displayVietnameseName": "Cho con bú",
       "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Cho con bướu",
+      "vietnamesePlaceholder": "Cho con bú",
       "options": [
         {
           "displayEnglishName": "Yes",
@@ -96,14 +96,6 @@
       "displayVietnameseName": "Tương tác thuốc lá",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Tương tác thuốc lá"
-    },
-    {
-      "name": "clinicalApplication",
-      "type": "text",
-      "displayEnglishName": "",
-      "displayVietnameseName": "Ứng dụng lâm sàng",
-      "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Ứng dụng lâm sàng"
     },
     {
       "name": "clinicalApplication",
@@ -178,6 +170,22 @@
       "vietnamesePlaceholder": "Ba tháng đầu chu kỳ"
     },
     {
+      "name": "midPregnancy",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ba tháng giữa chu kỳ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ba tháng giữa chu kỳ"
+    },
+    {
+      "name": "lastPregnancy",
+      "type": "text",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Ba tháng cuối chu kỳ",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Ba tháng cuối chu kỳ"
+    },
+    {
       "name": "foodInteraction",
       "type": "text",
       "displayEnglishName": "",
@@ -218,13 +226,13 @@
       "vietnamesePlaceholder": "Dùng được cho trẻ em",
       "options": [
         {
-          "displayEnglishName": "Có",
-          "displayVietnameseName": "Yes",
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có",
           "value": 1
         },
         {
-          "displayEnglishName": "Không",
-          "displayVietnameseName": "No",
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không",
           "value": 0
         }
       ]
@@ -238,13 +246,13 @@
       "vietnamesePlaceholder": "Dùng được cho PNMT",
       "options": [
         {
-          "displayEnglishName": "Có",
-          "displayVietnameseName": "Yes",
+          "displayEnglishName": "Yes",
+          "displayVietnameseName": "Có",
           "value": 1
         },
         {
-          "displayEnglishName": "Không",
-          "displayVietnameseName": "No",
+          "displayEnglishName": "No",
+          "displayVietnameseName": "Không",
           "value": 0
         }
       ]
@@ -266,28 +274,12 @@
       "vietnamesePlaceholder": "Tương tác lab"
     },
     {
-      "name": "lastPregnancy",
-      "type": "text",
-      "displayEnglishName": "",
-      "displayVietnameseName": "Ba tháng cuối chu kỳ",
-      "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Ba tháng cuối chu kỳ"
-    },
-    {
       "name": "liverFailure",
       "type": "text",
       "displayEnglishName": "",
       "displayVietnameseName": "Suy gan",
       "englishPlaceholder": "",
       "vietnamesePlaceholder": "Suy gan"
-    },
-    {
-      "name": "midPregnancy",
-      "type": "text",
-      "displayEnglishName": "",
-      "displayVietnameseName": "Ba tháng giữa chu kỳ",
-      "englishPlaceholder": "",
-      "vietnamesePlaceholder": "Ba tháng giữa chu kỳ"
     },
     {
       "name": "otherObject",
