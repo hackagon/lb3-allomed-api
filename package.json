@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "debug": "nodemon .",
+    "debug": "nodemon --nolazy --inspect-brk=9229 .",
     "debug:log": "DEBUG=* nodemon .",
     "posttest": "npm run lint && npm audit"
   },
