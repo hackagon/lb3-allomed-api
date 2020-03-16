@@ -37,6 +37,33 @@ module.exports = (ModelInventory) => {
   })
 
   /**
+   * @todo    sau khi nhân viên nhập kho, thủ kho tiến hành phê duyệt
+   * @todo    when status = true (first time) ==> create inventoryStoring record
+   */
+  ModelInventory.observe("after save", async ctx => {
+    const ModelInventoryStoring = app.models.InventoryStoring;
+    const instance__inventory = ctx.instance;
+
+    if (!instance__inventory) return;
+
+    const instance__inventoryLines = instance__inventory.inventoryLines.find();
+
+    await Promise.each(instance__inventoryLines, instance__inventoryLine => {
+
+      ModelInventoryStoring.create({
+        storeId: instance__inventory.__data.id,
+        inventoryLineId: instance__inventoryLine.__data.id,
+        productId: instance__inventoryLine.__data.productId,
+        month: _.Number(moment().format("M")),
+        year: _.Number(moment().format("Y")),
+        exportQuantity: 0,
+        existingQuantiy: 0,
+        importQuantity: instance__inventoryLine.__data.invoiceQuantity
+      })
+    })
+  })
+
+  /**
    * @todo    GET inventories
    */
   ModelInventory.afterRemote("find", async ctx => {
