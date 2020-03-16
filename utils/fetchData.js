@@ -19,9 +19,10 @@ module.exports.getRelationInstanceField = async (instance, relationName, relatio
 
     case "item":
       const relation__instance = await instance[relationName].get();
-      if (!relation__instance) return { [`${relationName}Name`]: null }
+      const fieldName = returnName || `${relationName}Name`
+      if (!relation__instance) return { [fieldName]: null }
       return {
-        [returnName || `${relationName}Name`]: relation__instance.__data[relationFieldName]
+        [fieldName]: relation__instance.__data[relationFieldName]
       }
   }
 }

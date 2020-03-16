@@ -56,12 +56,12 @@
         {
           "displayEnglishName": "Yes",
           "displayVietnameseName": "Có",
-          "value": 1
+          "value": true
         },
         {
           "displayEnglishName": "No",
           "displayVietnameseName": "Không",
-          "value": 0
+          "value": false
         }
       ]
     }

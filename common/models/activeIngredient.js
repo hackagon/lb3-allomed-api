@@ -26,8 +26,8 @@ module.exports = (ActiveIngredient) => {
     await Promise.all([
       utils.getRelationInstanceField(instance_activeIngredient, "categories", "categoryName", "collection", "categoryNames"),
       utils.getRelationInstanceField(instance_activeIngredient, "therapies", "therapyName", "collection", "therapyNames"),
-      utils.getRelationInstanceField(instance_activeIngredient, "supplyEnterprise", "enterpriseName"),
-      utils.getRelationInstanceField(instance_activeIngredient, "produceEnterprise", "enterpriseName"),
+      utils.getRelationInstanceField(instance_activeIngredient, "supplyEnterprise", "enterpriseName", "item", "supplierName"),
+      utils.getRelationInstanceField(instance_activeIngredient, "produceEnterprise", "enterpriseName", "item", "producerName"),
     ])
       .then(res => {
         res.forEach(e => {
