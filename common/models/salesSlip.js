@@ -9,15 +9,21 @@ module.exports = (ModelSalesSlip) => {
 
     const salesSlipId = _.get(ctx, "instance.__data.id");
     const salesSlipLines = _.get(ctx, "options.req.body.salesSlipLines", []);
-    const inventoryStoring = await ctx.instance.inventoryStoring.get();
-
     if (ctx.isNewInstance) {
       // POST /salesSlips => create salesSlipLines instance and update inventoryStoring instance
-      await Promise.map(salesSlipLines, salesSlipLine => {
+      await Promise.each(salesSlipLines, salesSlipLine => {
         _.set(salesSlipLine, "salesSlipId", salesSlipId)
-        ModelSalesSlipLine.create(salesSlipLine)
+        return ModelSalesSlipLine.create(salesSlipLine)
+          .then(instance__salesSlipLine => {
 
-        inventoryStoring.updateAttribute("exportQuantity", _.get(ctx, "instance.__data.quantity"))
+            return instance__salesSlipLine.inventoryStoring.get()
+          })
+          .then(instance__inventoryStoring => {
+            // const existingExportQuantity = instance__inventoryStoring.__data.exportQuantity
+            // const newExportQuantity = salesSlipLine.quantity;
+            // const exportQuantity = existingExportQuantity + newExportQuantity;
+            // return instance__inventoryStoring.updateAttribute("exportQuantity", exportQuantity)
+          })
       })
     } else {
       // PUT /salesSlips
