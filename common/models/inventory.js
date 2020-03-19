@@ -2,6 +2,7 @@ const _ = require('lodash');
 const app = require('../../server/server')
 const Promise = require("bluebird");
 const moment = require('moment');
+const createError = require('http-errors');
 
 module.exports = (ModelInventory) => {
 
@@ -50,7 +51,13 @@ module.exports = (ModelInventory) => {
 
     if (!instance__inventory.status) return;
 
-    const instance__inventoryLines = instance__inventory.inventoryLines.find();
+    const instance__inventoryLines = await instance__inventory.inventoryLines.find();
+    const inventoryLineIds = _.chain(instance__inventoryLines).map(m => m.id).value()
+    const inventoryStoringIds = await ModelInventoryStoring.find({
+      where: { inventoryId: inventoryLineIds },
+      fields: { id: true }
+    })
+    if (!_.isEmpty(inventoryStoringIds)) throw createError(400, "This inventory is already approved")
 
     await Promise.map(instance__inventoryLines, instance__inventoryLine => {
 

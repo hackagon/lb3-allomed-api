@@ -19,6 +19,7 @@
     "csv-parser": "^2.3.2",
     "get-stream": "^5.1.0",
     "helmet": "^3.10.0",
+    "http-errors": "^1.7.3",
     "lodash": "^4.17.15",
     "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
