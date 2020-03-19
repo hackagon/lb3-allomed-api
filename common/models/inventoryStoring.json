@@ -85,14 +85,14 @@
         "nullable": "N"
       }
     },
-    "existingQuantiy": {
+    "existingQuantity": {
       "type": "Number",
       "required": false,
       "length": null,
       "precision": 11,
       "scale": 0,
       "mysql": {
-        "columnName": "existing_quantiy",
+        "columnName": "existing_quantity",
         "dataType": "decimal",
         "dataLength": null,
         "dataPrecision": 11,

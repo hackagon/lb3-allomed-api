@@ -125,12 +125,23 @@ module.exports = (ModelInventory) => {
   })
 
   /**
-   * @todo    delete inventory including inventoryLines
+   * @todo    delete inventory including inventoryLines + storingInventories
    */
 
   ModelInventory.observe("after delete", async ctx => {
     const ModelInventoryLine = app.models.InventoryLine
+    const ModelInventoryStoring = app.models.InventoryStoring
     const inventoryId = _.get(ctx, "where.id", "");
-    await ModelInventoryLine.destroyAll({ where: { inventoryId } })
+    const instance__inventoryLines = await ModelInventoryLine.find({
+      where: { inventoryId },
+      fields: { id: true }
+    })
+    const inventoryLineIds = _.chain(instance__inventoryLines).map(m => m.__data.id).value()
+
+    // destroy all inventory Lines
+    await ModelInventoryLine.destroyAll({ inventoryId })
+
+    // destroy all storing Inventories
+    await ModelInventoryStoring.destroyAll({ inventoryLineId: { inq: inventoryLineIds } })
   })
 }

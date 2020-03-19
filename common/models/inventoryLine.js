@@ -26,10 +26,11 @@ module.exports = (ModelInventoryLine) => {
     await ModelInventoryStoring.create({
       inventoryLineId: instance__inventory_line.__data.id,
       existingQuantity: 0,
-      importQuantity: instance__inventory_line.__data.quantity,
+      importQuantity: instance__inventory_line.__data.converseQuantity,
       exportQuantity: 0,
       month: moment(instance__inventory.__data.inventoryDate).format("MM"),
-      year: moment(instance__inventory.__data.inventoryDate).format("YYYY")
+      year: moment(instance__inventory.__data.inventoryDate).format("YYYY"),
+      productId: instance__inventory_line.__data.productId
     })
   })
 }
