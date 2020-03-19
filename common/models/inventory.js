@@ -10,30 +10,34 @@ module.exports = (ModelInventory) => {
    */
   ModelInventory.observe("after save", async ctx => {
     const ModelInventoryLine = app.models.InventoryLine
+    const ModelConversion = app.models.Conversion;
 
     const inventoryId = _.get(ctx, "instance.__data.id")
     const inventoryLines = _.get(ctx, "options.req.body.inventoryLines", []);
 
-    if (ctx.isNewInstance) {
-      // POST /inventories
-      await Promise.map(inventoryLines, inventoryLine => {
-        _.set(inventoryLine, "inventoryId", inventoryId);
-        return ModelInventoryLine.create(inventoryLine);
-      })
+    if (ctx.instance.status) return;
 
-    } else {
-      // PUT /inventories
-      await Promise.each(inventoryLines, inventoryLine => {
-        return ModelInventoryLine.findById(inventoryLine.id)
-          .then(instance__inventoryLine => {
-            instance__inventoryLine.__data = {
-              ...instance__inventoryLine.__data,
-              ...inventoryLine
-            }
-            return instance__inventoryLine.save()
-          })
-      })
+    if (!ctx.isNewInstance) {
+      await ctx.instance.inventoryLines.destroyAll();
     }
+    await Promise.each(inventoryLines, inventoryLine => {
+
+      return ModelConversion.findById(inventoryLine.conversionId)
+        .then(instance__conversion => {
+
+          const converseQuantity = instance__conversion.__data.quantity * inventoryLine.invoiceQuantity;
+          const converseUnitPrice = inventoryLine.invoiceUnitPrice / instance__conversion.__data.quantity
+          const subtotalPrice = inventoryLine.invoiceQuantity * inventoryLine.invoiceUnitPrice;
+          const discountAmount = inventoryLine.discountRate ? (subtotalPrice * inventoryLine.discountRate) / 100 : inventoryLine.discountAmount;
+
+          _.set(inventoryLine, "inventoryId", inventoryId);
+          _.set(inventoryLine, "converseQuantity", converseQuantity);
+          _.set(inventoryLine, "converseUnitPrice", converseUnitPrice);
+          _.set(inventoryLine, "discountAmount", discountAmount);
+
+          return ModelInventoryLine.create(inventoryLine);
+        })
+    })
   })
 
   /**
@@ -58,7 +62,7 @@ module.exports = (ModelInventory) => {
         year: _.toNumber(moment().format("Y")),
         exportQuantity: 0,
         existingQuantiy: 0,
-        importQuantity: instance__inventoryLine.__data.invoiceQuantity
+        importQuantity: instance__inventoryLine.__data.converseQuantity
       })
     })
   })

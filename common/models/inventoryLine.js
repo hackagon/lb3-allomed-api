@@ -19,18 +19,18 @@ module.exports = (ModelInventoryLine) => {
    * @todo    create inventory Storing
    */
   ModelInventoryLine.observe("after save", async ctx => {
-    const ModelInventoryStoring = app.models.InventoryStoring;
+    // const ModelInventoryStoring = app.models.InventoryStoring;
 
-    const instance__inventory_line = ctx.instance;
-    const instance__inventory = await instance__inventory_line.inventory.get();
-    await ModelInventoryStoring.create({
-      inventoryLineId: instance__inventory_line.__data.id,
-      existingQuantity: 0,
-      importQuantity: instance__inventory_line.__data.converseQuantity,
-      exportQuantity: 0,
-      month: moment(instance__inventory.__data.inventoryDate).format("MM"),
-      year: moment(instance__inventory.__data.inventoryDate).format("YYYY"),
-      productId: instance__inventory_line.__data.productId
-    })
+    // const instance__inventory_line = ctx.instance;
+    // const instance__inventory = await instance__inventory_line.inventory.get();
+    // await ModelInventoryStoring.create({
+    //   inventoryLineId: instance__inventory_line.__data.id,
+    //   existingQuantity: 0,
+    //   importQuantity: instance__inventory_line.__data.converseQuantity,
+    //   exportQuantity: 0,
+    //   month: moment(instance__inventory.__data.inventoryDate).format("MM"),
+    //   year: moment(instance__inventory.__data.inventoryDate).format("YYYY"),
+    //   productId: instance__inventory_line.__data.productId
+    // })
   })
 }
