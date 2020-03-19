@@ -99,17 +99,25 @@ module.exports = (ModelInventory) => {
    */
   ModelInventory.afterRemote("findById", async ctx => {
     const instance__inventory = ctx.result;
-    const inventoryLines = await instance__inventory.inventoryLines.find();
+    const instance__inventoryLines = await instance__inventory.inventoryLines.find();
 
-    await Promise.each(inventoryLines, inventoryLine => {
+    await Promise.each(instance__inventoryLines, instance__inventoryLine => {
       return Promise.all([
-        inventoryLine.product.get(),
-        inventoryLine.conversion.get()
+        instance__inventoryLine.product.get(),
+        instance__inventoryLine.conversion.get()
       ])
-        .then(res => {
-          inventoryLine.__data.productName = res[0] && res[0].__data.productName;
-          inventoryLine.__data.conversionName = res[1] && res[1].__data.conversionName;
-          return inventoryLine;
+        .then(([instance__product, instance__conversion]) => {
+          instance__inventoryLine.__data.productName = instance__product && instance__product.__data.productName;
+          instance__inventoryLine.__data.conversionName = instance__conversion && instance__conversion.__data.conversionName;
+
+          const { invoiceQuantity, invoiceUnitPrice, discountAmount } = instance__inventoryLine
+          const realSubtotal = invoiceQuantity * invoiceUnitPrice - discountAmount;
+
+          _.set(instance__inventoryLine, "__data.productName", instance__product && instance__product.__data.productName)
+          _.set(instance__inventoryLine, "__data.conversionName", instance__conversion && instance__conversion.__data.conversionName)
+          _.set(instance__inventoryLine, "__data.realSubtotal", realSubtotal)
+
+          return instance__inventoryLine;
         })
     })
       .then(res => {

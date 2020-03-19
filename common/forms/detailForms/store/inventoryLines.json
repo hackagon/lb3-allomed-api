@@ -69,6 +69,11 @@
       "displayVietnameseName": "Số tiền giảm"
     },
     {
+      "name": "realSubtotal",
+      "displayEnglishName": "",
+      "displayVietnameseName": "Thành tiền (sau disocunt)"
+    },
+    {
       "name": "vat",
       "displayEnglishName": "",
       "englishPlaceholder": ""
