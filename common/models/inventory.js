@@ -7,6 +7,34 @@ const createError = require('http-errors');
 module.exports = (ModelInventory) => {
 
   /**
+   * @todo    when inventory.status = true => cannot update
+  */
+  ModelInventory.observe("before save", async ctx => {
+    const inventoryId = _.get(ctx, "options.req.params.id", "");
+    const httpMethod = _.get(ctx, "options.req.method", "");
+
+    if (httpMethod === "POST") return;
+
+    if (!inventoryId) throw createError(400, "inventoryId is required")
+
+    const instance__inventory = await ModelInventory.findOne({ where: { id: inventoryId } })
+    if (instance__inventory.status) throw createError(400, "This inventory is already approved, cannot be modified")
+    return;
+  })
+
+  /**
+   * @todo    when inventory.status = true => cannot delete
+  */
+  ModelInventory.observe("before delete", async ctx => {
+    const inventoryId = _.get(ctx, "options.req.params.id", "");
+    if (!inventoryId) throw createError(400, "inventoryId is required")
+
+    const instance__inventory = await ModelInventory.findById(inventoryId)
+    if (instance__inventory.status) throw createError(400, "This inventory is already approved, cannot be deleted")
+    return;
+  })
+
+  /**
    * @todo    add inventoryLine 
    */
   ModelInventory.observe("after save", async ctx => {
@@ -15,8 +43,8 @@ module.exports = (ModelInventory) => {
 
     const inventoryId = _.get(ctx, "instance.__data.id")
     const inventoryLines = _.get(ctx, "options.req.body.inventoryLines", []);
-
-    if (ctx.instance.status) return;
+    const httpMethod = _.get(ctx, "options.req.method", "");
+    if (httpMethod === "PATCH") return;
 
     if (!ctx.isNewInstance) {
       await ctx.instance.inventoryLines.destroyAll();
@@ -54,7 +82,7 @@ module.exports = (ModelInventory) => {
     const instance__inventoryLines = await instance__inventory.inventoryLines.find();
     const inventoryLineIds = _.chain(instance__inventoryLines).map(m => m.id).value()
     const inventoryStoringIds = await ModelInventoryStoring.find({
-      where: { inventoryId: inventoryLineIds },
+      where: { inventoryLineId: inventoryLineIds },
       fields: { id: true }
     })
     if (!_.isEmpty(inventoryStoringIds)) throw createError(400, "This inventory is already approved")
@@ -146,7 +174,6 @@ module.exports = (ModelInventory) => {
   /**
    * @todo    delete inventory including inventoryLines + storingInventories
    */
-
   ModelInventory.observe("after delete", async ctx => {
     const ModelInventoryLine = app.models.InventoryLine
     const ModelInventoryStoring = app.models.InventoryStoring
