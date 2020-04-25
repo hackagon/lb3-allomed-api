@@ -4,31 +4,21 @@
   "displayEnglishName": "List of enterprises",
   "headers": [
     {
-      "name": "countryCode",
-      "displayVietnameseName": "Mã doanh nghiệp",
-      "displayEnglishName": "Country code"
-    },
-    {
-      "name": "countryName",
+      "name": "enterpriseName",
       "displayVietnameseName": "Tên doanh nghiệp",
-      "displayEnglishName": "Country name"
+      "displayEnglishName": "Enterprise name"
     },
     {
-      "name": "notes",
-      "displayVietnameseName": "Ghi chú",
-      "displayEnglishName": "notes"
-    },
-    {
-      "name": "isActive",
-      "displayVietnameseName": "Đã kích hoạt?",
-      "displayEnglishName": "Is active?"
+      "name": "address",
+      "displayVietnameseName": "Địa chỉ",
+      "displayEnglishName": "Address"
     }
   ],
   "actions": [
     {
       "name": "create",
       "displayVietnameseName": "Thêm doanh nghiệp",
-      "displayEnglishName": "Add new active ingredient"
+      "displayEnglishName": ""
     }
   ]
 }

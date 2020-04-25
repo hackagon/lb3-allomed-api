@@ -4,24 +4,39 @@
   "displayEnglishName": "List of enterprises",
   "headers": [
     {
-      "name": "countryCode",
-      "displayVietnameseName": "Mã doanh nghiệp",
-      "displayEnglishName": "Country code"
-    },
-    {
-      "name": "countryName",
+      "name": "enterpriseName",
       "displayVietnameseName": "Tên doanh nghiệp",
-      "displayEnglishName": "Country name"
+      "displayEnglishName": "Enterprise name"
     },
     {
-      "name": "notes",
-      "displayVietnameseName": "Ghi chú",
-      "displayEnglishName": "notes"
+      "name": "shortName",
+      "displayVietnameseName": "Tên rút gọn",
+      "displayEnglishName": ""
     },
     {
-      "name": "isActive",
-      "displayVietnameseName": "Đã kích hoạt?",
-      "displayEnglishName": "Is active?"
+      "name": "address",
+      "displayVietnameseName": "Địa chỉ",
+      "displayEnglishName": "Address"
+    },
+    {
+      "name": "email",
+      "displayVietnameseName": "Email",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "phone",
+      "displayVietnameseName": "Số điện thoại",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "fax",
+      "displayVietnameseName": "Fax",
+      "displayEnglishName": ""
+    },
+    {
+      "name": "taxCode",
+      "displayVietnameseName": "Mã số thuế",
+      "displayEnglishName": ""
     }
   ]
 }

@@ -6,48 +6,53 @@
   "description": "Form thêm mới doanh nghiệp",
   "inputs": [
     {
-      "name": "enterpriseCode",
-      "type": "text",
-      "displayEnglishName": "Enterprise code",
-      "displayVietnameseName": "Mã doanh nghiệp",
-      "englishPlaceholder": "Enter enterprise code",
-      "vietnamesePlaceholder": "Nhập mã doanh nghiệp"
-    },
-    {
-      "name": "EnterpriseName",
-      "type": "text",
-      "displayEnglishName": "Enterprise name",
+      "name": "enterpriseName",
       "displayVietnameseName": "Tên doanh nghiệp",
-      "englishPlaceholder": "Enter enterprise name",
+      "displayEnglishName": "Enterprise name",
+      "englishPlaceholder": "",
       "vietnamesePlaceholder": "Nhập tên doanh nghiệp"
     },
     {
-      "name": "isActive",
-      "type": "radio",
-      "displayEnglishName": "Is active?",
-      "displayVietnameseName": "Được kích hoạt?",
-      "englishPlaceholder": "Choose",
-      "vietnamesePlaceholder": "Chọn",
-      "options": [
-        {
-          "displayEnglishName": "Yes",
-          "displayVietnameseName": "Có",
-          "value": true
-        },
-        {
-          "displayEnglishName": "No",
-          "displayVietnameseName": "Không",
-          "value": false
-        }
-      ]
+      "name": "shortName",
+      "displayVietnameseName": "Tên rút gọn",
+      "displayEnglishName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập tên rút gọn"
     },
     {
-      "name": "notes",
-      "type": "textarea",
-      "displayEnglishName": "Notes",
-      "displayVietnameseName": "Ghi chú",
-      "englishPlaceholder": "Enter notes",
-      "vietnamesePlaceholder": "Nhập ghi chú"
+      "name": "address",
+      "displayVietnameseName": "Địa chỉ",
+      "displayEnglishName": "Address",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập địa chỉ"
+    },
+    {
+      "name": "email",
+      "displayVietnameseName": "Email",
+      "displayEnglishName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập email"
+    },
+    {
+      "name": "phone",
+      "displayVietnameseName": "Số điện thoại",
+      "displayEnglishName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập số điện thoại"
+    },
+    {
+      "name": "fax",
+      "displayVietnameseName": "Fax",
+      "displayEnglishName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập số fax"
+    },
+    {
+      "name": "taxCode",
+      "displayVietnameseName": "Mã số thuế",
+      "displayEnglishName": "",
+      "englishPlaceholder": "",
+      "vietnamesePlaceholder": "Nhập mã số thuế"
     }
   ]
 }
